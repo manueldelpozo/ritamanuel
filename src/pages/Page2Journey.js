@@ -6,9 +6,11 @@ import { vh2px, vw2px } from '../helpers/parsers';
 import mapEurope from '../assets/mapEurope.jpg';
 import plane from '../assets/plane.png';
 
+const bgColor = getComputedStyle(document.documentElement).getPropertyValue('--bg-color');
+
 const TextHeader = styled.h1`
-    height: 50vh;
-    background-image: linear-gradient(180deg, white, transparent);
+    height: 70vh;
+    background-image: linear-gradient(180deg, ${bgColor}, transparent);
     padding: 10%;
     width: 100vw;
     margin: 0;
@@ -32,11 +34,11 @@ const MapEurope = styled.div`
     &:before {
         content: "";
         position: absolute;
-        top: 0;
+        top: -2px;
         left: 0;
         width: 100vw;
-        height: 15vh;
-        background-image: linear-gradient(180deg, white, transparent);
+        height: 35vh;
+        background-image: linear-gradient(180deg, ${bgColor}, transparent);
     }
 `;
 
@@ -64,7 +66,7 @@ const PageJourney = ({ scroll }) => {
         }}>
             <ParallaxWrapper
                 start={scroll.top} 
-                end={scroll.bottom}
+                end={scroll.bottom - 100}
                 animations={[
                     ['translateY', -vh2px(20), 0],
                     ['opacity', 0, 1],

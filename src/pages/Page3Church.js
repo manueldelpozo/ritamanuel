@@ -15,6 +15,9 @@ const TextHeader = styled.h1`
     position: relative;
     z-index: -1;
     text-align: start;
+    @media (max-width: 768px) {
+        font-size: 1.9em;
+    }
 `;
 
 const TextDetails = styled.div`
@@ -76,21 +79,21 @@ const PageChurch = ({ scroll }) => {
             // zIndex: -1,
         }}>
             <ParallaxWrapper
-                start={scroll.top} 
+                start={scroll.top - 50} 
                 end={scroll.bottom}
                 animations={[
                     ['translateY', -vh2px(20), 0],
                     ['opacity', 0, 1],
                 ]}>
                 <TextHeader>
-                    {t('church')} <span style={{ color: '#ac7d3d' }}>{churchDetails.name}</span>
+                    {t('church')} <br /><span style={{ color: '#ac7d3d' }}>{churchDetails.name}</span>
                 </TextHeader>
             </ParallaxWrapper>
             <ParallaxWrapper
                 start={scroll.top + 200} 
                 end={scroll.bottom}
                 animations={[
-                    ['translateY', vh2px(10), -vh2px(33)],
+                    ['translateY', vh2px(10), -vh2px(25)],
                     ['opacity', 0, 1],
                 ]}>
                 <TextDetails>
