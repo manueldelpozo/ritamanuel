@@ -1,8 +1,6 @@
 import * as React from 'react';
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
-import ParallaxWrapper from '../components/ParallaxWrapper';
-import { vh2px } from '../helpers/parsers';
 import divider from '../assets/divider.png';
 
 const TextDetails = styled.div`
@@ -28,18 +26,10 @@ const Page1Intro = ({ guest }) => {
             padding: '10%',
         }}>
             {guest && <h1>{guest}</h1>}  
-            <ParallaxWrapper
-                start={0} 
-                end={0}
-                animations={[
-                    ['translateY', vh2px(35), vh2px(25)],
-                    ['opacity', 0, 1],
-                ]}>
-                <TextDetails>
-                    <img src={divider} alt="divider" width="auto" height="100px" />
-                    <h1>{t('intro')}</h1>              
-                </TextDetails>
-            </ParallaxWrapper>
+            <TextDetails>
+                <img src={divider} alt="divider" width="auto" height="100px" />
+                <h1>{t('intro')}</h1>              
+            </TextDetails>
         </div>
     );
 };

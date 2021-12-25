@@ -2,6 +2,7 @@ import * as React from 'react';
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
 import ParallaxWrapper from '../components/ParallaxWrapper';
+import ExternalLink from '../components/ExternalLink';
 import { vh2px, vw2px } from '../helpers/parsers';
 import banquetDetails from '../consts/banquetDetails';
 import table from '../assets/table.png';
@@ -58,18 +59,18 @@ const PageBanquet = ({ scroll }) => {
             overflowX: 'clip',
         }}>
             <ParallaxWrapper
-                start={scroll.top + 50} 
-                end={scroll.bottom}
+                start={scroll.top - vh2px(10)} 
+                end={scroll.bottom - vh2px(20)}
                 animations={[
-                    ['translateY', -vh2px(10), vh2px(5)],
                     ['opacity', 0, 1],
+                    ['translateY', -vh2px(5), vh2px(5)],
                 ]}>
                 <TextHeader>
                     {t('banquet')} <br /><span style={{ color: '#ac7d3d' }}>{banquetDetails.name}</span>
                 </TextHeader>
             </ParallaxWrapper>
             <ParallaxWrapper
-                start={scroll.top + 200} 
+                start={scroll.top + vh2px(30)} 
                 end={scroll.bottom}
                 animations={[
                     ['translateY', vh2px(35), vh2px(25)],
@@ -77,29 +78,20 @@ const PageBanquet = ({ scroll }) => {
                 ]}>
                 <TextDetails>
                     <p>{t('church_time')}{banquetDetails.startTime}</p>
-                    <a
+                    <ExternalLink
                         href={`http://maps.google.com/?q=${banquetDetails.name} ${banquetDetails.address}`}
-                        target="_blank"
-                        without rel="noreferrer"
-                        style={{ 
-                            cursor: 'pointer',
-                            // width: 150,
-                            display: 'block',
-                            textDecoration: 'overline',
-                            color: '#ac7d3d',
-                        }}
                     >
                         {banquetDetails.address}
-                    </a>
+                    </ExternalLink>
                     <img src={divider} alt="divider" width="auto" height="100px" />
                 </TextDetails>
                 
             </ParallaxWrapper>
             <ParallaxWrapper
-                start={scroll.top + 200} 
+                start={scroll.top + vh2px(70)} 
                 end={scroll.bottom}
                 animations={[
-                    ['translateX', vw2px(-10), vw2px(0)],
+                    ['translateX', vw2px(-20), vw2px(0)],
                 ]}>
                 <Table src={table} />
             </ParallaxWrapper>

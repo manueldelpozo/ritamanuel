@@ -2,6 +2,7 @@ import * as React from 'react';
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
 import ParallaxWrapper from '../components/ParallaxWrapper';
+import ExternalLink from '../components/ExternalLink';
 import { vh2px, vw2px } from '../helpers/parsers';
 import churchDetails from '../consts/churchDetails';
 import iglesia from '../assets/iglesia.png';
@@ -98,20 +99,9 @@ const PageChurch = ({ scroll }) => {
                 ]}>
                 <TextDetails>
                     <p>{t('church_time')}{churchDetails.startTime}</p>
-                    <a
-                        href={`http://maps.google.com/?q=Iglesia ${churchDetails.name} ${churchDetails.address}`}
-                        target="_blank"
-                        without rel="noreferrer"
-                        style={{ 
-                            cursor: 'pointer',
-                            width: 150,
-                            display: 'block',
-                            textDecoration: 'overline',
-                            color: '#ac7d3d',
-                        }}
-                    >
+                    <ExternalLink href={`http://maps.google.com/?q=Iglesia ${churchDetails.name} ${churchDetails.address}`} width={150}>
                         {churchDetails.address}
-                    </a>
+                    </ExternalLink>
                 </TextDetails>
             </ParallaxWrapper>
             <ParallaxWrapper

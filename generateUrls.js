@@ -4,13 +4,13 @@ const fs = require('fs');
 const guestsJson = require('./src/consts/guests.json');
 
 const PORT = 3000;
-const urlBase = 'https://ritamanu.io';
+const urlBase = 'https://manueldelpozo.github.io/ritamanuel';
 const urlLocal = `http://localhost:${PORT}`
 
 const getUrlListByLang = (lang, list) => list.map(guest => ({
     guest,
     lang,
-    url: `${urlLocal}/${lang}?guest=${encodeURIComponent(guest)}`,
+    url: `${urlBase}/#/${lang}?guest=${encodeURIComponent(guest)}`,
 }));
 
 const urlLists = Object.entries(guestsJson).map(([lang, list]) => getUrlListByLang(lang, list));
