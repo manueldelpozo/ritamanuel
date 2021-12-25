@@ -7,7 +7,7 @@ import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-      <Router>
+      <Router basename="/ritamanuel">
         <Routes>
         <Route exact path="/" element={<App />} />
         <Route exact path="/:lang" element={<App />} />
