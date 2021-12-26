@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ritamanuel/static/css/main.beb1ffc4.chunk.css",
-    "main.js": "/ritamanuel/static/js/main.f8375603.chunk.js",
-    "main.js.map": "/ritamanuel/static/js/main.f8375603.chunk.js.map",
+    "main.js": "/ritamanuel/static/js/main.8a6629da.chunk.js",
+    "main.js.map": "/ritamanuel/static/js/main.8a6629da.chunk.js.map",
     "runtime-main.js": "/ritamanuel/static/js/runtime-main.37502d55.js",
     "runtime-main.js.map": "/ritamanuel/static/js/runtime-main.37502d55.js.map",
     "static/js/2.d7ff4ec6.chunk.js": "/ritamanuel/static/js/2.d7ff4ec6.chunk.js",
@@ -19,12 +19,12 @@
     "static/media/mapEurope.9047e83e.jpg": "/ritamanuel/static/media/mapEurope.9047e83e.jpg",
     "static/media/palm.afa9e04f.png": "/ritamanuel/static/media/palm.afa9e04f.png",
     "static/media/plane.bad8f55e.png": "/ritamanuel/static/media/plane.bad8f55e.png",
-    "static/media/table.ee99eb61.png": "/ritamanuel/static/media/table.ee99eb61.png"
+    "static/media/table.8ce060e3.png": "/ritamanuel/static/media/table.8ce060e3.png"
   },
   "entrypoints": [
     "static/js/runtime-main.37502d55.js",
     "static/js/2.d7ff4ec6.chunk.js",
     "static/css/main.beb1ffc4.chunk.css",
-    "static/js/main.f8375603.chunk.js"
+    "static/js/main.8a6629da.chunk.js"
   ]
 }
