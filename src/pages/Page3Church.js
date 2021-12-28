@@ -50,18 +50,15 @@ const Church = styled.div`
     }
 `;
 
-const Palm = styled.div`
-    width: 230px;
+const Palm = styled.img`
+    width: auto;
     height: 50vh;
-    background-image: url(${palm});
-    background-repeat: no-repeat;
-    background-size: cover;
     position: absolute;
     bottom: -15px;
     left: -35vw;
     z-index: -1;
     @media (max-width: 768px) {
-        left: -85vw;
+        left: -90vw;
     }
 `;
 
@@ -77,7 +74,6 @@ const PageChurch = ({ scroll }) => {
             justifyContent: 'center',
             flexWrap: 'wrap',
             overflowX: 'clip',
-            // zIndex: -1,
         }}>
             <ParallaxWrapper
                 start={scroll.top - 50} 
@@ -110,7 +106,7 @@ const PageChurch = ({ scroll }) => {
                 animations={[
                     ['translateX', vw2px(50), -vw2px(22)],
                 ]}>
-                <Palm />
+                <Palm src={palm} />
             </ParallaxWrapper>
             <ParallaxWrapper
                 start={scroll.top} 

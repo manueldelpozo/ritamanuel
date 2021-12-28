@@ -9,8 +9,8 @@ const ButtonContent = styled.div`
     align-items: center;
     border: 0;
     padding: 2em;
-    width: auto;
-    height: 30vh;
+    width: 210px;
+    height: auto;
     background: none;
     font-size: 1.2em;
     font-weight: bold;
@@ -23,7 +23,7 @@ const ButtonContent = styled.div`
         width: 100%;
         height: 100%;
         background-image: url(${buttonFrame});
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
     }
 
