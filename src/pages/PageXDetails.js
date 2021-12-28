@@ -11,10 +11,10 @@ const PageDetailsGift = styled.div`
         margin: .7em;
     }
     & .page-details__gift__intro {
-        font-size: 1em;
+        font-size: 1.2em;
     }
     & .page-details__gift__iban {
-        font-family: auto;
+        font-family: serif;
         font-weight: bold;
     }
 `;

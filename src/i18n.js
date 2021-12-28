@@ -21,6 +21,7 @@ const resources = {
         'ryanair_flights_alicante': 'Fligths to Alicante (Ryanair)',
         'ryanair_flights_murcia': 'Fligths to Murcia (Ryanair)',
         'at': 'at',
+        'copy': 'Copy',
     }
   },
   es: {
@@ -39,6 +40,7 @@ const resources = {
         'ryanair_flights_alicante': 'Vuelos a Alicante (Ryanair)',
         'ryanair_flights_murcia': 'Vuelos a Murcia (Ryanair)',
         'at': 'a las',
+        'copy': 'Copiar',
     }
   },
   es_pl: {
@@ -57,6 +59,7 @@ const resources = {
         'ryanair_flights_alicante': 'Vuelos a Alicante (Ryanair)',
         'ryanair_flights_murcia': 'Vuelos a Murcia (Ryanair)',
         'at': 'a las',
+        'copy': 'Copiar',
     }
   },
   pl: {
@@ -75,6 +78,7 @@ const resources = {
         'ryanair_flights_alicante': 'Loty do Alicante (Ryanair)',
         'ryanair_flights_murcia': 'Loty do Murcja (Ryanair)',
         'at': 'o',
+        'copy': 'Kopiuj',
     }
   },
   fr: {
@@ -93,6 +97,7 @@ const resources = {
         'ryanair_flights_alicante': 'Vols vers Alacante (Ryanair)',
         'ryanair_flights_murcia': 'Vols vers Murcie (Ryanair)',
         'at': 'à',
+        'copy': 'Copier',
     }
   }
 };
