@@ -42,9 +42,10 @@ const PageDetails = () => {
                 <img src={divider} alt="divider" width="30%" height="auto" />
                 <h3>{t('thanks_advance')}</h3>
             </PageDetailsGift>
-            <ButtonFrame download="../assets/Rita&Manu.pdf">
-                {t('download')}
-            </ButtonFrame>
+
+            {/*<ButtonFrame download="../assets/Rita&Manu.pdf">*/}
+            {/*    {t('download')}*/}
+            {/*</ButtonFrame>*/}
         </div>
     );
 };

@@ -1,4 +1,4 @@
-import i18n from 'i18next';
+import i18n, { t } from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
 // the translations
@@ -22,6 +22,10 @@ const resources = {
         'ryanair_flights_murcia': 'Fligths to Murcia (Ryanair)',
         'at': 'at',
         'copy': 'Copy',
+        'confirm': 'Please confirm you attendance asap',
+        'yesGo': 'Yes, I go',
+        'iluk': 'I\'ll let you know later',
+        'noGo': 'Unfortunately I can\'t go',
     }
   },
   es: {
@@ -41,6 +45,10 @@ const resources = {
         'ryanair_flights_murcia': 'Vuelos a Murcia (Ryanair)',
         'at': 'a las',
         'copy': 'Copiar',
+        'confirm': 'Por favor, confirmarnos tu asistencia',
+        'yesGo': 'Si, seguro que voy',
+        'iluk': 'Confirmaré más tarde',
+        'noGo': 'Me temo que no puedo',
     }
   },
   es_pl: {
@@ -60,6 +68,10 @@ const resources = {
         'ryanair_flights_murcia': 'Vuelos a Murcia (Ryanair)',
         'at': 'a las',
         'copy': 'Copiar',
+        'confirm': 'Por favor, confirmarnos vuestra asistencia',
+        'yesGo': 'Si, seguro que vamos',
+        'iluk': 'Confirmaremos más tarde',
+        'noGo': 'Lo siento, no podemos ir',
     }
   },
   pl: {
@@ -79,6 +91,10 @@ const resources = {
         'ryanair_flights_murcia': 'Loty do Murcja (Ryanair)',
         'at': 'o',
         'copy': 'Kopiuj',
+        'confirm': 'Proszę potwierdzić swoją obecność',
+        'yesGo': 'Tak, na pewno będę',
+        'iluk': 'Potwierdzimy później',
+        'noGo': 'Niestety nie możemy',
     }
   },
   fr: {
@@ -98,6 +114,10 @@ const resources = {
         'ryanair_flights_murcia': 'Vols vers Murcie (Ryanair)',
         'at': 'à',
         'copy': 'Copier',
+        'confirm': 'Veuillez confirmer votre présence',
+        'yesGo': 'Oui, on irons',
+        'iluk': 'Nous confirmerons plus tard',
+        'noGo': 'Nous ne pourrons pas aller',
     }
   }
 };

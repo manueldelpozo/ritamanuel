@@ -7,10 +7,11 @@ const ButtonContent = styled.div`
     position: relative;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     border: 0;
     padding: 2em;
     width: 210px;
-    height: auto;
+    height: 140px;
     background: none;
     font-size: 1.2em;
     font-weight: bold;
@@ -39,12 +40,12 @@ const AnimatedHand = styled.div`
     background-image: url(${hand});
     background-size: contain;
     background-repeat: no-repeat;
-    width: 80px;
+    width: 60px;
     height: 60px;
     animation: point 1.5s infinite ease-out;
 `;
 
-const ButtonFrame = ({ onClick, download, children }) => {
+const ButtonFrame = ({ onClick, download, href, children }) => {
     if (onClick) {
         return (
             <button onClick={onClick} style={{ border: 'none', background: 'none', margin: 0, padding: 0 }}>
@@ -53,6 +54,17 @@ const ButtonFrame = ({ onClick, download, children }) => {
                     {children}
                 </ButtonContent>
             </button>
+        );
+    }
+
+    if (href) {
+        return (
+            <a href={href} style={{ textDecoration: 'none', color: 'inherit' }}>
+                <ButtonContent>
+                    <AnimatedHand />
+                    {children}
+                </ButtonContent>
+            </a>
         );
     }
     

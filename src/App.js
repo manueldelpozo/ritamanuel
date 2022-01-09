@@ -9,9 +9,10 @@ import PageIntro from './pages/Page1Intro';
 import PageJourney from './pages/Page2Journey';
 import PageChurch from './pages/Page3Church';
 import PageBanquet from './pages/Page4Banquet';
-import PageAccomodation from './pages/PageXAccomodation';
-import PageDetails from './pages/PageXDetails';
-import PageEnd from './pages/PageXEnd';
+import PageAccomodation from './pages/Page5Accomodation';
+import PageDetails from './pages/Page6Details';
+import PageConfirmation from './pages/Page7Confirmation';
+import PageEnd from './pages/Page8End';
 import './App.css';
 
 const Footer = styled.footer`
@@ -29,6 +30,7 @@ function App() {
   const scrollRef = useRef(null);
   const [scrolling, setScrolling] = useState(false);
   const [scrollTop, setScrollTop] = useState(0);
+  const [isBottom, setIsBottom] = useState(false);
 
   const guest = useMemo(() => {
     if (search.startsWith('?')) {
@@ -50,6 +52,7 @@ function App() {
       const { documentElement } = e.target;
       setScrollTop(documentElement.scrollTop);
       setScrolling(documentElement.scrollTop > scrollTop);
+      setIsBottom(documentElement.scrollHeight - documentElement.scrollTop === documentElement.clientHeight)
     };
     window.addEventListener("scroll", onScroll);
 
@@ -66,9 +69,10 @@ function App() {
         {hasAccomodation && <PageAccomodation />}
         <PageDetails />
         <PageEnd guest={guest} />
+        <PageConfirmation lang={lang} />
       </Layout>
       <Footer>
-        {!scrolling && <ButtonScroll scrollTop={scrollTop} />}
+        {!scrolling && !isBottom && <ButtonScroll scrollTop={scrollTop} />}
       </Footer>
     </div>
   );
