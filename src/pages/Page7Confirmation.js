@@ -18,7 +18,7 @@ const PageConfirmation = ({ lang }) => {
     const getHrefWithMessage = (message, isWhatsapp) => {
         return isWhatsapp
             ? `https://wa.me/${whatsapp}?text=${encodeURIComponent(message)}`
-            : `mailto:${email}?Subject=${encodeURIComponent(message)}`;
+            : `mailto:${email}?subject=Confirmation&body=${encodeURIComponent(message)}`;
     }
 
     return (

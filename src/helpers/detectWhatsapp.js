@@ -1,7 +1,5 @@
 const detectWhatsapp = (phone, text) => {
-    const uri = `whatsapp://send/?phone=${encodeURIComponent(
-        phone
-    )}&text=${encodeURIComponent(text)}`;
+    const uri = `whatsapp://send/?phone=${encodeURIComponent(phone)}&text=${encodeURIComponent(text)}`;
 
     const onIE = () => {
         return new Promise((resolve) => {
@@ -15,8 +13,7 @@ const detectWhatsapp = (phone, text) => {
 
     const notOnIE = () => {
         return new Promise((resolve) => {
-            const a =
-                document.getElementById("wapp-launcher") || document.createElement("a");
+            const a = document.getElementById("wapp-launcher") || document.createElement("a");
             a.id = "wapp-launcher";
             a.href = uri;
             a.style.display = "none";
@@ -24,16 +21,16 @@ const detectWhatsapp = (phone, text) => {
 
             const start = Date.now();
             const timeoutToken = setTimeout(() => {
-                if (Date.now() - start > 1250) {
-                    resolve(true);
-                } else {
-                    resolve(false);
-                }
+                resolve(Date.now() - start > 1250);
+                document.body.removeChild(a);
+                return window.removeEventListener("blur", handleBlur);
             }, 1000);
 
             const handleBlur = () => {
                 clearTimeout(timeoutToken);
                 resolve(true);
+                document.body.removeChild(a);
+                return window.removeEventListener("blur", handleBlur);
             };
             window.addEventListener("blur", handleBlur);
 
