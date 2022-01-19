@@ -5,7 +5,8 @@ import qs from 'qs';
 import styled from 'styled-components';
 import Layout from './components/Layout';
 import ButtonScroll from './components/ButtonScroll'
-import PageIntro from './pages/Page1Intro';
+import PageIntro from './pages/Page0Intro';
+import PageInvitation from './pages/Page1bInvitation';
 import PageJourney from './pages/Page2Journey';
 import PageChurch from './pages/Page3Church';
 import PageBanquet from './pages/Page4Banquet';
@@ -63,9 +64,10 @@ function App() {
     <div className="App">
       <Layout ref={scrollRef}>
         <PageIntro guest={guest} />
-        <PageJourney scroll={{ top: 0, bottom: document.documentElement.clientHeight }} />
-        <PageChurch scroll={{ top: document.documentElement.clientHeight, bottom: document.documentElement.clientHeight * 2 }} />
-        <PageBanquet scroll={{ top: document.documentElement.clientHeight * 2, bottom: document.documentElement.clientHeight * 3 }} />
+        <PageInvitation scroll={{ top: 0, bottom: document.documentElement.clientHeight }} />
+        <PageJourney scroll={{ top: document.documentElement.clientHeight, bottom: document.documentElement.clientHeight * 2 }} />
+        <PageChurch scroll={{ top: document.documentElement.clientHeight * 2, bottom: document.documentElement.clientHeight * 3 }} />
+        <PageBanquet scroll={{ top: document.documentElement.clientHeight * 3, bottom: document.documentElement.clientHeight * 4 }} />
         {hasAccomodation && <PageAccomodation />}
         <PageDetails />
         <PageEnd guest={guest} />

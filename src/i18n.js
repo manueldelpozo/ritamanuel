@@ -7,6 +7,7 @@ import { initReactI18next } from 'react-i18next';
 const resources = {
   en: {
     translation: {
+        'dear': 'Dear',
         'intro': 'You are invited to join our wedding',
         'journey': 'We are onboard on a new journey, and we want you to come with us.',
         'church': 'The ceremony will take place in the Church of ',
@@ -30,7 +31,8 @@ const resources = {
   },
   es: {
     translation: {
-        'intro': 'Te invitamos a nuestra boda',
+        'dear': 'Querid@',
+        'intro': 'Te invitamos a nuestro enlace',
         'journey': 'Nos embarcamos en un viaje, y queremos que nos acompañes.',
         'church': 'La ceremonia tendrá lugar en la Iglesia de ',
         'church_time': 'El 3 de septiembre a las ',
@@ -53,7 +55,8 @@ const resources = {
   },
   es_pl: {
     translation: {
-        'intro': 'Os invitamos a nuestra boda',
+        'dear': 'Queridos',
+        'intro': 'Os invitamos a nuestro enlace',
         'journey': 'Nos embarcamos en un viaje, y queremos que nos acompañes.',
         'church': 'La ceremonia tendrá lugar en la Iglesia de ',
         'church_time': 'El 3 de septiembre a las ',
@@ -76,6 +79,7 @@ const resources = {
   },
   pl: {
     translation: {
+        'dear': 'Drodzy',
         'intro': 'Zapraszamy na nasze wesele',
         'journey': 'Jesteśmy na pokładzie w podróży i chcemy, żebyś do nas dołączył.',
         'church': 'Uroczystość odbędzie się w kościele ',
@@ -99,6 +103,7 @@ const resources = {
   },
   fr: {
     translation: {
+        'dear': 'Chers',
         'intro': 'Nous vous invitons à notre mariage',
         'journey': 'Nous nous embarquons dans un voyage, et nous voulons que vous vous joigniez à nous.',
         'church': 'La cérémonie aura lieu dans l\'église de ',

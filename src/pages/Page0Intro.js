@@ -13,7 +13,7 @@ const TextDetails = styled.div`
     text-align: center;
 `;
 
-const Page1Intro = ({ guest }) => {
+const Page0Intro = ({ guest }) => {
     const { t } = useTranslation();
 
     return (
@@ -25,13 +25,13 @@ const Page1Intro = ({ guest }) => {
             flexDirection: 'column',
             padding: '10%',
         }}>
-            {guest && <h1>{guest}</h1>}  
             <TextDetails>
+                <h1>{t('dear')}</h1>
                 <img src={divider} alt="divider" width="auto" height="100px" />
-                <h1>{t('intro')}</h1>              
+                {guest && <h1>{guest}</h1>}
             </TextDetails>
         </div>
     );
 };
 
-export default Page1Intro;
+export default Page0Intro;

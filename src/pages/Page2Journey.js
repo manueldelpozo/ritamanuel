@@ -13,7 +13,7 @@ const TextHeader = styled.h1`
     background-image: linear-gradient(180deg, ${bgColor}, transparent);
     padding: 10%;
     width: 100vw;
-    margin: 0;
+    margin: -10vh 0;
     position: relative;
     z-index: -1;
 `;
@@ -65,10 +65,10 @@ const PageJourney = ({ scroll }) => {
             zIndex: -1,
         }}>
             <ParallaxWrapper
-                start={scroll.top} 
+                start={scroll.top - 100}
                 end={scroll.bottom - 100}
                 animations={[
-                    ['translateY', -vh2px(20), 0],
+                    ['translateY', 0, vh2px(10)],
                     ['opacity', 0, 1],
                 ]}>
                 <TextHeader>{t('journey')}</TextHeader>
