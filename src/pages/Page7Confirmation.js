@@ -9,11 +9,11 @@ const PageConfirmation = ({ lang }) => {
     const { email, whatsapp } = confirmationDetails[lang];
     const [hasWhatsapp, setHasWhatsapp] = useState(false);
 
-    useEffect(() => {
-        detectWhatsapp(whatsapp, 'test')
-            .then((result) => setHasWhatsapp(result))
-            .catch(() => setHasWhatsapp(false));
-    }, [whatsapp]);
+    // useEffect(() => {
+    //     detectWhatsapp(whatsapp, 'test')
+    //         .then((result) => setHasWhatsapp(result))
+    //         .catch(() => setHasWhatsapp(false));
+    // }, [whatsapp]);
 
     const getHrefWithMessage = (message, isWhatsapp) => {
         return isWhatsapp

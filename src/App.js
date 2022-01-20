@@ -69,7 +69,7 @@ function App() {
         <PageChurch scroll={{ top: document.documentElement.clientHeight * 2, bottom: document.documentElement.clientHeight * 3 }} />
         <PageBanquet scroll={{ top: document.documentElement.clientHeight * 3, bottom: document.documentElement.clientHeight * 4 }} />
         {hasAccomodation && <PageAccomodation />}
-        <PageDetails />
+        {/*<PageDetails />*/}
         <PageEnd guest={guest} />
         <PageConfirmation lang={lang} />
       </Layout>
