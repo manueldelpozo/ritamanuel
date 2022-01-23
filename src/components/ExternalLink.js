@@ -12,7 +12,7 @@ const AnimatedHand = styled.div`
     animation: point 1.5s infinite ease-out;
 `;
 
-const ExternalLink = ({ children, href, width }) => (
+const ExternalLink = ({ children, href, width, isBlack }) => (
     <a
         href={href}
         target="_blank"
@@ -22,7 +22,7 @@ const ExternalLink = ({ children, href, width }) => (
             cursor: 'pointer',
             display: 'block',
             textDecoration: 'overline',
-            color: '#ac7d3d',
+            color: isBlack ? 'black' : '#ac7d3d',
             position: 'relative',
         }}
         without="true"

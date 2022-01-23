@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
 import ParallaxWrapper from '../components/ParallaxWrapper';
 import ExternalLink from '../components/ExternalLink';
+import createLinkCalendar from '../helpers/createLinkCalendar';
 import { vh2px, vw2px } from '../helpers/parsers';
 import churchDetails from '../consts/churchDetails';
 import iglesia from '../assets/iglesia.png';
@@ -90,11 +91,26 @@ const PageChurch = ({ scroll }) => {
                 start={scroll.top + 200} 
                 end={scroll.bottom}
                 animations={[
-                    ['translateY', vh2px(10), -vh2px(25)],
+                    ['translateY', vh2px(10), -vh2px(30)],
                     ['opacity', 0, 1],
                 ]}>
                 <TextDetails>
-                    <p>{t('church_time')}{churchDetails.startTime}</p>
+                    <p>
+                        <ExternalLink
+                            href={createLinkCalendar({
+                                text: t('wedding'),
+                                dates: [
+                                    `${churchDetails.startDate} ${churchDetails.startTime.split(' ')[0]}`,
+                                    `${churchDetails.startDate} ${churchDetails.endTime.split(' ')[0]}`,
+                                ],
+                                details: churchDetails.name,
+                                location: churchDetails.address,
+                            })}
+                            isBlack
+                        >
+                            {t('church_time')}{churchDetails.startTime}
+                        </ExternalLink>
+                    </p>
                     <ExternalLink href={`http://maps.google.com/?q=Iglesia ${churchDetails.name} ${churchDetails.address}`} width={150}>
                         {churchDetails.address}
                     </ExternalLink>

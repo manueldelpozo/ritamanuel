@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
 import ParallaxWrapper from '../components/ParallaxWrapper';
 import ExternalLink from '../components/ExternalLink';
+import createLinkCalendar from '../helpers/createLinkCalendar';
 import { vh2px, vw2px } from '../helpers/parsers';
 import banquetDetails from '../consts/banquetDetails';
 import table from '../assets/table.png';
@@ -73,11 +74,26 @@ const PageBanquet = ({ scroll }) => {
                 start={scroll.top + vh2px(30)} 
                 end={scroll.bottom}
                 animations={[
-                    ['translateY', vh2px(35), vh2px(25)],
+                    ['translateY', vh2px(35), vh2px(20)],
                     ['opacity', 0, 1],
                 ]}>
                 <TextDetails>
-                    <p>{t('church_time')}{banquetDetails.startTime}</p>
+                    <p>
+                        <ExternalLink
+                            href={createLinkCalendar({
+                                text: t('banquet_calendar'),
+                                dates: [
+                                    `${banquetDetails.startDate} ${banquetDetails.startTime.split(' ')[0]}`,
+                                    `${banquetDetails.startDate} ${banquetDetails.endTime.split(' ')[0]}`,
+                                ],
+                                details: banquetDetails.name,
+                                location: banquetDetails.address,
+                            })}
+                            isBlack
+                        >
+                            {t('church_time')}{banquetDetails.startTime}
+                        </ExternalLink>
+                    </p>
                     <ExternalLink
                         href={`http://maps.google.com/?q=${banquetDetails.name} ${banquetDetails.address}`}
                     >

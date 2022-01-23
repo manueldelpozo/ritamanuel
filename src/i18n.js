@@ -27,6 +27,8 @@ const resources = {
         'yesGo': 'Yes, I go',
         'iluk': 'I\'ll let you know later',
         'noGo': 'Unfortunately I can\'t go',
+        'wedding': 'Rita and Manuel Wedding',
+        'banquet_calendar': 'Rita and Manuel Wedding\'s Banquet',
     }
   },
   es: {
@@ -51,6 +53,8 @@ const resources = {
         'yesGo': 'Si, seguro que voy',
         'iluk': 'Confirmaré más tarde',
         'noGo': 'Me temo que no puedo',
+        'wedding': 'Ceremonia Rita y Manuel',
+        'banquet_calendar': 'El banquete de bodas de Rita y Manuel',
     }
   },
   es_pl: {
@@ -75,6 +79,8 @@ const resources = {
         'yesGo': 'Si, seguro que vamos',
         'iluk': 'Confirmaremos más tarde',
         'noGo': 'Lo siento, no podemos ir',
+        'wedding': 'Ceremonia boda Rita y Manuel',
+        'banquet_calendar': 'El banquete de bodas de Rita y Manuel',
     }
   },
   pl: {
@@ -99,6 +105,8 @@ const resources = {
         'yesGo': 'Tak, na pewno będę',
         'iluk': 'Potwierdzimy później',
         'noGo': 'Niestety nie możemy',
+        'wedding': 'Ślub Rity i Manuela',
+        'banquet_calendar': 'Wesele Rity i Manuela',
     }
   },
   fr: {
@@ -123,6 +131,8 @@ const resources = {
         'yesGo': 'Oui, on irons',
         'iluk': 'Nous confirmerons plus tard',
         'noGo': 'Nous ne pourrons pas aller',
+        'wedding': 'Le mariage Rita et Manuel',
+        'banquet_calendar': 'La noce de Rita et Manuel',
     }
   }
 };
@@ -131,7 +141,7 @@ i18n
   .use(initReactI18next) // passes i18n down to react-i18next
   .init({
     resources,
-    lng: 'pl', // language to use, more information here: https://www.i18next.com/overview/configuration-options#languages-namespaces-resources
+    lng: 'es', // language to use, more information here: https://www.i18next.com/overview/configuration-options#languages-namespaces-resources
     // you can use the i18n.changeLanguage function to change the language manually: https://www.i18next.com/overview/api#changelanguage
     // if you're using a language detector, do not define the lng option
 
