@@ -10,10 +10,10 @@ import PageInvitation from './pages/Page1bInvitation';
 import PageJourney from './pages/Page2Journey';
 import PageChurch from './pages/Page3Church';
 import PageBanquet from './pages/Page4Banquet';
-import PageAccomodation from './pages/Page5Accomodation';
-import PageDetails from './pages/Page6Details';
-import PageConfirmation from './pages/Page7Confirmation';
-import PageEnd from './pages/Page8End';
+import PageTravelInterest from './pages/Page7TravelInterest';
+// import PageGift from './pages/Page8Gift';
+import PageConfirmation from './pages/Page10Confirmation';
+import PageEnd from './pages/Page9End';
 import './App.css';
 
 const Footer = styled.footer`
@@ -68,10 +68,10 @@ function App() {
         <PageJourney scroll={{ top: document.documentElement.clientHeight, bottom: document.documentElement.clientHeight * 2 }} />
         <PageChurch scroll={{ top: document.documentElement.clientHeight * 2, bottom: document.documentElement.clientHeight * 3 }} />
         <PageBanquet scroll={{ top: document.documentElement.clientHeight * 3, bottom: document.documentElement.clientHeight * 4 }} />
-        {hasAccomodation && <PageAccomodation />}
-        {/*<PageDetails />*/}
+        {hasAccomodation && <PageTravelInterest />}
+        {/*<PageGift />*/}
         <PageEnd guest={guest} />
-        <PageConfirmation lang={lang} />
+        <PageConfirmation lang={lang} guest={guest} />
       </Layout>
       <Footer>
         {!scrolling && !isBottom && <ButtonScroll scrollTop={scrollTop} />}

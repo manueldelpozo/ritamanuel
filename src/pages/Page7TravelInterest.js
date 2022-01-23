@@ -2,7 +2,7 @@ import * as React from 'react';
 import { useTranslation } from 'react-i18next';
 import infoInterest from '../consts/infoInterest';
 
-const PageDetails = () => {
+const Page7TravelInterest = () => {
     const { t } = useTranslation();
 
     return (
@@ -25,4 +25,4 @@ const PageDetails = () => {
     );
 };
 
-export default PageDetails;
+export default Page7TravelInterest;

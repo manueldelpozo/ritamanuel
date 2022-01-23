@@ -6,6 +6,7 @@ import { vh2px, vw2px } from '../helpers/parsers';
 import dame from '../assets/dame.png';
 import gentleman from '../assets/gentleman.png';
 import angelDivider from '../assets/angel-divider.png';
+import angelWing from '../assets/angel-wind.png';
 import angel from '../assets/angel.png';
 
 const TextHeader = styled.h1`
@@ -26,10 +27,13 @@ const Figure = styled.img`
     height: 40vh;
 `;
 
-const Angel = styled.img`
-    position: absolute;
-    width: auto;
-    height: 20vh;
+const AngelWing = styled.img`
+    position: relative;
+    right: -55px;
+    width: 25px;
+    height: 25px;
+    transform-origin: 100% 100%;
+    animation: fly 1s infinite ease-in-out alternate;
 `;
  
 const PageInvitation = ({ scroll }) => {
@@ -56,7 +60,7 @@ const PageInvitation = ({ scroll }) => {
                     {t('intro')}
                 </TextHeader>
             </ParallaxWrapper>
-            <img src={angelDivider} alt="divider" width="auto" height="200px" />
+            <img src={angelDivider} alt="divider" width="auto" height="200px" style={{ filter: 'brightness(0.7)' }} />
             <div style={{ display: 'flex', width: '100vw', fontSize: '2em' }}>
                 <ParallaxWrapper
                     start="self"
@@ -66,7 +70,8 @@ const PageInvitation = ({ scroll }) => {
                     ]}>
                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-end', width: '50vw' }}>
                         <span style={{ display: 'inline-flex' }}>
-                            <img src={angel} alt="angel" width="auto" height="50px" />
+                            <AngelWing src={angelWing} />
+                            <img src={angel} alt="angel" width="100px" height="auto" />
                             <span>Rita</span>
                         </span>
                         <Figure src={dame} />

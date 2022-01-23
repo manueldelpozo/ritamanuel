@@ -2,6 +2,15 @@
   text-align: center;
 }
 
+@keyframes fly {
+  100% {
+    transform: rotate(-10deg);
+  }
+  0% {
+    transform: rotate(15deg);
+  }
+}
+
 @keyframes bounceAndRotate {
   100% {
     transform:rotate(-15deg);

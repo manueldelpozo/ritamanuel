@@ -48,8 +48,8 @@ const Plane = styled.img`
     position: absolute;
     right: -200px;
     z-index: 10;
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter: drop-shadow(5px 5px 5px #222);
+    -webkit-filter: drop-shadow(7px 7px 4px #222);
+    filter: drop-shadow(7px 7px 4px #222);
 `;
  
 const PageJourney = ({ scroll }) => {

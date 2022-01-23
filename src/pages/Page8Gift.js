@@ -19,7 +19,7 @@ const PageDetailsGift = styled.div`
     }
 `;
 
-const PageDetails = () => {
+const PageGift = () => {
     const { t } = useTranslation();
 
     return (
@@ -50,4 +50,4 @@ const PageDetails = () => {
     );
 };
 
-export default PageDetails;
+export default PageGift;
