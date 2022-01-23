@@ -47,7 +47,7 @@ const resources = {
         'ryanair_flights_murcia': 'Vuelos a Murcia (Ryanair)',
         'at': 'a las',
         'copy': 'Copiar',
-        'confirm': 'Por favor, confirmarnos tu asistencia',
+        'confirm': 'Por favor, confirmanos tu asistencia',
         'yesGo': 'Si, seguro que voy',
         'iluk': 'Confirmaré más tarde',
         'noGo': 'Me temo que no puedo',

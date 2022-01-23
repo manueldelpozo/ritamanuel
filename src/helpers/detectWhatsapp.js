@@ -1,5 +1,5 @@
 const detectWhatsapp = (phone, text) => {
-    const uri = `whatsapp://send/?phone=${encodeURIComponent(phone)}&text=${encodeURIComponent(text)}`;
+    const uri = `https://wa.me/${phone}&text=${text}`;
 
     const onIE = () => {
         return new Promise((resolve) => {

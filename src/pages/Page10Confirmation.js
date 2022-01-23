@@ -4,7 +4,7 @@ import ButtonFrame from '../components/ButtonFrame';
 import detectWhatsapp from '../helpers/detectWhatsapp';
 import confirmationDetails from '../consts/confirmationDetails';
 
-const PageConfirmation = ({ lang }) => {
+const PageConfirmation = ({ lang, guest }) => {
     const { t } = useTranslation();
     const { email, whatsapp } = confirmationDetails[lang];
     const [hasWhatsapp, setHasWhatsapp] = useState(false);
@@ -16,10 +16,17 @@ const PageConfirmation = ({ lang }) => {
     // }, [whatsapp]);
 
     const getHrefWithMessage = (message, isWhatsapp) => {
+        // return detectWhatsapp(whatsapp, encodeURIComponent(message))
+        //     .then((result) => result)
+        //     .catch(() => `mailto:${email}?
+        //         subject=Confirmation${encodeURIComponent(` ${guest}`)}
+        //         &body=${encodeURIComponent(message)}`);
         return isWhatsapp
             ? `https://wa.me/${whatsapp}?text=${encodeURIComponent(message)}`
-            : `mailto:${email}?subject=Confirmation&body=${encodeURIComponent(message)}`;
-    }
+            : `mailto:${email}?
+                subject=Confirmation${encodeURIComponent(` ${guest}`)}
+                &body=${encodeURIComponent(message)}`;
+    };
 
     return (
         <div style={{
