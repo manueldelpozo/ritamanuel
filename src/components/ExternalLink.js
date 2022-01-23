@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import hand from '../assets/hand.png';
+import { COLOR_PRIMARY, COLOR_SECONDARY } from '../consts/colors';
 
 const AnimatedHand = styled.div`
     position: absolute;
@@ -22,7 +23,7 @@ const ExternalLink = ({ children, href, width, isBlack }) => (
             cursor: 'pointer',
             display: 'block',
             textDecoration: 'overline',
-            color: isBlack ? 'black' : '#ac7d3d',
+            color: isBlack ? COLOR_PRIMARY : COLOR_SECONDARY,
             position: 'relative',
         }}
         without="true"

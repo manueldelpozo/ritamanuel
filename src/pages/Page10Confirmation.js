@@ -23,9 +23,9 @@ const PageConfirmation = ({ lang, guest }) => {
         //         &body=${encodeURIComponent(message)}`);
         return isWhatsapp
             ? `https://wa.me/${whatsapp}?text=${encodeURIComponent(message)}`
-            : `mailto:${email}?
-                subject=Confirmation${encodeURIComponent(` ${guest}`)}
-                &body=${encodeURIComponent(message)}`;
+            : `mailto:${email}?`
+                + `subject=Confirmation${encodeURIComponent(` ${guest}`)}`
+                + `&body=${encodeURIComponent(message)}`;
     };
 
     return (

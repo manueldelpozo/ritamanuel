@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { COLOR_SECONDARY } from '../consts/colors';
 import hand from '../assets/hand.png';
 import buttonFrame from '../assets/buttonFrame.svg';
 
@@ -29,7 +30,7 @@ const ButtonContent = styled.div`
     }
 
     &:hover {
-        color: turquoise;
+        color: ${COLOR_SECONDARY};
         cursor: pointer;
     }
 `;
