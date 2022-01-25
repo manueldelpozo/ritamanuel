@@ -29,6 +29,8 @@ const resources = {
         'noGo': 'Unfortunately I can\'t go',
         'wedding': 'Rita and Manuel Wedding',
         'banquet_calendar': 'Rita and Manuel Wedding\'s Banquet',
+        'transport_banquet': 'Bus service will be available from Murcia',
+        'transport_journeys': 'Bus journeys',
     }
   },
   es: {
@@ -55,6 +57,8 @@ const resources = {
         'noGo': 'Me temo que no puedo',
         'wedding': 'Ceremonia Rita y Manuel',
         'banquet_calendar': 'El banquete de bodas de Rita y Manuel',
+        'transport_banquet': 'Dispondras de servicio de tranporte desde Murcia',
+        'transport_journeys': 'Trayectos en bus',
     }
   },
   es_pl: {
@@ -81,6 +85,8 @@ const resources = {
         'noGo': 'Lo siento, no podemos ir',
         'wedding': 'Ceremonia boda Rita y Manuel',
         'banquet_calendar': 'El banquete de bodas de Rita y Manuel',
+        'transport_banquet': 'Dispondreis de servicio de tranporte desde Murcia',
+        'transport_journeys': 'Trayectos en bus',
     }
   },
   pl: {
@@ -107,6 +113,8 @@ const resources = {
         'noGo': 'Niestety nie możemy',
         'wedding': 'Ślub Rity i Manuela',
         'banquet_calendar': 'Wesele Rity i Manuela',
+        'transport_banquet': 'Autobus będzie dostępny z Murcji',
+        'transport_journeys': 'Przejazdy autobusem',
     }
   },
   fr: {
@@ -133,6 +141,8 @@ const resources = {
         'noGo': 'Nous ne pourrons pas aller',
         'wedding': 'Le mariage Rita et Manuel',
         'banquet_calendar': 'La noce de Rita et Manuel',
+        'transport_banquet': 'Un service de bus sera disponible depuis Murcie',
+        'transport_journeys': 'Trajets en bus',
     }
   }
 };

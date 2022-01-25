@@ -10,6 +10,7 @@ import PageInvitation from './pages/Page1bInvitation';
 import PageJourney from './pages/Page2Journey';
 import PageChurch from './pages/Page3Church';
 import PageBanquet from './pages/Page4Banquet';
+import PageBusService from './pages/Page5BusService';
 import PageTravelInterest from './pages/Page7TravelInterest';
 // import PageGift from './pages/Page8Gift';
 import PageConfirmation from './pages/Page10Confirmation';
@@ -68,6 +69,7 @@ function App() {
         <PageJourney scroll={{ top: document.documentElement.clientHeight, bottom: document.documentElement.clientHeight * 2 }} />
         <PageChurch scroll={{ top: document.documentElement.clientHeight * 2, bottom: document.documentElement.clientHeight * 3 }} />
         <PageBanquet scroll={{ top: document.documentElement.clientHeight * 3, bottom: document.documentElement.clientHeight * 4 }} />
+        <PageBusService scroll={{ top: document.documentElement.clientHeight * 4, bottom: document.documentElement.clientHeight * 5 }} />
         {hasAccomodation && <PageTravelInterest />}
         {/*<PageGift />*/}
         <PageEnd guest={guest} />

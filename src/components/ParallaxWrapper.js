@@ -1,7 +1,7 @@
 import React from 'react';
 import Plx from 'react-plx';
 
-const ParallaxWrapper = ({ children, start, end, duration, animations }) => (
+const ParallaxWrapper = ({ children, start, end, duration, animations, style }) => (
     <Plx parallaxData={[
         {
             start,
@@ -14,7 +14,8 @@ const ParallaxWrapper = ({ children, start, end, duration, animations }) => (
             duration,
             easing: 'easeInOut',
         },
-    ]}>
+
+    ]} style={style}>
         {children}
     </Plx>
 );

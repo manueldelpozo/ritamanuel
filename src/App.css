@@ -11,6 +11,15 @@
   }
 }
 
+@keyframes round {
+  100% {
+    transform: rotate(0deg);
+  }
+  0% {
+    transform: rotate(-360deg);
+  }
+}
+
 @keyframes bounceAndRotate {
   100% {
     transform:rotate(-15deg);

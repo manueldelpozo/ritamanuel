@@ -4,8 +4,8 @@ const banquetDetails = {
     tel: '+34 968 67 24 19',
     startDate: '09/03/2022',
     startTime: '20:00 PM',
-    endTime: '1:00 AM',
-    endTime2: '4:00 AM',
+    endTime: '1:30 AM',
+    endTime2: '4:30 AM',
 };
 
 export default banquetDetails;

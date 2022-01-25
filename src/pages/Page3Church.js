@@ -91,7 +91,7 @@ const PageChurch = ({ scroll }) => {
                 start={scroll.top + 200} 
                 end={scroll.bottom}
                 animations={[
-                    ['translateY', vh2px(10), -vh2px(30)],
+                    ['translateY', vh2px(10), -vh2px(27)],
                     ['opacity', 0, 1],
                 ]}>
                 <TextDetails>
