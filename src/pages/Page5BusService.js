@@ -55,7 +55,7 @@ const Wheel = styled.img`
 `;
 
 const Journey = ({ from, to, departure }) => (
-    <div style={{ display: 'flex', justifyContent: 'center', gap: 15, fontSize: 'max(16px, 1.5vw)', marginBottom: 16 }}>
+    <div style={{ display: 'flex', justifyContent: 'center', gap: 15, fontSize: 'max(14px, 1.5vw)', marginBottom: 16 }}>
         <ExternalLink
             href={createLinkCalendar({
                 text: `Bus ${from.name} - ${to.name}`,
@@ -68,7 +68,7 @@ const Journey = ({ from, to, departure }) => (
             })}
             isBlack
         >
-            <span style={{ fontSize: 14 }}>
+            <span style={{ fontSize: 12 }}>
                 {format(subMinutes(new Date(`${banquetDetails.startDate} ${departure.split(' ')[0]}`), 30), 'hh:mm a')}
             </span>
         </ExternalLink>
@@ -108,7 +108,7 @@ const PageParty = ({ scroll }) => {
                 </TextHeader>
             </ParallaxWrapper>
             <ParallaxWrapper
-                start={scroll.top + vh2px(5)}
+                start="self"
                 end={scroll.bottom}
                 animations={[
                     ['translateX', vw2px(-20), vw2px(10)],
@@ -126,7 +126,7 @@ const PageParty = ({ scroll }) => {
                 </div>
             </ParallaxWrapper>
             <ParallaxWrapper
-                start={scroll.top + vh2px(50)}
+                start="self"
                 end={scroll.bottom}
                 animations={[
                     ['translateY', vh2px(20), vh2px(-10)],

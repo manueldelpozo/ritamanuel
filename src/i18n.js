@@ -57,7 +57,7 @@ const resources = {
         'noGo': 'Me temo que no puedo',
         'wedding': 'Ceremonia Rita y Manuel',
         'banquet_calendar': 'El banquete de bodas de Rita y Manuel',
-        'transport_banquet': 'Dispondras de servicio de tranporte desde Murcia',
+        'transport_banquet': 'Dispondras de servicio de transporte desde Murcia',
         'transport_journeys': 'Trayectos en bus',
     }
   },
@@ -85,7 +85,7 @@ const resources = {
         'noGo': 'Lo siento, no podemos ir',
         'wedding': 'Ceremonia boda Rita y Manuel',
         'banquet_calendar': 'El banquete de bodas de Rita y Manuel',
-        'transport_banquet': 'Dispondreis de servicio de tranporte desde Murcia',
+        'transport_banquet': 'Dispondreis de servicio de transporte desde Murcia',
         'transport_journeys': 'Trayectos en bus',
     }
   },
