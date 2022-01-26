@@ -1,4 +1,4 @@
-const infoInterest = [
+const transportInfo = [
     {
         label: 'ryanair_flights_alicante',
         link: 'https://www.ryanair.com/hr/en/plan-trip/destinations/flights-to-alicante',
@@ -8,17 +8,17 @@ const infoInterest = [
         link: 'https://www.ryanair.com/hr/en/plan-trip/destinations/flights-to-murcia',
     },
     {
-        label: 'hotel_beach',
-        link: '',
+        label: 'train-renfe',
+        link: 'https://www.renfe.com/es/en',
     },
     {
-        label: 'point_interest',
-        link: '',
+        label: 'bus-alsa',
+        link: 'https://www.alsa.com/en/web/bus/home',
     },
     {
-        label: 'info_turismo_murcia',
-        link: '',
+        label: 'rent-a-car',
+        link: 'https://www.discovercars.com/',
     },
 ];
 
-export default infoInterest;
+export default transportInfo;

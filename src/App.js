@@ -11,7 +11,7 @@ import PageJourney from './pages/Page2Journey';
 import PageChurch from './pages/Page3Church';
 import PageBanquet from './pages/Page4Banquet';
 import PageBusService from './pages/Page5BusService';
-import PageTravelInterest from './pages/Page7TravelInterest';
+import PageTravelInterest from './pages/Page7Transport';
 // import PageGift from './pages/Page8Gift';
 import PageConfirmation from './pages/Page10Confirmation';
 import PageEnd from './pages/Page9End';
@@ -24,6 +24,11 @@ const Footer = styled.footer`
   right: 0;
   z-index: 1000;
 `;
+
+const getScrollPos = (pageNumber) => ({
+  top: document.documentElement.clientHeight * (pageNumber - 1),
+  bottom: document.documentElement.clientHeight * pageNumber,
+});
 
 function App() {
   const { search } = useLocation();
@@ -65,12 +70,14 @@ function App() {
     <div className="App">
       <Layout ref={scrollRef}>
         <PageIntro guest={guest} />
-        <PageInvitation scroll={{ top: 0, bottom: document.documentElement.clientHeight }} />
-        <PageJourney scroll={{ top: document.documentElement.clientHeight, bottom: document.documentElement.clientHeight * 2 }} />
-        <PageChurch scroll={{ top: document.documentElement.clientHeight * 2, bottom: document.documentElement.clientHeight * 3 }} />
-        <PageBanquet scroll={{ top: document.documentElement.clientHeight * 3, bottom: document.documentElement.clientHeight * 4 }} />
-        <PageBusService scroll={{ top: document.documentElement.clientHeight * 4, bottom: document.documentElement.clientHeight * 5 }} />
-        {hasAccomodation && <PageTravelInterest />}
+        <PageInvitation scroll={getScrollPos(1)} />
+        <PageJourney scroll={getScrollPos(2)} />
+        <PageChurch scroll={getScrollPos(3)} />
+        <PageBanquet scroll={getScrollPos(4)} />
+        <PageBusService scroll={getScrollPos(5)} />
+        {hasAccomodation && (
+            <PageTravelInterest scroll={getScrollPos(6)} />
+        )}
         {/*<PageGift />*/}
         <PageEnd guest={guest} />
         <PageConfirmation lang={lang} guest={guest} />

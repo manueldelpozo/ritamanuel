@@ -126,7 +126,7 @@ const PageParty = ({ scroll }) => {
                 </div>
             </ParallaxWrapper>
             <ParallaxWrapper
-                start="self"
+                start={scroll.top + vh2px(50)}
                 end={scroll.bottom}
                 animations={[
                     ['translateY', vh2px(20), vh2px(-10)],

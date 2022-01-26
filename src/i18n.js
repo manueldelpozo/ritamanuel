@@ -21,6 +21,9 @@ const resources = {
         'thanks_advance': 'Thank You in advance',
         'ryanair_flights_alicante': 'Fligths to Alicante (Ryanair)',
         'ryanair_flights_murcia': 'Fligths to Murcia (Ryanair)',
+        'train-renfe': 'Go by train (Renfe)',
+        'bus-alsa': 'Go by bus (Alsa)',
+        'rent-a-car': 'Go by car (Rent-a-Car)',
         'at': 'at',
         'copy': 'Copy',
         'confirm': 'Please confirm you attendance asap',
@@ -31,6 +34,7 @@ const resources = {
         'banquet_calendar': 'Rita and Manuel Wedding\'s Banquet',
         'transport_banquet': 'Bus service will be available from Murcia',
         'transport_journeys': 'Bus journeys',
+        'transport_info': 'Let\'s start the journey',
     }
   },
   es: {
@@ -49,6 +53,9 @@ const resources = {
         'thanks_advance': 'Te damos las gracias de antemano',
         'ryanair_flights_alicante': 'Vuelos a Alicante (Ryanair)',
         'ryanair_flights_murcia': 'Vuelos a Murcia (Ryanair)',
+        'train-renfe': 'Viaja en tren (Renfe)',
+        'bus-alsa': 'Viaja en autobus (Alsa)',
+        'rent-a-car': 'Viaja en coche (Rent-a-Car)',
         'at': 'a las',
         'copy': 'Copiar',
         'confirm': 'Por favor, confirmanos tu asistencia',
@@ -59,6 +66,7 @@ const resources = {
         'banquet_calendar': 'El banquete de bodas de Rita y Manuel',
         'transport_banquet': 'Dispondras de servicio de transporte desde Murcia',
         'transport_journeys': 'Trayectos en bus',
+        'transport_info': 'Comencemos el viaje',
     }
   },
   es_pl: {
@@ -77,6 +85,9 @@ const resources = {
         'thanks_advance': 'Os damos las gracias de antemano',
         'ryanair_flights_alicante': 'Vuelos a Alicante (Ryanair)',
         'ryanair_flights_murcia': 'Vuelos a Murcia (Ryanair)',
+        'train-renfe': 'Viajar en tren (Renfe)',
+        'bus-alsa': 'Viajar en autobus (Alsa)',
+        'rent-a-car': 'Viajar en coche (Rent-a-Car)',
         'at': 'a las',
         'copy': 'Copiar',
         'confirm': 'Por favor, confirmarnos vuestra asistencia',
@@ -87,6 +98,7 @@ const resources = {
         'banquet_calendar': 'El banquete de bodas de Rita y Manuel',
         'transport_banquet': 'Dispondreis de servicio de transporte desde Murcia',
         'transport_journeys': 'Trayectos en bus',
+        'transport_info': 'Comencemos el viaje',
     }
   },
   pl: {
@@ -105,6 +117,9 @@ const resources = {
         'thanks_advance': 'Z góry dziękuję',
         'ryanair_flights_alicante': 'Loty do Alicante (Ryanair)',
         'ryanair_flights_murcia': 'Loty do Murcja (Ryanair)',
+        'train-renfe': 'Podróżować pociągiem (Renfe)',
+        'bus-alsa': 'Podróżować autobusem (Alsa)',
+        'rent-a-car': 'Podróżować samochodem (Rent-a-Car)',
         'at': 'o',
         'copy': 'Kopiuj',
         'confirm': 'Proszę potwierdzić swoją obecność',
@@ -115,6 +130,7 @@ const resources = {
         'banquet_calendar': 'Wesele Rity i Manuela',
         'transport_banquet': 'Autobus będzie dostępny z Murcji',
         'transport_journeys': 'Przejazdy autobusem',
+        'transport_info': 'Rozpocznijmy podróż',
     }
   },
   fr: {
@@ -133,6 +149,9 @@ const resources = {
         'thanks_advance': 'Merci d\'avance',
         'ryanair_flights_alicante': 'Vols vers Alacante (Ryanair)',
         'ryanair_flights_murcia': 'Vols vers Murcie (Ryanair)',
+        'train-renfe': 'Voyage en train (Renfe)',
+        'bus-alsa': 'Voyage en bus (Alsa)',
+        'rent-a-car': 'Voyage en voiture (Rent-a-Car)',
         'at': 'à',
         'copy': 'Copier',
         'confirm': 'Veuillez confirmer votre présence',
@@ -143,6 +162,7 @@ const resources = {
         'banquet_calendar': 'La noce de Rita et Manuel',
         'transport_banquet': 'Un service de bus sera disponible depuis Murcie',
         'transport_journeys': 'Trajets en bus',
+        'transport_info': 'Commençons le voyage',
     }
   }
 };
