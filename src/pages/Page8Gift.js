@@ -1,10 +1,12 @@
 import * as React from 'react';
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
-import ButtonFrame from '../components/ButtonFrame';
 import CopyContent from '../components/CopyContent';
+import ParallaxWrapper from '../components/ParallaxWrapper';
 import bankDetails from '../consts/bankDetails';
 import divider from '../assets/divider2.png';
+import gift from '../assets/gift.png';
+import { vh2px } from '../helpers/parsers';
 
 const PageDetailsGift = styled.div`
     & > * {
@@ -19,33 +21,44 @@ const PageDetailsGift = styled.div`
     }
 `;
 
-const PageGift = () => {
+const PageGift = ({ scroll }) => {
     const { t } = useTranslation();
 
     return (
         <div style={{
             height: '100vh',
             display: 'flex',
-            justifyContent: 'center',
+            justifyContent: 'space-around',
             alignItems: 'center',
             flexDirection: 'column',
             padding: '10%',
         }}>
+            <ParallaxWrapper
+                start={scroll.top}
+                end={scroll.bottom}
+                animations={[
+                    ['scale', 1.1, 0.8],
+                ]}>
+                <h1>{t('gift_intro')}</h1>
+            </ParallaxWrapper>
+            <ParallaxWrapper
+                start={scroll.top}
+                end={scroll.bottom}
+                animations={[
+                    ['scale', 0.8, 1.2],
+                ]}>
+                <img src={gift} height={vh2px(20)} width="auto"/>
+            </ParallaxWrapper>
             <PageDetailsGift className="page-details__gift">
-                <div className="page-details__gift__intro">{t('gift_intro')}</div>
                 <div className="page-details__gift__iban">
                     <CopyContent content={bankDetails.iban} noSpaces />
                 </div>
                 <div className="page-details__gift__title">
-                    {t('gift_title')}: <strong>{bankDetails.title}</strong>
+                    {t('gift_title')}:<br /><strong>{bankDetails.title}</strong>
                 </div>
                 <img src={divider} alt="divider" width="30%" height="auto" />
-                <h3>{t('thanks_advance')}</h3>
+                <h2>{t('thanks_advance')}</h2>
             </PageDetailsGift>
-
-            {/*<ButtonFrame download="../assets/Rita&Manu.pdf">*/}
-            {/*    {t('download')}*/}
-            {/*</ButtonFrame>*/}
         </div>
     );
 };

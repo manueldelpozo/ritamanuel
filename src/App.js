@@ -12,7 +12,7 @@ import PageChurch from './pages/Page3Church';
 import PageBanquet from './pages/Page4Banquet';
 import PageBusService from './pages/Page5BusService';
 import PageTravelInterest from './pages/Page7Transport';
-// import PageGift from './pages/Page8Gift';
+import PageGift from './pages/Page8Gift';
 import PageConfirmation from './pages/Page10Confirmation';
 import PageEnd from './pages/Page9End';
 import './App.css';
@@ -46,7 +46,7 @@ function App() {
     return undefined;
   }, [search]);
 
-  const hasAccomodation = useMemo(() => (lang && ['en', 'pl', 'fr'].includes(lang)), [lang]);
+  const hasAccommodation = useMemo(() => (lang && ['en', 'pl', 'fr'].includes(lang)), [lang]);
 
   useEffect(() => {
     if (lang) {
@@ -75,10 +75,10 @@ function App() {
         <PageChurch scroll={getScrollPos(3)} />
         <PageBanquet scroll={getScrollPos(4)} />
         <PageBusService scroll={getScrollPos(5)} />
-        {hasAccomodation && (
+        {hasAccommodation && (
             <PageTravelInterest scroll={getScrollPos(6)} />
         )}
-        {/*<PageGift />*/}
+        <PageGift scroll={getScrollPos(hasAccommodation ? 7 : 6)} />
         <PageEnd guest={guest} />
         <PageConfirmation lang={lang} guest={guest} />
       </Layout>
