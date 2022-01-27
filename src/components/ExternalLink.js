@@ -1,17 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
-import hand from '../assets/hand.png';
 import { COLOR_PRIMARY, COLOR_SECONDARY } from '../consts/colors';
-
-const AnimatedHand = styled.div`
-    position: absolute;
-    background-image: url(${hand});
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 30px;
-    height: 60px;
-    animation: point 1.5s infinite ease-out;
-`;
 
 const ExternalLink = ({ children, href, width, isBlack }) => (
     <a

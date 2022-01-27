@@ -12,9 +12,11 @@ import PageChurch from './pages/Page3Church';
 import PageBanquet from './pages/Page4Banquet';
 import PageBusService from './pages/Page5BusService';
 import PageTravelInterest from './pages/Page7Transport';
+import PageHotel from './pages/Page8Hotel';
 import PageGift from './pages/Page8Gift';
 import PageConfirmation from './pages/Page10Confirmation';
 import PageEnd from './pages/Page9End';
+import hotelNights from './consts/hotelNights.json';
 import './App.css';
 
 const Footer = styled.footer`
@@ -46,7 +48,7 @@ function App() {
     return undefined;
   }, [search]);
 
-  const hasAccommodation = useMemo(() => (lang && ['en', 'pl', 'fr'].includes(lang)), [lang]);
+  // const hasAccommodation = useMemo(() => (lang && ['en', 'pl', 'fr'].includes(lang)), [lang]);
 
   useEffect(() => {
     if (lang) {
@@ -75,10 +77,13 @@ function App() {
         <PageChurch scroll={getScrollPos(3)} />
         <PageBanquet scroll={getScrollPos(4)} />
         <PageBusService scroll={getScrollPos(5)} />
-        {hasAccommodation && (
-            <PageTravelInterest scroll={getScrollPos(6)} />
+        {hotelNights[guest] && (
+            <>
+              <PageTravelInterest scroll={getScrollPos(6)} />
+              <PageHotel scroll={getScrollPos(7)} lang={lang} nights={hotelNights[guest]} />
+            </>
         )}
-        <PageGift scroll={getScrollPos(hasAccommodation ? 7 : 6)} />
+        <PageGift scroll={getScrollPos(hotelNights[guest] ? 8 : 6)} />
         <PageEnd guest={guest} />
         <PageConfirmation lang={lang} guest={guest} />
       </Layout>

@@ -35,6 +35,9 @@ const resources = {
         'transport_banquet': 'Bus service will be available from Murcia',
         'transport_journeys': 'Bus journeys',
         'transport_info': 'Let\'s start the journey',
+        'hotel_intro': 'Also included stay at',
+        'night': 'Night',
+        'breakfast': 'Breakfast',
     }
   },
   es: {
@@ -67,6 +70,9 @@ const resources = {
         'transport_banquet': 'Dispondras de servicio de transporte desde Murcia',
         'transport_journeys': 'Trayectos en bus',
         'transport_info': 'Comencemos el viaje',
+        'hotel_intro': 'Te pagamos la estancia en',
+        'night': 'Noche',
+        'breakfast': 'Desayuno',
     }
   },
   es_pl: {
@@ -99,11 +105,14 @@ const resources = {
         'transport_banquet': 'Dispondreis de servicio de transporte desde Murcia',
         'transport_journeys': 'Trayectos en bus',
         'transport_info': 'Comencemos el viaje',
+        'hotel_intro': 'Os pagamos la estancia en',
+        'night': 'Noche',
+        'breakfast': 'Desayuno',
     }
   },
   pl: {
     translation: {
-        'dear': 'Drodzy',
+        'dear': '',
         'intro': 'Zapraszamy na nasze wesele',
         'journey': 'Jesteśmy na pokładzie w podróży i chcemy, żebyś do nas dołączył.',
         'church': 'Uroczystość odbędzie się w kościele ',
@@ -112,9 +121,9 @@ const resources = {
         'banquet_time': 'A koktajl zaczniemy w patio wejściowym o godz ',
         'end': 'Do zobaczenia 3 września w Murcje.',
         'download': 'Pobierz szczegóły ślubu',
-        'gift_intro': 'A jeśli chcieli dać na prezent',
+        'gift_intro': 'A jeśli chcielibyscie dać nam prezent',
         'gift_title': 'Z tytulem przelewu',
-        'thanks_advance': 'Z góry dziękuję',
+        'thanks_advance': 'Z góry dziękujemy',
         'ryanair_flights_alicante': 'Loty do Alicante (Ryanair)',
         'ryanair_flights_murcia': 'Loty do Murcja (Ryanair)',
         'train-renfe': 'Podróżować pociągiem (Renfe)',
@@ -124,13 +133,16 @@ const resources = {
         'copy': 'Kopiuj',
         'confirm': 'Proszę potwierdzić swoją obecność',
         'yesGo': 'Tak, na pewno będę',
-        'iluk': 'Potwierdzimy później',
+        'iluk': 'Potwierdzimy przed 1 maja',
         'noGo': 'Niestety nie możemy',
         'wedding': 'Ślub Rity i Manuela',
         'banquet_calendar': 'Wesele Rity i Manuela',
         'transport_banquet': 'Autobus będzie dostępny z Murcji',
         'transport_journeys': 'Przejazdy autobusem',
         'transport_info': 'Rozpocznijmy podróż',
+        'hotel_intro': 'Obejmuje również pobyt w',
+        'night': 'Noc',
+        'breakfast': 'Śniadanie',
     }
   },
   fr: {
@@ -163,6 +175,9 @@ const resources = {
         'transport_banquet': 'Un service de bus sera disponible depuis Murcie',
         'transport_journeys': 'Trajets en bus',
         'transport_info': 'Commençons le voyage',
+        'hotel_intro': 'Nous vous invitons à rester au',
+        'night': 'Nuit',
+        'breakfast': 'Petit-déjeuner',
     }
   }
 };
