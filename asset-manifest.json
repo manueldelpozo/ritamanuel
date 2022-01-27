@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ritamanuel/static/css/main.661b5fc3.chunk.css",
-    "main.js": "/ritamanuel/static/js/main.4822e322.chunk.js",
-    "main.js.map": "/ritamanuel/static/js/main.4822e322.chunk.js.map",
+    "main.js": "/ritamanuel/static/js/main.80b546fb.chunk.js",
+    "main.js.map": "/ritamanuel/static/js/main.80b546fb.chunk.js.map",
     "runtime-main.js": "/ritamanuel/static/js/runtime-main.37502d55.js",
     "runtime-main.js.map": "/ritamanuel/static/js/runtime-main.37502d55.js.map",
-    "static/js/2.b54e4831.chunk.js": "/ritamanuel/static/js/2.b54e4831.chunk.js",
-    "static/js/2.b54e4831.chunk.js.map": "/ritamanuel/static/js/2.b54e4831.chunk.js.map",
+    "static/js/2.179c6638.chunk.js": "/ritamanuel/static/js/2.179c6638.chunk.js",
+    "static/js/2.179c6638.chunk.js.map": "/ritamanuel/static/js/2.179c6638.chunk.js.map",
     "index.html": "/ritamanuel/index.html",
     "static/css/main.661b5fc3.chunk.css.map": "/ritamanuel/static/css/main.661b5fc3.chunk.css.map",
-    "static/js/2.b54e4831.chunk.js.LICENSE.txt": "/ritamanuel/static/js/2.b54e4831.chunk.js.LICENSE.txt",
+    "static/js/2.179c6638.chunk.js.LICENSE.txt": "/ritamanuel/static/js/2.179c6638.chunk.js.LICENSE.txt",
     "static/media/angel-divider.e6b14411.png": "/ritamanuel/static/media/angel-divider.e6b14411.png",
     "static/media/angel-wind.02d1229f.png": "/ritamanuel/static/media/angel-wind.02d1229f.png",
     "static/media/angel.8f70e2f2.png": "/ritamanuel/static/media/angel.8f70e2f2.png",
@@ -22,6 +22,7 @@
     "static/media/gentleman.643f24e9.png": "/ritamanuel/static/media/gentleman.643f24e9.png",
     "static/media/gift.e1acb3f7.png": "/ritamanuel/static/media/gift.e1acb3f7.png",
     "static/media/hand.28bb8145.png": "/ritamanuel/static/media/hand.28bb8145.png",
+    "static/media/hotel.2f068fa3.png": "/ritamanuel/static/media/hotel.2f068fa3.png",
     "static/media/iglesia.34d15ec5.png": "/ritamanuel/static/media/iglesia.34d15ec5.png",
     "static/media/mapEurope.9047e83e.jpg": "/ritamanuel/static/media/mapEurope.9047e83e.jpg",
     "static/media/palm.afa9e04f.png": "/ritamanuel/static/media/palm.afa9e04f.png",
@@ -31,8 +32,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.37502d55.js",
-    "static/js/2.b54e4831.chunk.js",
+    "static/js/2.179c6638.chunk.js",
     "static/css/main.661b5fc3.chunk.css",
-    "static/js/main.4822e322.chunk.js"
+    "static/js/main.80b546fb.chunk.js"
   ]
 }
