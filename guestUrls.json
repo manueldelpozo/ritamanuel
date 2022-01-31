@@ -61,6 +61,12 @@
       "message": "Hola Carmen :) Rita y yo tenemos el gusto de invitarte a nuestra boda 👰🤵. Haz click en el siguente enlace: https://manueldelpozo.github.io/ritamanuel/#/es?guest=Carmen"
     },
     {
+      "guest": "Esperanza",
+      "lang": "es",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/es?guest=Esperanza",
+      "message": "Hola Esperanza :) Rita y yo tenemos el gusto de invitarte a nuestra boda 👰🤵. Haz click en el siguente enlace: https://manueldelpozo.github.io/ritamanuel/#/es?guest=Esperanza"
+    },
+    {
       "guest": "Fulgen",
       "lang": "es",
       "url": "https://manueldelpozo.github.io/ritamanuel/#/es?guest=Fulgen",
@@ -201,34 +207,28 @@
       "message": "Hola Lorena y Alvaro :) Rita y yo tenemos el gusto de invitaros a nuestra boda 👰🤵. Haz click en el siguente enlace: https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Lorena%20y%20Alvaro"
     },
     {
-      "guest": "_ y Eduardo",
+      "guest": "Lucía y Eduardo",
       "lang": "es_pl",
-      "url": "https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=_%20y%20Eduardo",
-      "message": "Hola _ y Eduardo :) Rita y yo tenemos el gusto de invitaros a nuestra boda 👰🤵. Haz click en el siguente enlace: https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=_%20y%20Eduardo"
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Luc%C3%ADa%20y%20Eduardo",
+      "message": "Hola Lucía y Eduardo :) Rita y yo tenemos el gusto de invitaros a nuestra boda 👰🤵. Haz click en el siguente enlace: https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Luc%C3%ADa%20y%20Eduardo"
     },
     {
-      "guest": "Rocío y _",
+      "guest": "Rocío y Jose",
       "lang": "es_pl",
-      "url": "https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Roc%C3%ADo%20y%20_",
-      "message": "Hola Rocío y _ :) Rita y yo tenemos el gusto de invitaros a nuestra boda 👰🤵. Haz click en el siguente enlace: https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Roc%C3%ADo%20y%20_"
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Roc%C3%ADo%20y%20Jose",
+      "message": "Hola Rocío y Jose :) Rita y yo tenemos el gusto de invitaros a nuestra boda 👰🤵. Haz click en el siguente enlace: https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Roc%C3%ADo%20y%20Jose"
     },
     {
-      "guest": "Marisina y _",
+      "guest": "Marisina y Alejandro",
       "lang": "es_pl",
-      "url": "https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Marisina%20y%20_",
-      "message": "Hola Marisina y _ :) Rita y yo tenemos el gusto de invitaros a nuestra boda 👰🤵. Haz click en el siguente enlace: https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Marisina%20y%20_"
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Marisina%20y%20Alejandro",
+      "message": "Hola Marisina y Alejandro :) Rita y yo tenemos el gusto de invitaros a nuestra boda 👰🤵. Haz click en el siguente enlace: https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Marisina%20y%20Alejandro"
     },
     {
       "guest": "Sita y Dani",
       "lang": "es_pl",
       "url": "https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Sita%20y%20Dani",
       "message": "Hola Sita y Dani :) Rita y yo tenemos el gusto de invitaros a nuestra boda 👰🤵. Haz click en el siguente enlace: https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Sita%20y%20Dani"
-    },
-    {
-      "guest": "_ y Julián",
-      "lang": "es_pl",
-      "url": "https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=_%20y%20Juli%C3%A1n",
-      "message": "Hola _ y Julián :) Rita y yo tenemos el gusto de invitaros a nuestra boda 👰🤵. Haz click en el siguente enlace: https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=_%20y%20Juli%C3%A1n"
     },
     {
       "guest": "María y Fede",
@@ -277,12 +277,6 @@
       "lang": "es_pl",
       "url": "https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Olga%20y%20Andr%C3%A9s",
       "message": "Hola Olga y Andrés :) Rita y yo tenemos el gusto de invitaros a nuestra boda 👰🤵. Haz click en el siguente enlace: https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Olga%20y%20Andr%C3%A9s"
-    },
-    {
-      "guest": "Pilar y _",
-      "lang": "es_pl",
-      "url": "https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Pilar%20y%20_",
-      "message": "Hola Pilar y _ :) Rita y yo tenemos el gusto de invitaros a nuestra boda 👰🤵. Haz click en el siguente enlace: https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Pilar%20y%20_"
     }
   ],
   [
@@ -293,40 +287,16 @@
       "message": "Cześć Marcin :) Rita i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Marcin"
     },
     {
-      "guest": "Mama i Tata",
-      "lang": "pl",
-      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Mama%20i%20Tata",
-      "message": "Cześć Mama i Tata :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Mama%20i%20Tata"
-    },
-    {
       "guest": "Babcia",
       "lang": "pl",
       "url": "https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Babcia",
       "message": "Cześć Babcia :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Babcia"
     },
     {
-      "guest": "Norbert Grzegorz",
+      "guest": "Norbert",
       "lang": "pl",
-      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Norbert%20Grzegorz",
-      "message": "Cześć Norbert Grzegorz :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Norbert%20Grzegorz"
-    },
-    {
-      "guest": "Sandra i Piotr",
-      "lang": "pl",
-      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Sandra%20i%20Piotr",
-      "message": "Cześć Sandra i Piotr :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Sandra%20i%20Piotr"
-    },
-    {
-      "guest": "Asia i Jarek",
-      "lang": "pl",
-      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Asia%20i%20Jarek",
-      "message": "Cześć Asia i Jarek :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Asia%20i%20Jarek"
-    },
-    {
-      "guest": "Ada i Patryk",
-      "lang": "pl",
-      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Ada%20i%20Patryk",
-      "message": "Cześć Ada i Patryk :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Ada%20i%20Patryk"
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Norbert",
+      "message": "Cześć Norbert :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Norbert"
     },
     {
       "guest": "Ola",
@@ -335,118 +305,144 @@
       "message": "Cześć Ola :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Ola"
     },
     {
-      "guest": "_ i Oskar",
-      "lang": "pl",
-      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl?guest=_%20i%20Oskar",
-      "message": "Cześć _ i Oskar :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl?guest=_%20i%20Oskar"
-    },
-    {
       "guest": "Julia",
       "lang": "pl",
       "url": "https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Julia",
       "message": "Cześć Julia :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Julia"
     },
     {
-      "guest": "Sylwia i Tomek",
-      "lang": "pl",
-      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Sylwia%20i%20Tomek",
-      "message": "Cześć Sylwia i Tomek :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Sylwia%20i%20Tomek"
-    },
-    {
-      "guest": "Dominika i Przemek",
-      "lang": "pl",
-      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Dominika%20i%20Przemek",
-      "message": "Cześć Dominika i Przemek :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Dominika%20i%20Przemek"
-    },
-    {
-      "guest": "Oliwia i _",
-      "lang": "pl",
-      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Oliwia%20i%20_",
-      "message": "Cześć Oliwia i _ :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Oliwia%20i%20_"
-    },
-    {
-      "guest": "Ewelina i Robert",
-      "lang": "pl",
-      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Ewelina%20i%20Robert",
-      "message": "Cześć Ewelina i Robert :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Ewelina%20i%20Robert"
-    },
-    {
-      "guest": "Joanna i Grzegorz",
-      "lang": "pl",
-      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Joanna%20i%20Grzegorz",
-      "message": "Cześć Joanna i Grzegorz :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Joanna%20i%20Grzegorz"
-    },
-    {
       "guest": "Pani Jola",
       "lang": "pl",
       "url": "https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Pani%20Jola",
       "message": "Cześć Pani Jola :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Pani%20Jola"
+    }
+  ],
+  [
+    {
+      "guest": "Mama i Tata",
+      "lang": "pl_pl",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Mama%20i%20Tata",
+      "message": "Cześć Mama i Tata :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Mama%20i%20Tata"
+    },
+    {
+      "guest": "Sandra i Piotr",
+      "lang": "pl_pl",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Sandra%20i%20Piotr",
+      "message": "Cześć Sandra i Piotr :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Sandra%20i%20Piotr"
+    },
+    {
+      "guest": "Asia i Jarek",
+      "lang": "pl_pl",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Asia%20i%20Jarek",
+      "message": "Cześć Asia i Jarek :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Asia%20i%20Jarek"
+    },
+    {
+      "guest": "Ada i Patryk",
+      "lang": "pl_pl",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Ada%20i%20Patryk",
+      "message": "Cześć Ada i Patryk :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Ada%20i%20Patryk"
+    },
+    {
+      "guest": "_ i Oskar",
+      "lang": "pl_pl",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=_%20i%20Oskar",
+      "message": "Cześć _ i Oskar :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=_%20i%20Oskar"
+    },
+    {
+      "guest": "Sylwia i Tomek",
+      "lang": "pl_pl",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Sylwia%20i%20Tomek",
+      "message": "Cześć Sylwia i Tomek :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Sylwia%20i%20Tomek"
+    },
+    {
+      "guest": "Dominika i Przemek",
+      "lang": "pl_pl",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Dominika%20i%20Przemek",
+      "message": "Cześć Dominika i Przemek :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Dominika%20i%20Przemek"
+    },
+    {
+      "guest": "Oliwia i _",
+      "lang": "pl_pl",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Oliwia%20i%20_",
+      "message": "Cześć Oliwia i _ :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Oliwia%20i%20_"
+    },
+    {
+      "guest": "Ewelina i Robert",
+      "lang": "pl_pl",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Ewelina%20i%20Robert",
+      "message": "Cześć Ewelina i Robert :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Ewelina%20i%20Robert"
+    },
+    {
+      "guest": "Joanna i Grzegorz",
+      "lang": "pl_pl",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Joanna%20i%20Grzegorz",
+      "message": "Cześć Joanna i Grzegorz :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Joanna%20i%20Grzegorz"
     },
     {
       "guest": "Agnieszka i Rudi",
-      "lang": "pl",
-      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Agnieszka%20i%20Rudi",
-      "message": "Cześć Agnieszka i Rudi :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Agnieszka%20i%20Rudi"
+      "lang": "pl_pl",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Agnieszka%20i%20Rudi",
+      "message": "Cześć Agnieszka i Rudi :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Agnieszka%20i%20Rudi"
     },
     {
       "guest": "Kuba i Paulina",
-      "lang": "pl",
-      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Kuba%20i%20Paulina",
-      "message": "Cześć Kuba i Paulina :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Kuba%20i%20Paulina"
+      "lang": "pl_pl",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Kuba%20i%20Paulina",
+      "message": "Cześć Kuba i Paulina :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Kuba%20i%20Paulina"
     },
     {
       "guest": "Kasia i Paweł",
-      "lang": "pl",
-      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Kasia%20i%20Pawe%C5%82",
-      "message": "Cześć Kasia i Paweł :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Kasia%20i%20Pawe%C5%82"
+      "lang": "pl_pl",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Kasia%20i%20Pawe%C5%82",
+      "message": "Cześć Kasia i Paweł :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Kasia%20i%20Pawe%C5%82"
     },
     {
       "guest": "Karolina i Dawid",
-      "lang": "pl",
-      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Karolina%20i%20Dawid",
-      "message": "Cześć Karolina i Dawid :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Karolina%20i%20Dawid"
+      "lang": "pl_pl",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Karolina%20i%20Dawid",
+      "message": "Cześć Karolina i Dawid :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Karolina%20i%20Dawid"
     },
     {
       "guest": "Asia i Kamil",
-      "lang": "pl",
-      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Asia%20i%20Kamil",
-      "message": "Cześć Asia i Kamil :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Asia%20i%20Kamil"
+      "lang": "pl_pl",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Asia%20i%20Kamil",
+      "message": "Cześć Asia i Kamil :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Asia%20i%20Kamil"
     },
     {
       "guest": "Iza i Tomek",
-      "lang": "pl",
-      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Iza%20i%20Tomek",
-      "message": "Cześć Iza i Tomek :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Iza%20i%20Tomek"
+      "lang": "pl_pl",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Iza%20i%20Tomek",
+      "message": "Cześć Iza i Tomek :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Iza%20i%20Tomek"
     },
     {
       "guest": "Marta i Jozek",
-      "lang": "pl",
-      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Marta%20i%20Jozek",
-      "message": "Cześć Marta i Jozek :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Marta%20i%20Jozek"
+      "lang": "pl_pl",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Marta%20i%20Jozek",
+      "message": "Cześć Marta i Jozek :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Marta%20i%20Jozek"
     },
     {
       "guest": "Dorota i Michał",
-      "lang": "pl",
-      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Dorota%20i%20Micha%C5%82",
-      "message": "Cześć Dorota i Michał :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Dorota%20i%20Micha%C5%82"
+      "lang": "pl_pl",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Dorota%20i%20Micha%C5%82",
+      "message": "Cześć Dorota i Michał :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Dorota%20i%20Micha%C5%82"
     },
     {
       "guest": "Hania i _",
-      "lang": "pl",
-      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Hania%20i%20_",
-      "message": "Cześć Hania i _ :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Hania%20i%20_"
+      "lang": "pl_pl",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Hania%20i%20_",
+      "message": "Cześć Hania i _ :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Hania%20i%20_"
     },
     {
       "guest": "Paulina i Maciek",
-      "lang": "pl",
-      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Paulina%20i%20Maciek",
-      "message": "Cześć Paulina i Maciek :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Paulina%20i%20Maciek"
+      "lang": "pl_pl",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Paulina%20i%20Maciek",
+      "message": "Cześć Paulina i Maciek :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Paulina%20i%20Maciek"
     },
     {
       "guest": "Joanna i Michał",
-      "lang": "pl",
-      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Joanna%20i%20Micha%C5%82",
-      "message": "Cześć Joanna i Michał :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Joanna%20i%20Micha%C5%82"
+      "lang": "pl_pl",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Joanna%20i%20Micha%C5%82",
+      "message": "Cześć Joanna i Michał :) Manu i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Joanna%20i%20Micha%C5%82"
     }
   ],
   [

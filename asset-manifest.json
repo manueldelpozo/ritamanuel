@@ -1,21 +1,23 @@
 {
   "files": {
     "main.css": "/ritamanuel/static/css/main.661b5fc3.chunk.css",
-    "main.js": "/ritamanuel/static/js/main.80b546fb.chunk.js",
-    "main.js.map": "/ritamanuel/static/js/main.80b546fb.chunk.js.map",
+    "main.js": "/ritamanuel/static/js/main.811007fc.chunk.js",
+    "main.js.map": "/ritamanuel/static/js/main.811007fc.chunk.js.map",
     "runtime-main.js": "/ritamanuel/static/js/runtime-main.37502d55.js",
     "runtime-main.js.map": "/ritamanuel/static/js/runtime-main.37502d55.js.map",
-    "static/js/2.179c6638.chunk.js": "/ritamanuel/static/js/2.179c6638.chunk.js",
-    "static/js/2.179c6638.chunk.js.map": "/ritamanuel/static/js/2.179c6638.chunk.js.map",
+    "static/js/2.3704eccb.chunk.js": "/ritamanuel/static/js/2.3704eccb.chunk.js",
+    "static/js/2.3704eccb.chunk.js.map": "/ritamanuel/static/js/2.3704eccb.chunk.js.map",
     "index.html": "/ritamanuel/index.html",
     "static/css/main.661b5fc3.chunk.css.map": "/ritamanuel/static/css/main.661b5fc3.chunk.css.map",
-    "static/js/2.179c6638.chunk.js.LICENSE.txt": "/ritamanuel/static/js/2.179c6638.chunk.js.LICENSE.txt",
+    "static/js/2.3704eccb.chunk.js.LICENSE.txt": "/ritamanuel/static/js/2.3704eccb.chunk.js.LICENSE.txt",
     "static/media/angel-divider.e6b14411.png": "/ritamanuel/static/media/angel-divider.e6b14411.png",
     "static/media/angel-wind.02d1229f.png": "/ritamanuel/static/media/angel-wind.02d1229f.png",
     "static/media/angel.8f70e2f2.png": "/ritamanuel/static/media/angel.8f70e2f2.png",
     "static/media/arrow-down.eb3810c2.svg": "/ritamanuel/static/media/arrow-down.eb3810c2.svg",
+    "static/media/beach.3944426a.png": "/ritamanuel/static/media/beach.3944426a.png",
     "static/media/bus.a303968b.png": "/ritamanuel/static/media/bus.a303968b.png",
     "static/media/buttonFrame.b7291cfb.svg": "/ritamanuel/static/media/buttonFrame.b7291cfb.svg",
+    "static/media/coast.b3d1f1a9.png": "/ritamanuel/static/media/coast.b3d1f1a9.png",
     "static/media/corner.e46dc9a9.png": "/ritamanuel/static/media/corner.e46dc9a9.png",
     "static/media/dame.1797731b.png": "/ritamanuel/static/media/dame.1797731b.png",
     "static/media/divider.3274a30a.png": "/ritamanuel/static/media/divider.3274a30a.png",
@@ -24,7 +26,7 @@
     "static/media/hand.28bb8145.png": "/ritamanuel/static/media/hand.28bb8145.png",
     "static/media/hotel.2f068fa3.png": "/ritamanuel/static/media/hotel.2f068fa3.png",
     "static/media/iglesia.34d15ec5.png": "/ritamanuel/static/media/iglesia.34d15ec5.png",
-    "static/media/mapEurope.9047e83e.jpg": "/ritamanuel/static/media/mapEurope.9047e83e.jpg",
+    "static/media/mapEurope.37e46d37.jpeg": "/ritamanuel/static/media/mapEurope.37e46d37.jpeg",
     "static/media/palm.afa9e04f.png": "/ritamanuel/static/media/palm.afa9e04f.png",
     "static/media/plane.bad8f55e.png": "/ritamanuel/static/media/plane.bad8f55e.png",
     "static/media/table.8ce060e3.png": "/ritamanuel/static/media/table.8ce060e3.png",
@@ -32,8 +34,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.37502d55.js",
-    "static/js/2.179c6638.chunk.js",
+    "static/js/2.3704eccb.chunk.js",
     "static/css/main.661b5fc3.chunk.css",
-    "static/js/main.80b546fb.chunk.js"
+    "static/js/main.811007fc.chunk.js"
   ]
 }
