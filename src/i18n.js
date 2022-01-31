@@ -42,7 +42,7 @@ const resources = {
             'murcia': 'Murcia',
             'cartagena': 'Cartagena',
             'rural_house': 'Rural house in Pliego',
-            'baths_archena': 'Baths in Archena - near wedding celebration',
+            'baths_archena': 'Archena Spa - near wedding celebration',
         }
     },
     es: {
@@ -158,11 +158,11 @@ const resources = {
             'hotel_intro': 'Obejmuje również pobyt w',
             'night': 'Noc',
             'breakfast': 'Śniadanie',
-            'tourism_info': 'Jesli wstajecie poznej, ',
+            'tourism_info': 'Jeśli zostaniesz na więcej dni, polecamy te miejsca',
             'murcia': 'Murcja',
             'cartagena': 'Kartagena',
             'rural_house': 'Dom w Pliego',
-            'baths_archena': 'Balneario w Archena - blisko wesele',
+            'baths_archena': 'Termy w Archena - blisko wesele',
         }
     },
     pl_pl: {
@@ -198,11 +198,11 @@ const resources = {
             'hotel_intro': 'Obejmuje również pobyt w',
             'night': 'Noc',
             'breakfast': 'Śniadanie',
-            'tourism_info': 'Jesli wstajesz poznej, ',
+            'tourism_info': 'Jeśli zostaniecie na więcej dni, polecamy te miejsca',
             'murcia': 'Murcja',
             'cartagena': 'Kartagena',
             'rural_house': 'Dom w Pliego',
-            'baths_archena': 'Balneario w Archena - blisko wesele',
+            'baths_archena': 'Termy w Archena - blisko wesele',
         }
     },
     fr: {
@@ -238,11 +238,11 @@ const resources = {
             'hotel_intro': 'Nous vous invitons à rester au',
             'night': 'Nuit',
             'breakfast': 'Petit-déjeuner',
-            'tourism_info': 'Si vous restez plus des jours, nous vous recommendons ces lieus',
+            'tourism_info': 'Si vous restez plus de jours, nous vous recommandons ces lieux',
             'murcia': 'Murcie',
             'cartagena': 'Cartagene',
-            'rural_house': 'La maison rurele à Pliego',
-            'baths_archena': 'Balneario en Archena - pret la noce',
+            'rural_house': 'La maison rurale à Pliego',
+            'baths_archena': 'Les Bains de Archena - près de la noce',
         }
     }
 };
