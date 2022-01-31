@@ -15,6 +15,10 @@ const confirmationDetails = {
         whatsapp: 48796668665,
         email: 'ritagrzegorz@gmail.com',
     },
+    pl_pl: {
+        whatsapp: 48796668665,
+        email: 'ritagrzegorz@gmail.com',
+    },
     en: {
         whatsapp: 48796668665,
         email: 'ritagrzegorz@gmail.com',

@@ -80,7 +80,7 @@ function App() {
             <>
               <PageTravelInterest scroll={getScrollPos(6)} />
               <PageHotel scroll={getScrollPos(7)} lang={lang} nights={hotelNights[guest]} />
-              <Page9Tourism scroll={getScrollPos(8)} />
+              <Page9Tourism scroll={getScrollPos(8)} lang={lang.replace('_pl', '')} />
             </>
         )}
         <PageGift scroll={getScrollPos(hotelNights[guest] ? 9 : 6)} />

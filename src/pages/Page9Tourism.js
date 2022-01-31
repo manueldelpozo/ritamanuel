@@ -9,16 +9,22 @@ import coast from '../assets/coast.png';
 import { vh2px, vw2px } from '../helpers/parsers';
 
 const TextHeader = styled.h1`
-    text-align: start;
+    text-align: center;
     font-size: 2em;
     padding: 0 10%;
+    @media (max-width: 768px) {
+        text-align: end;
+    }
 `;
 
 const Beach = styled.img`
     width: min(200px, 40vw);
     height: auto;
-    align-self: flex-start;
+    align-self: center;
     margin: 0 16px;
+    @media (max-width: 768px) {
+      align-self: flex-start;
+    }
 `;
 
 const Coast = styled.div`
@@ -31,7 +37,7 @@ const Coast = styled.div`
     position: relative;
 `;
 
-const PageTourism = ({ scroll }) => {
+const PageTourism = ({ scroll, lang }) => {
     const { t } = useTranslation();
 
     return (
@@ -41,9 +47,7 @@ const PageTourism = ({ scroll }) => {
             justifyContent: 'space-between',
             alignItems: 'end',
             flexDirection: 'column',
-            position: 'relative',
             overflowX: 'clip',
-            zIndex: -1,
         }}>
             <ParallaxWrapper
                 start={scroll.top - vh2px(10)}
@@ -73,7 +77,7 @@ const PageTourism = ({ scroll }) => {
                             animations={[
                                 ['translateX', vw2px(-20 * (i + 1)), vw2px(0)],
                             ]}>
-                            <ExternalLink href={town.link} isBlack>{t(town.label)}</ExternalLink>
+                            <ExternalLink href={town.link(lang)} isBlack>{t(town.label)}</ExternalLink>
                         </ParallaxWrapper>
                     </div>
                 ))}

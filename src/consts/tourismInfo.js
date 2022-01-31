@@ -1,7 +1,7 @@
 const tourismInfo = [
     {
         label: 'San Juan',
-        link: 'link_de_booking',
+        link: lang => `https://www.booking.com/city/es/san-juan.${lang}.html`,
         position: {
             top: 10,
             left: 50,
@@ -9,7 +9,7 @@ const tourismInfo = [
     },
     {
         label: 'Alicante',
-        link: 'link_de_booking',
+        link: lang => `https://www.booking.com/city/es/alicante.${lang}.html`,
         position: {
             top: 80,
             left: 105,
@@ -17,7 +17,7 @@ const tourismInfo = [
     },
     {
         label: 'Santa Pola',
-        link: 'link_de_booking',
+        link: lang => `https://www.booking.com/city/es/santa-pola.${lang}.html`,
         position: {
             top: 180,
             left: 35,
@@ -25,7 +25,7 @@ const tourismInfo = [
     },
     {
         label: 'Torrevieja',
-        link: 'link_de_booking',
+        link: lang => `https://www.booking.com/city/es/torrevieja.${lang}.html`,
         position: {
             top: 240,
             left: 70,
@@ -33,7 +33,7 @@ const tourismInfo = [
     },
     {
         label: 'Mil Palmeras',
-        link: 'link_de_booking',
+        link: lang => `https://www.booking.com/holiday-homes/city/es/pilar-de-la-horadada.${lang}.html`,
         position: {
             top: 310,
             left: 65,
@@ -41,7 +41,7 @@ const tourismInfo = [
     },
     {
         label: 'La Manga',
-        link: 'link_de_booking',
+        link: lang => `https://www.booking.com/city/es/la-manga-del-mar-menor.${lang}.html`,
         position: {
             top: 410,
             left: 80,
@@ -49,7 +49,7 @@ const tourismInfo = [
     },
     {
         label: 'cartagena',
-        link: 'link_de_booking',
+        link: lang => `https://www.booking.com/city/es/cartagena.${lang}.html`,
         position: {
             top: 430,
             left: 300,
@@ -57,7 +57,7 @@ const tourismInfo = [
     },
     {
         label: 'murcia',
-        link: 'link_de_booking',
+        link: lang => `https://www.booking.com/city/es/murcia.${lang}.html`,
         position: {
             top: 180,
             left: 300,

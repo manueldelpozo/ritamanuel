@@ -198,7 +198,7 @@ const resources = {
             'hotel_intro': 'Obejmuje również pobyt w',
             'night': 'Noc',
             'breakfast': 'Śniadanie',
-            'tourism_info': 'Jesli wstajecie poznej, ',
+            'tourism_info': 'Jesli wstajesz poznej, ',
             'murcia': 'Murcja',
             'cartagena': 'Kartagena',
             'rural_house': 'Dom w Pliego',
