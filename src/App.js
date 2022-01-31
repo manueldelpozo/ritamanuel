@@ -49,8 +49,6 @@ function App() {
     return undefined;
   }, [search]);
 
-  // const hasAccommodation = useMemo(() => (lang && ['en', 'pl', 'fr'].includes(lang)), [lang]);
-
   useEffect(() => {
     if (lang) {
       i18n.changeLanguage(lang)

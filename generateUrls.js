@@ -13,6 +13,7 @@ const getInvitationMessage = ({ guest, lang, url, isfromRita }) => {
         es: `Hola ${guest} :) ${other} y yo tenemos el gusto de invitarte a nuestra boda 👰🤵. Haz click en el siguente enlace: ${url}`,
         es_pl: `Hola ${guest} :) ${other} y yo tenemos el gusto de invitaros a nuestra boda 👰🤵. Haz click en el siguente enlace: ${url}`,
         pl: `Cześć ${guest} :) ${other} i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: ${url}`,
+        pl_pl: `Cześć ${guest} :) ${other} i ja mamy przyjemność zaprosić Państwa na nasz ślub 👰🤵. Kliknij poniższy link: ${url}`,
         en: `Hi ${guest} :) ${other} and I have the pleasure of inviting you to our wedding 👰🤵. Click on the following link: ${url}`,
         fr: `Coucou ${guest} :) ${other} et j'ai le plaisir de vous inviter à notre mariage 👰🤵. Cliquez sur le lien suivant: ${url}`,
     };
@@ -31,7 +32,7 @@ const getUrlListByLang = (lang, list) => list.map(guest => {
             lang,
             guest,
             url,
-            isfromRita: (lang === 'pl' && guest !== 'Marcin') || (lang === 'en' && guest !== 'Filipa and Bruno'),
+            isfromRita: (['pl', 'pl_pl'].includes(lang) && guest !== 'Marcin') || (lang === 'en' && guest !== 'Filipa and Bruno'),
         }),
     };
 });
