@@ -1,0 +1,85 @@
+import * as React from 'react';
+import { useTranslation } from 'react-i18next';
+import styled from 'styled-components';
+import ParallaxWrapper from '../components/ParallaxWrapper';
+import ExternalLink from '../components/ExternalLink';
+import tourismInfo from '../consts/tourismInfo';
+import beach from '../assets/beach.png';
+import coast from '../assets/coast.png';
+import { vh2px, vw2px } from '../helpers/parsers';
+
+const TextHeader = styled.h1`
+    text-align: start;
+    font-size: 2em;
+    padding: 0 10%;
+`;
+
+const Beach = styled.img`
+    width: min(200px, 40vw);
+    height: auto;
+    align-self: flex-start;
+    margin: 0 16px;
+`;
+
+const Coast = styled.div`
+    width: 450px;
+    height: 538px;
+    background-image: url(${coast});
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+`;
+
+const PageTourism = ({ scroll }) => {
+    const { t } = useTranslation();
+
+    return (
+        <div style={{
+            height: '100vh',
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'end',
+            flexDirection: 'column',
+            position: 'relative',
+            overflowX: 'clip',
+            zIndex: -1,
+        }}>
+            <ParallaxWrapper
+                start={scroll.top - vh2px(10)}
+                end={scroll.bottom - vh2px(20)}
+                animations={[
+                    ['opacity', 0, 1],
+                    ['translateX', vw2px(-20), vw2px(0)],
+                ]}>
+                <TextHeader>
+                    {t('tourism_info')}
+                </TextHeader>
+            </ParallaxWrapper>
+            <Beach src={beach} />
+            <Coast>
+                {tourismInfo?.map((town, i) => (
+                    <div key={town.label} style={{
+                        fontSize: 20,
+                        textAlign: 'end',
+                        width: 450,
+                        position: 'absolute',
+                        top: town.position.top,
+                        left: -town.position.left,
+                    }}>
+                        <ParallaxWrapper
+                            start={scroll.bottom - 540}
+                            end={scroll.bottom}
+                            animations={[
+                                ['translateX', vw2px(-20 * (i + 1)), vw2px(0)],
+                            ]}>
+                            <ExternalLink href={town.link} isBlack>{t(town.label)}</ExternalLink>
+                        </ParallaxWrapper>
+                    </div>
+                ))}
+            </Coast>
+        </div>
+    );
+};
+
+export default PageTourism;

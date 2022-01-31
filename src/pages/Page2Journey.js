@@ -3,8 +3,9 @@ import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
 import ParallaxWrapper from '../components/ParallaxWrapper';
 import { vh2px, vw2px } from '../helpers/parsers';
-import mapEurope from '../assets/mapEurope.jpg';
+import mapEurope from '../assets/mapEurope.jpeg';
 import plane from '../assets/plane.png';
+import windRose from '../assets/windRose.png';
 
 const bgColor = getComputedStyle(document.documentElement).getPropertyValue('--bg-color');
 
@@ -51,6 +52,26 @@ const Plane = styled.img`
     -webkit-filter: drop-shadow(7px 7px 4px #222);
     filter: drop-shadow(7px 7px 4px #222);
 `;
+
+const WindRose = styled.span`
+    transform-origin: 50% 50%;
+    width: 50px;
+    height: auto;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    z-index: 10;
+    -webkit-filter: drop-shadow(7px 7px 4px #222);
+    filter: drop-shadow(7px 7px 4px #222);
+    animation: fly 1s infinite ease-in-out alternate
+`;
+
+const Murcia = styled.span`
+    font-size: 20px;
+    position: absolute;
+    bottom: 50px;
+    z-index: 10;
+`;
  
 const PageJourney = ({ scroll }) => {
     const { t } = useTranslation();
@@ -74,8 +95,16 @@ const PageJourney = ({ scroll }) => {
                 <TextHeader>{t('journey')}</TextHeader>
             </ParallaxWrapper>
             <ParallaxWrapper
+                start={scroll.top + 200}
+                end={scroll.bottom - vh2px(20)}
+                animations={[
+                    ['rotate', 360, 0],
+                ]}>
+                <WindRose src={windRose} />
+            </ParallaxWrapper>
+            <ParallaxWrapper
                 start={scroll.top + 200} 
-                end={scroll.bottom}
+                end={scroll.bottom - vh2px(20)}
                 animations={[
                     ['translateX', vw2px(3), -vw2px(90)],
                     ['translateY', -vh2px(20), vh2px(55)],
@@ -83,6 +112,14 @@ const PageJourney = ({ scroll }) => {
                     ['rotate', 0, 15],
                 ]}>
                 <Plane src={plane} />
+            </ParallaxWrapper>
+            <ParallaxWrapper
+                start={scroll.bottom - vh2px(20)}
+                end={scroll.bottom}
+                animations={[
+                    ['scale', 0, 1],
+                ]}>
+                <Murcia>{t('murcia')}</Murcia>
             </ParallaxWrapper>
             <MapEurope className="page-journey__map" />
         </div>

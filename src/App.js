@@ -13,9 +13,10 @@ import PageBanquet from './pages/Page4Banquet';
 import PageBusService from './pages/Page5BusService';
 import PageTravelInterest from './pages/Page7Transport';
 import PageHotel from './pages/Page8Hotel';
-import PageGift from './pages/Page8Gift';
-import PageConfirmation from './pages/Page10Confirmation';
-import PageEnd from './pages/Page9End';
+import Page9Tourism from './pages/Page9Tourism';
+import PageGift from './pages/Page10Gift';
+import PageConfirmation from './pages/Page12Confirmation';
+import PageEnd from './pages/Page11End';
 import hotelNights from './consts/hotelNights.json';
 import './App.css';
 
@@ -81,9 +82,10 @@ function App() {
             <>
               <PageTravelInterest scroll={getScrollPos(6)} />
               <PageHotel scroll={getScrollPos(7)} lang={lang} nights={hotelNights[guest]} />
+              <Page9Tourism scroll={getScrollPos(8)} />
             </>
         )}
-        <PageGift scroll={getScrollPos(hotelNights[guest] ? 8 : 6)} />
+        <PageGift scroll={getScrollPos(hotelNights[guest] ? 9 : 6)} />
         <PageEnd guest={guest} />
         <PageConfirmation lang={lang} guest={guest} />
       </Layout>
