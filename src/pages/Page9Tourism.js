@@ -74,9 +74,10 @@ const PageTourism = ({ scroll, lang }) => {
                         left: -town.position.left,
                     }}>
                         <ParallaxWrapper
-                            start="self"
+                            start={scroll.bottom - 580}
                             end={scroll.bottom}
                             animations={[
+                                ['opacity', 0, 1],
                                 ['translateX', vw2px(-20 * (i + 1)), vw2px(0)],
                             ]}>
                             <ExternalLink href={town.link(lang)} isBlack>{t(town.label)}</ExternalLink>
