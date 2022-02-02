@@ -9,11 +9,13 @@ import coast from '../assets/coast.png';
 import { vh2px, vw2px } from '../helpers/parsers';
 
 const TextHeader = styled.h1`
-    text-align: center;
+    text-align: end;
     font-size: 2em;
-    padding: 0 10%;
+    padding: 10%;
+    align-self: flex-start;
     @media (max-width: 768px) {
-        text-align: end;
+        align-self: center;
+        // padding: 20px 10%;
     }
 `;
 
@@ -28,12 +30,12 @@ const Beach = styled.img`
 `;
 
 const Coast = styled.div`
-    width: 450px;
-    height: 538px;
+    min-width: 412px;
+    min-height: 580px;
     background-image: url(${coast});
     background-position: bottom;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     position: relative;
 `;
 
@@ -60,7 +62,7 @@ const PageTourism = ({ scroll, lang }) => {
                     {t('tourism_info')}
                 </TextHeader>
             </ParallaxWrapper>
-            <Beach src={beach} />
+            {/*<Beach src={beach} />*/}
             <Coast>
                 {tourismInfo?.map((town, i) => (
                     <div key={town.label} style={{

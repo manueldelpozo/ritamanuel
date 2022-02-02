@@ -3,55 +3,55 @@ const tourismInfo = [
         label: 'San Juan',
         link: lang => `https://www.booking.com/city/es/san-juan.${lang}.html`,
         position: {
-            top: 10,
-            left: 50,
+            top: 30,
+            left: 85,
         }
     },
     {
         label: 'Alicante',
         link: lang => `https://www.booking.com/city/es/alicante.${lang}.html`,
         position: {
-            top: 80,
-            left: 105,
+            top: 110,
+            left: 140,
         }
     },
     {
         label: 'Santa Pola',
         link: lang => `https://www.booking.com/city/es/santa-pola.${lang}.html`,
         position: {
-            top: 180,
-            left: 35,
+            top: 200,
+            left: 70,
         }
     },
     {
         label: 'Torrevieja',
         link: lang => `https://www.booking.com/city/es/torrevieja.${lang}.html`,
         position: {
-            top: 240,
-            left: 70,
+            top: 270,
+            left: 105,
         }
     },
     {
         label: 'Mil Palmeras',
         link: lang => `https://www.booking.com/holiday-homes/city/es/pilar-de-la-horadada.${lang}.html`,
         position: {
-            top: 310,
-            left: 65,
+            top: 360,
+            left: 110,
         }
     },
     {
         label: 'La Manga',
         link: lang => `https://www.booking.com/city/es/la-manga-del-mar-menor.${lang}.html`,
         position: {
-            top: 410,
-            left: 80,
+            top: 460,
+            left: 115,
         }
     },
     {
         label: 'cartagena',
         link: lang => `https://www.booking.com/city/es/cartagena.${lang}.html`,
         position: {
-            top: 430,
+            top: 490,
             left: 300,
         }
     },
@@ -59,8 +59,8 @@ const tourismInfo = [
         label: 'murcia',
         link: lang => `https://www.booking.com/city/es/murcia.${lang}.html`,
         position: {
-            top: 180,
-            left: 300,
+            top: 280,
+            left: 330,
         }
     },
     // {
