@@ -74,7 +74,7 @@ const PageTourism = ({ scroll, lang }) => {
                         left: -town.position.left,
                     }}>
                         <ParallaxWrapper
-                            start={scroll.bottom - 540}
+                            start="self"
                             end={scroll.bottom}
                             animations={[
                                 ['translateX', vw2px(-20 * (i + 1)), vw2px(0)],
