@@ -67,10 +67,22 @@ const WindRose = styled.span`
 `;
 
 const Murcia = styled.span`
-    font-size: 20px;
+    color: #f9e6aa;
+    font-weight: bolder;
+    font-size: 2.4em;
     position: absolute;
-    bottom: 50px;
+    left: -77vw;
+    bottom: 18vh;
     z-index: 10;
+    text-shadow:
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        2px 2px 0 #000;
+    @media (max-width: 768px) {  
+      left: -55vw;
+      font-size: 2.1em;
+    }
 `;
  
 const PageJourney = ({ scroll }) => {
@@ -104,10 +116,10 @@ const PageJourney = ({ scroll }) => {
             </ParallaxWrapper>
             <ParallaxWrapper
                 start={scroll.top + 200} 
-                end={scroll.bottom - vh2px(20)}
+                end={scroll.bottom - vh2px(10)}
                 animations={[
                     ['translateX', vw2px(3), -vw2px(90)],
-                    ['translateY', -vh2px(20), vh2px(55)],
+                    ['translateY', -vh2px(20), vh2px(52)],
                     ['scale', 1.3, 0.8],
                     ['rotate', 0, 15],
                 ]}>
@@ -117,7 +129,9 @@ const PageJourney = ({ scroll }) => {
                 start={scroll.bottom - vh2px(20)}
                 end={scroll.bottom}
                 animations={[
-                    ['scale', 0, 1],
+                    ['translateY', 10, 0],
+                    ['scale', 0.98, 1],
+                    ['opacity', 0, 1],
                 ]}>
                 <Murcia>{t('murcia')}</Murcia>
             </ParallaxWrapper>
