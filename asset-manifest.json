@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ritamanuel/static/css/main.661b5fc3.chunk.css",
-    "main.js": "/ritamanuel/static/js/main.e7a7c540.chunk.js",
-    "main.js.map": "/ritamanuel/static/js/main.e7a7c540.chunk.js.map",
+    "main.js": "/ritamanuel/static/js/main.5095e060.chunk.js",
+    "main.js.map": "/ritamanuel/static/js/main.5095e060.chunk.js.map",
     "runtime-main.js": "/ritamanuel/static/js/runtime-main.37502d55.js",
     "runtime-main.js.map": "/ritamanuel/static/js/runtime-main.37502d55.js.map",
     "static/js/2.3704eccb.chunk.js": "/ritamanuel/static/js/2.3704eccb.chunk.js",
@@ -17,7 +17,7 @@
     "static/media/beach.3944426a.png": "/ritamanuel/static/media/beach.3944426a.png",
     "static/media/bus.a303968b.png": "/ritamanuel/static/media/bus.a303968b.png",
     "static/media/buttonFrame.b7291cfb.svg": "/ritamanuel/static/media/buttonFrame.b7291cfb.svg",
-    "static/media/coast.b3d1f1a9.png": "/ritamanuel/static/media/coast.b3d1f1a9.png",
+    "static/media/coast.93d8cb11.png": "/ritamanuel/static/media/coast.93d8cb11.png",
     "static/media/corner.e46dc9a9.png": "/ritamanuel/static/media/corner.e46dc9a9.png",
     "static/media/dame.1797731b.png": "/ritamanuel/static/media/dame.1797731b.png",
     "static/media/divider.3274a30a.png": "/ritamanuel/static/media/divider.3274a30a.png",
@@ -36,6 +36,6 @@
     "static/js/runtime-main.37502d55.js",
     "static/js/2.3704eccb.chunk.js",
     "static/css/main.661b5fc3.chunk.css",
-    "static/js/main.e7a7c540.chunk.js"
+    "static/js/main.5095e060.chunk.js"
   ]
 }
