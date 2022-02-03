@@ -31,6 +31,7 @@ const PageTransport = ({ scroll }) => {
             alignItems: 'flex-end',
             flexDirection: 'column',
             padding: '10%',
+            marginBottom: 30,
         }}>
             <ParallaxWrapper
                 start={scroll.top - vh2px(10)}

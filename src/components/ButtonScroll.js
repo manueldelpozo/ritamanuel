@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import hand from '../assets/hand.png';
-import arrowDown from '../assets/arrow-down.svg';
+import arrowDown from '../assets/arrow-down.png';
 
 const Button = styled.button`
     position: relative;
@@ -13,11 +13,11 @@ const Button = styled.button`
 
 const AnimatedHand = styled.div`
     position: absolute;
-    left: -60px;
+    left: -70px;
     background-image: url(${hand});
     background-size: contain;
     background-repeat: no-repeat;
-    width: 80px;
+    width: 60px;
     height: 60px;
     animation: bounceAndRotate 2s infinite ease-in-out alternate;
 `;

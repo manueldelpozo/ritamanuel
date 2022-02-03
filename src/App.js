@@ -70,6 +70,7 @@ function App() {
   return (
     <div className="App">
       <Layout ref={scrollRef}>
+        <span>clientHeight = {document.documentElement.clientHeight}</span>
         <PageIntro guest={guest} />
         <PageInvitation scroll={getScrollPos(1)} />
         <PageJourney scroll={getScrollPos(2)} />

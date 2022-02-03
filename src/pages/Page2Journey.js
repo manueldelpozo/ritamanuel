@@ -53,17 +53,15 @@ const Plane = styled.img`
     filter: drop-shadow(7px 7px 4px #222);
 `;
 
-const WindRose = styled.span`
+const WindRose = styled.img`
     transform-origin: 50% 50%;
-    width: 50px;
+    width: 100px;
     height: auto;
     position: absolute;
-    left: 20px;
-    top: 20px;
+    left: -88vw;
+    bottom: 60vh;
     z-index: 10;
-    -webkit-filter: drop-shadow(7px 7px 4px #222);
-    filter: drop-shadow(7px 7px 4px #222);
-    animation: fly 1s infinite ease-in-out alternate
+    animation: fly 2s infinite ease-in-out alternate
 `;
 
 const Murcia = styled.span`
@@ -73,13 +71,17 @@ const Murcia = styled.span`
     position: absolute;
     left: -77vw;
     bottom: 18vh;
-    z-index: 10;
+    z-index: 9;
     text-shadow:
         -2px -2px 0 #000,
         2px -2px 0 #000,
         -2px 2px 0 #000,
         2px 2px 0 #000;
-    @media (max-width: 768px) {  
+    @media (max-width: 760px) {
+        left: -66vw;
+        font-size: 2.2em;
+    }
+    @media (max-width: 450px) {  
       left: -55vw;
       font-size: 2.1em;
     }
@@ -110,7 +112,7 @@ const PageJourney = ({ scroll }) => {
                 start={scroll.top + 200}
                 end={scroll.bottom - vh2px(20)}
                 animations={[
-                    ['rotate', 360, 0],
+                    ['scale', 0, 1],
                 ]}>
                 <WindRose src={windRose} />
             </ParallaxWrapper>
@@ -126,12 +128,10 @@ const PageJourney = ({ scroll }) => {
                 <Plane src={plane} />
             </ParallaxWrapper>
             <ParallaxWrapper
-                start={scroll.bottom - vh2px(20)}
+                start={scroll.bottom - vh2px(30)}
                 end={scroll.bottom}
                 animations={[
-                    ['translateY', 10, 0],
-                    ['scale', 0.98, 1],
-                    ['opacity', 0, 1],
+                    ['translateY', -20, 0],
                 ]}>
                 <Murcia>{t('murcia')}</Murcia>
             </ParallaxWrapper>

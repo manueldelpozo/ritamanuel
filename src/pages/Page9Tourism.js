@@ -15,7 +15,7 @@ const TextHeader = styled.h1`
     align-self: flex-start;
     @media (max-width: 768px) {
         align-self: center;
-        // padding: 20px 10%;
+        padding: 20px 10% 10px;
     }
 `;
 

@@ -32,6 +32,7 @@ const PageGift = ({ scroll }) => {
             alignItems: 'center',
             flexDirection: 'column',
             padding: '10%',
+            marginTop: 20,
         }}>
             <ParallaxWrapper
                 start={scroll.top}
