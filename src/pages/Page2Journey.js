@@ -117,8 +117,8 @@ const PageJourney = ({ scroll }) => {
                 <WindRose src={windRose} />
             </ParallaxWrapper>
             <ParallaxWrapper
-                start={scroll.top + 200} 
-                end={scroll.bottom - vh2px(10)}
+                start="self"
+                end={scroll.bottom }
                 animations={[
                     ['translateX', vw2px(3), -vw2px(90)],
                     ['translateY', -vh2px(20), vh2px(52)],
@@ -128,7 +128,7 @@ const PageJourney = ({ scroll }) => {
                 <Plane src={plane} />
             </ParallaxWrapper>
             <ParallaxWrapper
-                start={scroll.bottom - vh2px(30)}
+                start="self"
                 end={scroll.bottom}
                 animations={[
                     ['translateY', -20, 0],
