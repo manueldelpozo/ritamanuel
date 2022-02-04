@@ -118,7 +118,7 @@ const PageJourney = ({ scroll }) => {
             </ParallaxWrapper>
             <ParallaxWrapper
                 start="self"
-                end={scroll.bottom }
+                end={scroll.bottom}
                 animations={[
                     ['translateX', vw2px(3), -vw2px(90)],
                     ['translateY', -vh2px(20), vh2px(52)],

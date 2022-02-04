@@ -101,13 +101,11 @@ const PageBanquet = ({ scroll }) => {
                     </ExternalLink>
                     <img src={divider} alt="divider" width="auto" height="100px" />
                 </TextDetails>
-                
             </ParallaxWrapper>
             <ParallaxWrapper
-                start={scroll.bottom - vh2px(40)}
+                start="self"
                 end={scroll.bottom}
                 animations={[
-                    ['translateY', vh2px(-10), vh2px(0)],
                     ['scale', 0.8, 1],
                 ]}>
                 <Table src={table} />

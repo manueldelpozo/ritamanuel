@@ -51,7 +51,7 @@ const PageHotel = ({ scroll, lang, nights }) => {
                 {Array.from(Array(hotelDetails.stars).keys()).map(star => (
                     <div key={`star${star}`}>
                         <ParallaxWrapper
-                            start={scroll.top + vh2px(20 * star)}
+                            start={scroll.top + 100 * star}
                             end={scroll.bottom}
                             animations={[
                                 ['rotate', -360, 0],

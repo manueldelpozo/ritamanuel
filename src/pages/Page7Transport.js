@@ -34,7 +34,7 @@ const PageTransport = ({ scroll }) => {
             marginBottom: 30,
         }}>
             <ParallaxWrapper
-                start={scroll.top - vh2px(10)}
+                start="self"
                 end={scroll.bottom - vh2px(20)}
                 animations={[
                     ['opacity', 0, 1],
@@ -48,7 +48,7 @@ const PageTransport = ({ scroll }) => {
             {transportInfo?.map((interest, i) => (
                 <div key={interest.label} style={{ fontSize: 20 }}>
                     <ParallaxWrapper
-                        start={scroll.top + vh2px(60)}
+                        start="self"
                         end={scroll.bottom}
                         animations={[
                             ['translateX', vw2px(-10 * i), vw2px(0)],
