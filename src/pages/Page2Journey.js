@@ -11,7 +11,7 @@ const bgColor = getComputedStyle(document.documentElement).getPropertyValue('--b
 
 const TextHeader = styled.h1`
     height: 70vh;
-    background-image: linear-gradient(180deg, ${bgColor}, transparent);
+    background-image: linear-gradient(180deg, ${bgColor}, ${`${bgColor}11`});
     padding: 10%;
     width: 100vw;
     margin: -10vh 0;
@@ -39,7 +39,7 @@ const MapEurope = styled.div`
         left: 0;
         width: 100vw;
         height: 35vh;
-        background-image: linear-gradient(180deg, ${bgColor}, transparent);
+        background-image: linear-gradient(180deg, ${bgColor}, ${`${bgColor}11`});
     }
 `;
 

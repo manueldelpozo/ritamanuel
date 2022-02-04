@@ -46,6 +46,8 @@ const resources = {
             'cartagena': 'Cartagena',
             'rural_house': 'Rural house in Pliego',
             'baths_archena': 'Archena Spa - near wedding celebration',
+            'wrong_app_intro': 'If you want to see your wedding invitation, please use another app',
+            'download_chrome': 'Here download Chrome',
         }
     },
     es: {
@@ -89,6 +91,8 @@ const resources = {
             'cartagena': 'Cartagena',
             'rural_house': 'Casa rural de Pliego',
             'baths_archena': 'Balneario de Archena - cerca banquete de bodas',
+            'wrong_app_intro': 'Si quieres ver tu invitación de boda, por favor usa otra app',
+            'download_chrome': 'Aquí descárgate Chrome',
         }
     },
     es_pl: {
@@ -132,11 +136,13 @@ const resources = {
             'cartagena': 'Cartagena',
             'rural_house': 'Casa rural de Pliego',
             'baths_archena': 'Balneario de Archena - cerca banquete de bodas',
+            'wrong_app_intro': 'Si queréis ver vuestra invitación de boda, por favor usad otra app',
+            'download_chrome': 'Aquí descárgaos Chrome',
         }
     },
     pl: {
         translation: {
-            'dear': 'Dla ciebie',
+            'dear': 'Dla Ciebie',
             'intro': 'Zapraszamy na nasze wesele',
             'journey': 'Jesteśmy na pokładzie w podróży i chcemy, żebyś do nas dołączył.',
             'church': 'Uroczystość odbędzie się w kościele ',
@@ -175,11 +181,13 @@ const resources = {
             'cartagena': 'Kartagena',
             'rural_house': 'Dom w Pliego',
             'baths_archena': 'Termy w Archena - blisko wesele',
+            'wrong_app_intro': 'Jeśli chcesz zobaczyć swoje zaproszenie na ślub, skorzystaj z innej aplikacji',
+            'download_chrome': 'Tutaj pobierz Chrome',
         }
     },
     pl_pl: {
         translation: {
-            'dear': 'Dla was',
+            'dear': 'Dla Was',
             'intro': 'Zapraszamy na nasze wesele',
             'journey': 'Jesteśmy na pokładzie w podróży i chcemy, żebyś do nas dołączył.',
             'church': 'Uroczystość odbędzie się w kościele ',
@@ -218,6 +226,8 @@ const resources = {
             'cartagena': 'Kartagena',
             'rural_house': 'Dom w Pliego',
             'baths_archena': 'Termy w Archena - blisko wesele',
+            'wrong_app_intro': 'Jeśli chcielibyscie zobaczyć swoje zaproszenie na ślub, skorzystajcie z innej aplikacji',
+            'download_chrome': 'Tutaj pobierzcie Chrome',
         }
     },
     fr: {
@@ -261,6 +271,8 @@ const resources = {
             'cartagena': 'Cartagene',
             'rural_house': 'La maison rurale à Pliego',
             'baths_archena': 'Les Bains de Archena - près de la noce',
+            'wrong_app_intro': 'Si vous voulez voir votre invitation de mariage, veuillez utiliser une autre application',
+            'download_chrome': 'Ici télécharger Chrome',
         }
     }
 };

@@ -17,6 +17,7 @@ import Page9Tourism from './pages/Page9Tourism';
 import PageGift from './pages/Page10Gift';
 import PageConfirmation from './pages/Page12Confirmation';
 import PageEnd from './pages/Page11End';
+import PageWrongApp from './pages/PageWrongApp';
 import hotelNights from './consts/hotelNights.json';
 import './App.css';
 
@@ -33,7 +34,7 @@ const getScrollPos = (pageNumber) => ({
   bottom: document.documentElement.clientHeight * pageNumber,
 });
 
-function App() {
+const App = ({ useChrome }) => {
   const { search } = useLocation();
   const { lang } = useParams();
   const { i18n } = useTranslation();
@@ -67,10 +68,19 @@ function App() {
     return () => window.removeEventListener("scroll", onScroll);
   }, [scrollTop]);
 
+  if (!useChrome) {
+    return (
+        <div className="App">
+          <Layout ref={scrollRef}>
+            <PageWrongApp />
+          </Layout>
+        </div>
+    )
+  }
+
   return (
     <div className="App">
       <Layout ref={scrollRef}>
-        <span>clientHeight = {document.documentElement.clientHeight}</span>
         <PageIntro guest={guest} />
         <PageInvitation scroll={getScrollPos(1)} />
         <PageJourney scroll={getScrollPos(2)} />

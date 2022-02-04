@@ -104,10 +104,10 @@ const PageBanquet = ({ scroll }) => {
                 
             </ParallaxWrapper>
             <ParallaxWrapper
-                start="self"
+                start={scroll.bottom - vh2px(40)}
                 end={scroll.bottom}
                 animations={[
-                    ['opacity', 0, 1],
+                    ['translateY', vh2px(-10), vh2px(0)],
                     ['scale', 0.8, 1],
                 ]}>
                 <Table src={table} />

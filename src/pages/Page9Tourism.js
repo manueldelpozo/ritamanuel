@@ -47,7 +47,7 @@ const PageTourism = ({ scroll, lang }) => {
             height: '100vh',
             display: 'flex',
             justifyContent: 'space-between',
-            alignItems: 'end',
+            alignItems: 'flex-end',
             flexDirection: 'column',
             overflowX: 'clip',
         }}>
