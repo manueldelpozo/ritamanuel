@@ -130,13 +130,20 @@
     -->
     <!-- Start detect Chrome -->
     <script type="text/javascript">
-      var useChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-      var useSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && window['safari'].pushNotification));
+      function detectBrowser() {
+        var useSamsung = navigator.userAgent.match(/SAMSUNG|Samsung|SGH-[I|N|T]|GT-[I|N]|SM-[A|N|P|T|Z]|SHV-E|SCH-[I|J|R|S]|SPH-L/i);
+        if(useSamsung) {
+          return undefined;
+        }
 
-      if (useChrome || useSafari) {
-        const root = document.getElementById('root');
-        root.setAttribute('data-use-chrome', 'true');
+        var useChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        var useSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && window['safari'].pushNotification));
+        if (useChrome || useSafari) {
+          var root = document.getElementById('root');
+          root.setAttribute('data-use-chrome', 'true');
+        }
       }
+      detectBrowser();
     </script>
     <!-- End detect Chrome -->
   </body>
