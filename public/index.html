@@ -131,10 +131,10 @@
     <!-- Start detect Chrome -->
     <script type="text/javascript">
       function detectBrowser() {
-        var useSamsung = navigator.userAgent.match(/SAMSUNG|Samsung|SGH-[I|N|T]|GT-[I|N]|SM-[A|N|P|T|Z]|SHV-E|SCH-[I|J|R|S]|SPH-L/i);
-        if(useSamsung) {
-          return undefined;
-        }
+        // var useSamsung = navigator.userAgent.match(/SAMSUNG|Samsung|SGH-[I|N|T]|GT-[I|N]|SM-[A|N|P|T|Z]|SHV-E|SCH-[I|J|R|S]|SPH-L/i);
+        // if(useSamsung) {
+        //   return undefined;
+        // }
 
         var useChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
         var useSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && window['safari'].pushNotification));
