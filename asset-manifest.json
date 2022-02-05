@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ritamanuel/static/css/main.661b5fc3.chunk.css",
-    "main.js": "/ritamanuel/static/js/main.793aedb8.chunk.js",
-    "main.js.map": "/ritamanuel/static/js/main.793aedb8.chunk.js.map",
+    "main.js": "/ritamanuel/static/js/main.81c4fc6d.chunk.js",
+    "main.js.map": "/ritamanuel/static/js/main.81c4fc6d.chunk.js.map",
     "runtime-main.js": "/ritamanuel/static/js/runtime-main.37502d55.js",
     "runtime-main.js.map": "/ritamanuel/static/js/runtime-main.37502d55.js.map",
     "static/js/2.3704eccb.chunk.js": "/ritamanuel/static/js/2.3704eccb.chunk.js",
@@ -19,7 +19,7 @@
     "static/media/coast.93d8cb11.png": "/ritamanuel/static/media/coast.93d8cb11.png",
     "static/media/corner.e46dc9a9.png": "/ritamanuel/static/media/corner.e46dc9a9.png",
     "static/media/dame.1797731b.png": "/ritamanuel/static/media/dame.1797731b.png",
-    "static/media/divider.3274a30a.png": "/ritamanuel/static/media/divider.3274a30a.png",
+    "static/media/divider.290dbcd1.svg": "/ritamanuel/static/media/divider.290dbcd1.svg",
     "static/media/gentleman.643f24e9.png": "/ritamanuel/static/media/gentleman.643f24e9.png",
     "static/media/gift.e1acb3f7.png": "/ritamanuel/static/media/gift.e1acb3f7.png",
     "static/media/hand.28bb8145.png": "/ritamanuel/static/media/hand.28bb8145.png",
@@ -35,6 +35,6 @@
     "static/js/runtime-main.37502d55.js",
     "static/js/2.3704eccb.chunk.js",
     "static/css/main.661b5fc3.chunk.css",
-    "static/js/main.793aedb8.chunk.js"
+    "static/js/main.81c4fc6d.chunk.js"
   ]
 }
