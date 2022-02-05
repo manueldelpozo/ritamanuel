@@ -6,12 +6,13 @@ import { vh2px, vw2px } from '../helpers/parsers';
 import mapEurope from '../assets/mapEurope.jpeg';
 import plane from '../assets/plane.png';
 import windRose from '../assets/windRose.png';
+import fabric from '../assets/45degreee_fabric.png';
 
 const bgColor = getComputedStyle(document.documentElement).getPropertyValue('--bg-color');
 
 const TextHeader = styled.h1`
     height: 70vh;
-    background-image: linear-gradient(180deg, ${bgColor}, ${`${bgColor}11`});
+    // background-image: linear-gradient(${bgColor}, ${`${bgColor}00`});
     padding: 10%;
     width: 100vw;
     margin: -10vh 0;
@@ -29,6 +30,7 @@ const MapEurope = styled.div`
     position: absolute;
     top: 0;
     z-index: -2;
+    filter: brightness(0.95);
     @media (max-width: 768px) {
         background-position: -90px center;
     }
@@ -38,8 +40,8 @@ const MapEurope = styled.div`
         top: -2px;
         left: 0;
         width: 100vw;
-        height: 35vh;
-        background-image: linear-gradient(180deg, ${bgColor}, ${`${bgColor}11`});
+        height: 45vh;
+        background-image: linear-gradient(${bgColor}, ${`${bgColor}00`});
     }
 `;
 
