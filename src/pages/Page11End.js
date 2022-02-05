@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useTranslation } from 'react-i18next';
-import divider from '../assets/divider.png';
+import divider from '../assets/divider.svg';
 
 const PageEnd = ({ guest }) => {
     const { t } = useTranslation();

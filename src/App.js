@@ -72,7 +72,7 @@ const App = ({ useChrome }) => {
     return (
         <div className="App">
           <Layout ref={scrollRef}>
-            <PageWrongApp />
+            <PageWrongApp url={window.location.href}/>
           </Layout>
         </div>
     )

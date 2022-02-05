@@ -1,8 +1,9 @@
 import * as React from 'react';
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
-import divider from '../assets/divider.png';
+import divider from '../assets/divider.svg';
 import ButtonFrame from '../components/ButtonFrame';
+import CopyContent from '../components/CopyContent';
 
 const TextDetails = styled.div`
     height: 50vh;
@@ -14,10 +15,10 @@ const TextDetails = styled.div`
     text-align: center;
 `;
 
-const PageWrongApp = () => {
+const PageWrongApp = ({ url }) => {
     const { t } = useTranslation();
 
-    return (
+    return (console.log(url),
         <div style={{
             height: '100vh',
             display: 'flex',
@@ -29,10 +30,15 @@ const PageWrongApp = () => {
             <TextDetails>
                 <h1>{t('wrong_app_intro')}</h1>
                 <img src={divider} alt="divider" width="auto" height="100px" />
-                <div>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
                     <ButtonFrame href="https://www.google.com/chrome/">
-                        {t('download_chrome')}
+                        <strong>1.</strong> {t('download_chrome')}
                     </ButtonFrame>
+                    <div style={{ fontSize: '1.2em' }}>
+                        <strong>2.</strong> {t('wrong_app_copy')}:
+                        <strong style={{ fontFamily: 'serif' }}><CopyContent content={url} /></strong>
+                    </div>
+                    <div style={{ fontSize: '1.2em' }}>3. {t('wrong_app_paste')}</div>
                 </div>
             </TextDetails>
         </div>

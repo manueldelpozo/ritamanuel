@@ -58,8 +58,14 @@ const PageGift = ({ scroll, lang }) => {
                 <img src={gift} height={vh2px(20)} width="auto"/>
             </ParallaxWrapper>
             <PageDetailsGift className="page-details__gift">
-                <div className="page-details__gift__iban">
-                    <CopyContent content={lang.startsWith('pl') ? bankDetails.accountPL : bankDetails.iban} noSpaces />
+                <div>
+                    {t('gift_nr_account')}:<br />
+                    <div className="page-details__gift__iban">
+                        <CopyContent
+                            content={lang.startsWith('pl') ? bankDetails.accountPL : bankDetails.iban}
+                            noSpaces
+                        />
+                    </div>
                 </div>
                 <div className="page-details__gift__title">
                     {t('gift_title')}:<br />

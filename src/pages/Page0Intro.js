@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
-import divider from '../assets/divider.png';
+import divider from '../assets/divider.svg';
 
 const TextDetails = styled.div`
     height: 50vh;

@@ -4,10 +4,10 @@ import styled from 'styled-components';
 import ParallaxWrapper from '../components/ParallaxWrapper';
 import ExternalLink from '../components/ExternalLink';
 import createLinkCalendar from '../helpers/createLinkCalendar';
-import { vh2px, vw2px } from '../helpers/parsers';
-import banquetDetails from '../consts/banquetDetails';
+import { vh2px } from '../helpers/parsers';
 import table from '../assets/table.png';
-import divider from '../assets/divider.png';
+import divider from '../assets/divider.svg';
+import banquetDetails from '../consts/banquetDetails';
 
 const TextHeader = styled.h1`
     height: 10vh;

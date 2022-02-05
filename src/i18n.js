@@ -20,6 +20,7 @@ const resources = {
             'end4': 'Bye!',
             'download': 'Download all wedding details',
             'gift_intro': 'Just your presence is already the best gift to us. However, if you desire to give nonetheless',
+            'gift_nr_account': 'Account number',
             'gift_title': 'In the transfer title',
             'thanks_advance': 'Thank You in advance',
             'ryanair_flights_alicante': 'Fligths to Alicante (Ryanair)',
@@ -48,6 +49,8 @@ const resources = {
             'baths_archena': 'Archena Spa - near wedding celebration',
             'wrong_app_intro': 'If you want to see your wedding invitation, please use another app',
             'download_chrome': 'Here download Chrome',
+            'wrong_app_copy': 'Copy this url:',
+            'wrong_app_paste': 'Paste the url in Chrome and enjoy the wedding invitation :)',
         }
     },
     es: {
@@ -65,6 +68,7 @@ const resources = {
             'end4': 'Hasta pronto',
             'download': 'Descarga los detalles de la boda',
             'gift_intro': 'Tu presencia ya es un regalo para nosotros. Sin embargo si deseas obsequiarnos con un detalle',
+            'gift_nr_account': 'Número de cuenta',
             'gift_title': 'Con el titulo',
             'thanks_advance': 'Te damos las gracias de antemano',
             'ryanair_flights_alicante': 'Vuelos a Alicante (Ryanair)',
@@ -93,6 +97,8 @@ const resources = {
             'baths_archena': 'Balneario de Archena - cerca banquete de bodas',
             'wrong_app_intro': 'Si quieres ver tu invitación de boda, por favor usa otra app',
             'download_chrome': 'Aquí descárgate Chrome',
+            'wrong_app_copy': 'Copia esta url:',
+            'wrong_app_paste': 'Pega la url en el navegador Chrome y disfruta de la invitación :)',
         }
     },
     es_pl: {
@@ -110,6 +116,7 @@ const resources = {
             'end4': 'Hasta pronto',
             'download': 'Descarga los detalles de la boda',
             'gift_intro': 'Vuestra presencia ya es un regalo para nosotros. Sin embargo si deseáis obsequiarnos con un detalle',
+            'gift_nr_account': 'Número de cuenta',
             'gift_title': 'Con el titulo',
             'thanks_advance': 'Os damos las gracias de antemano',
             'ryanair_flights_alicante': 'Vuelos a Alicante (Ryanair)',
@@ -138,6 +145,8 @@ const resources = {
             'baths_archena': 'Balneario de Archena - cerca banquete de bodas',
             'wrong_app_intro': 'Si queréis ver vuestra invitación de boda, por favor usad otra app',
             'download_chrome': 'Aquí descárgaos Chrome',
+            'wrong_app_copy': 'Copiad esta url:',
+            'wrong_app_paste': 'Pegad la url en el navegador Chrome y disfrutad de la invitación :)',
         }
     },
     pl: {
@@ -154,7 +163,8 @@ const resources = {
             'end3': 'w Murcje',
             'end4': 'Do zobaczenia',
             'download': 'Pobierz szczegóły ślubu',
-            'gift_intro': 'Tylko Twoja obecność jest dla nas najlepszym prezentem. Jednak tradycyjnie w Hiszpanii goście nie przynoszą prezentów, więc jeśli chcielibyscie pomóc, przyjmujemy przelewy',
+            'gift_intro': 'Wasza obecność jest dla nas najlepszym prezentem. Jednak tradycyjnie w Hiszpanii goście nie przynoszą prezentów, ani kwiatów. Jeśli chcielibyscie pomóc mozecie pszelac dowolną kwotę',
+            'gift_nr_account': 'Numer konta',
             'gift_title': 'Z tytulem przelewu',
             'thanks_advance': 'Z góry dziękujemy',
             'ryanair_flights_alicante': 'Loty do Alicante (Ryanair)',
@@ -181,8 +191,10 @@ const resources = {
             'cartagena': 'Kartagena',
             'rural_house': 'Dom w Pliego',
             'baths_archena': 'Termy w Archena - blisko wesele',
-            'wrong_app_intro': 'Jeśli chcesz zobaczyć swoje zaproszenie na ślub, skorzystaj z innej aplikacji',
+            'wrong_app_intro': 'Jeśli chcesz zobaczyć twoje zaproszenie na ślub, skorzystaj z innej aplikacji',
             'download_chrome': 'Tutaj pobierz Chrome',
+            'wrong_app_copy': 'Skopiuj ten adres url:',
+            'wrong_app_paste': 'Wklej adres url w Chrome i ciesz się twoje zaproszenie na ślub :)',
         }
     },
     pl_pl: {
@@ -199,7 +211,8 @@ const resources = {
             'end3': 'w Murcje',
             'end4': 'Do zobaczenia',
             'download': 'Pobierz szczegóły ślubu',
-            'gift_intro': 'Tylko Swoja obecność jest dla nas najlepszym prezentem. Jednak tradycyjnie w Hiszpanii goście nie przynoszą prezentów, więc jeśli chcielibyscie pomóc, przyjmujemy przelewy',
+            'gift_intro': 'Wasza obecność jest dla nas najlepszym prezentem. Jednak tradycyjnie w Hiszpanii goście nie przynoszą prezentów, ani kwiatów. Jeśli chcielibyscie pomóc mozecie pszelac dowolną kwotę',
+            'gift_nr_account': 'Numer konta',
             'gift_title': 'Z tytulem przelewu',
             'thanks_advance': 'Z góry dziękujemy',
             'ryanair_flights_alicante': 'Loty do Alicante (Ryanair)',
@@ -209,7 +222,7 @@ const resources = {
             'rent-a-car': 'Podróżować samochodem (Rent-a-Car)',
             'at': 'o',
             'copy': 'Kopiuj',
-            'confirm': 'Proszę potwierdzić swoją obecność',
+            'confirm': 'Proszę potwierdzić wasza obecność',
             'yesGo': 'Tak, na pewno będę',
             'iluk': 'Potwierdzimy przed 1 maja',
             'noGo': 'Niestety nie możemy',
@@ -226,8 +239,10 @@ const resources = {
             'cartagena': 'Kartagena',
             'rural_house': 'Dom w Pliego',
             'baths_archena': 'Termy w Archena - blisko wesele',
-            'wrong_app_intro': 'Jeśli chcielibyscie zobaczyć swoje zaproszenie na ślub, skorzystajcie z innej aplikacji',
+            'wrong_app_intro': 'Jeśli chcielibyscie zobaczyć wasza zaproszenie na ślub, skorzystajcie z innej aplikacji',
             'download_chrome': 'Tutaj pobierzcie Chrome',
+            'wrong_app_copy': 'Skopiujcie ten adres url:',
+            'wrong_app_paste': 'Wklejcie adres url w Chrome i ciesz się wasza zaproszenie na ślub :)',
         }
     },
     fr: {
@@ -245,6 +260,7 @@ const resources = {
             'end4': 'À bientôt!',
             'download': 'Télécharger les détails du mariage',
             'gift_intro': 'Votre seule présence est le meilleur cadeau pour nous. Cependant, si vous souhaitez aider',
+            'gift_nr_account': 'Numéro de compte',
             'gift_title': 'Avec motif du virement',
             'thanks_advance': 'Merci d\'avance',
             'ryanair_flights_alicante': 'Vols vers Alacante (Ryanair)',
@@ -273,6 +289,8 @@ const resources = {
             'baths_archena': 'Les Bains de Archena - près de la noce',
             'wrong_app_intro': 'Si vous voulez voir votre invitation de mariage, veuillez utiliser une autre application',
             'download_chrome': 'Ici télécharger Chrome',
+            'wrong_app_copy': 'Copier cette url:',
+            'wrong_app_paste': 'Collez l\'url dans le navigateur Chrome et profitez de l\'invitation :)',
         }
     }
 };

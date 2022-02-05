@@ -7,12 +7,12 @@ import ParallaxWrapper from '../components/ParallaxWrapper';
 import ExternalLink from '../components/ExternalLink';
 import createLinkCalendar from '../helpers/createLinkCalendar';
 import { vh2px, vw2px } from '../helpers/parsers';
-import hotelDetails from '../consts/hotelDetails';
-import banquetDetails from '../consts/banquetDetails';
 import bus from '../assets/bus.png';
 import wheel from '../assets/wheel.png';
-import divider from '../assets/divider.png';
+import divider from '../assets/divider.svg';
 import divider2 from '../assets/divider2.png';
+import hotelDetails from '../consts/hotelDetails';
+import banquetDetails from '../consts/banquetDetails';
 
 const TextHeader = styled.h1`
     //height: 12vh;
