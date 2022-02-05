@@ -60,6 +60,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    <meta name="mobile-web-app-capable" content="yes">
     <meta
       name="description"
       content="Invitacion a la boda Rita y Manuel"
@@ -105,10 +106,16 @@
           transform: rotate(-90deg);
           transform-origin: left top;
           width: 100vh;
+          height: 100vw;
           overflow-x: hidden;
+          overflow-y: hidden;
           position: absolute;
           top: 100%;
           left: 0;
+        }
+
+        main > div > * {
+          height: 100vw !important;
         }
       }
       body {
@@ -152,6 +159,7 @@
           root.setAttribute('data-use-chrome', 'true');
         }
       }
+      window.scrollTo(0,1);
       detectBrowser();
     </script>
     <!-- End detect Chrome -->
