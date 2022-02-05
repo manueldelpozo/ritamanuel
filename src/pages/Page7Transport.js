@@ -49,10 +49,10 @@ const PageTransport = ({ scroll }) => {
             {transportInfo?.map((interest, i) => (
                 <div key={interest.label} style={{ fontSize: 20 }}>
                     <ParallaxWrapper
-                        start="self"
-                        end={scroll.bottom}
+                        start={scroll.bottom - vh2px(40)}
+                        end={scroll.bottom - vh2px(10)}
                         animations={[
-                            ['translateX', vw2px(-10 * i), vw2px(0)],
+                            ['translateX', vw2px(-10 * i), 0],
                         ]}
                     >
                         <ExternalLink href={interest.link}>{t(interest.label)}</ExternalLink>
