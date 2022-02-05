@@ -59,6 +59,7 @@
     <meta name="color-scheme" content="only light">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
     <meta
       name="description"
       content="Invitacion a la boda Rita y Manuel"
@@ -98,6 +99,17 @@
       }
       :root {
           --bg-color: #f5efe7;
+      }
+      @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+        html {
+          transform: rotate(-90deg);
+          transform-origin: left top;
+          width: 100vh;
+          overflow-x: hidden;
+          position: absolute;
+          top: 100%;
+          left: 0;
+        }
       }
       body {
         margin: 0;

@@ -15,6 +15,7 @@ const TextDetails = styled.div`
 
 const Guest = styled.h1`
     font-size: 2.6em;
+    margin-bottom: 0;
 `;
 
 const Page0Intro = ({ guest, lang }) => {
@@ -24,25 +25,24 @@ const Page0Intro = ({ guest, lang }) => {
         <div style={{
             height: '100vh',
             display: 'flex',
-            justifyContent: 'flex-start',
+            justifyContent: 'space-around',
             alignItems: 'center',
             flexDirection: 'column',
             padding: '10%',
             borderBottom: '1px solid #ccc',
         }}>
-            {/*{lang.startsWith('pl') ? (*/}
-            {/*    <TextDetails>*/}
-            {/*        <h2>{t('dear')}</h2>*/}
-            {/*        <img src={rm} alt="divider" width="auto" height="200px" />*/}
-            {/*        {guest && <Guest>{guest}</Guest>}*/}
-            {/*    </TextDetails>*/}
-            {/*) : (*/}
+            <img src={rm} alt="divider" width="auto" height="200px" />
+            {!lang.startsWith('pl') ? (
+                <TextDetails>
+                    <h2>{t('dear')}</h2>
+                    {guest && <Guest>{guest}</Guest>}
+                </TextDetails>
+            ) : (
                 <TextDetails>
                     {guest && <Guest>{guest}</Guest>}
-                    <img src={rm} alt="divider" width="auto" height="200px" />
                     <h2>{t('dear')}</h2>
                 </TextDetails>
-            {/*)}*/}
+            )}
         </div>
     );
 };
