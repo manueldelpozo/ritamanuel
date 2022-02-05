@@ -60,7 +60,7 @@ const PageInvitation = ({ scroll }) => {
                     {t('intro')}
                 </TextHeader>
             </ParallaxWrapper>
-            <img src={angelDivider} alt="divider" width="auto" height="200px" style={{ filter: 'brightness(0.7)' }} />
+            <img src={angelDivider} alt="divider" width="auto" height="150px" style={{ filter: 'brightness(0.6)' }} />
             <div style={{ display: 'flex', width: '100vw', fontSize: '2em' }}>
                 <ParallaxWrapper
                     start="self"

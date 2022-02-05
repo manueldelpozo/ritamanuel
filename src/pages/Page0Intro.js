@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
-import divider from '../assets/divider.svg';
+import rm from '../assets/rm.svg';
 
 const TextDetails = styled.div`
     height: 50vh;
@@ -13,24 +13,36 @@ const TextDetails = styled.div`
     text-align: center;
 `;
 
-const Page0Intro = ({ guest }) => {
+const Guest = styled.h1`
+    font-size: 2.6em;
+`;
+
+const Page0Intro = ({ guest, lang }) => {
     const { t } = useTranslation();
 
     return (
         <div style={{
             height: '100vh',
             display: 'flex',
-            justifyContent: 'center',
+            justifyContent: 'flex-start',
             alignItems: 'center',
             flexDirection: 'column',
             padding: '10%',
             borderBottom: '1px solid #ccc',
         }}>
-            <TextDetails>
-                <h1>{t('dear')}</h1>
-                <img src={divider} alt="divider" width="auto" height="100px" />
-                {guest && <h1>{guest}</h1>}
-            </TextDetails>
+            {/*{lang.startsWith('pl') ? (*/}
+            {/*    <TextDetails>*/}
+            {/*        <h2>{t('dear')}</h2>*/}
+            {/*        <img src={rm} alt="divider" width="auto" height="200px" />*/}
+            {/*        {guest && <Guest>{guest}</Guest>}*/}
+            {/*    </TextDetails>*/}
+            {/*) : (*/}
+                <TextDetails>
+                    {guest && <Guest>{guest}</Guest>}
+                    <img src={rm} alt="divider" width="auto" height="200px" />
+                    <h2>{t('dear')}</h2>
+                </TextDetails>
+            {/*)}*/}
         </div>
     );
 };

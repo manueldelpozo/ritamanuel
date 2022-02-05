@@ -59,7 +59,7 @@ const WindRose = styled.img`
     height: auto;
     position: absolute;
     left: -88vw;
-    bottom: 60vh;
+    bottom: 55vh;
     z-index: 10;
     animation: fly 2s infinite ease-in-out alternate
 `;

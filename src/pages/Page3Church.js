@@ -81,7 +81,7 @@ const PageChurch = ({ scroll }) => {
                 start={scroll.top - 50} 
                 end={scroll.bottom}
                 animations={[
-                    ['translateY', -vh2px(20), 0],
+                    ['translateY', -vh2px(20), -vh2px(2)],
                     ['opacity', 0, 1],
                 ]}>
                 <TextHeader>

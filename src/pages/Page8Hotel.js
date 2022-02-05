@@ -15,7 +15,7 @@ const TextHeader = styled.h1`
 `;
 
 const Hotel = styled.img`
-    width: min(400px, 75vw);
+    width: min(400px, 70vw);
     height: auto;
 `;
 
@@ -42,7 +42,7 @@ const PageHotel = ({ scroll, lang, nights }) => {
                     ['translateY', vh2px(-5), vh2px(0)],
                 ]}>
                 <TextHeader>
-                    {t('hotel_intro')}
+                    <span style={{ fontSize: '0.7em' }}>{t('hotel_intro')}</span>
                     <ExternalLink href={`http://maps.google.com/?q=${hotelDetails.name} ${hotelDetails.address}`}>
                         {hotelDetails.name}
                     </ExternalLink>

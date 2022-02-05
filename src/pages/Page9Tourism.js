@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import ParallaxWrapper from '../components/ParallaxWrapper';
 import ExternalLink from '../components/ExternalLink';
 import tourismInfo from '../consts/tourismInfo';
-import beach from '../assets/beach.png';
+import palm from '../assets/palm.png';
 import coast from '../assets/coast.png';
 import { vh2px, vw2px } from '../helpers/parsers';
 
@@ -20,16 +20,18 @@ const TextHeader = styled.h1`
         font-size: 1.8em;
         margin-bottom: 0;
     }
+    @media (max-width: 450px) {
+        font-size: 3vh;
+    }
 `;
 
 const Beach = styled.img`
+    position: absolute;
+    top: 0;
+    left: 20px;
     width: min(200px, 40vw);
     height: auto;
-    align-self: center;
     margin: 0 16px;
-    @media (max-width: 768px) {
-      align-self: flex-start;
-    }
 `;
 
 const Coast = styled.div`
@@ -66,8 +68,8 @@ const PageTourism = ({ scroll, lang }) => {
                     {t('tourism_info')}
                 </TextHeader>
             </ParallaxWrapper>
-            {/*<Beach src={beach} />*/}
             <Coast>
+                <Beach src={palm} />
                 {tourismInfo?.map((town, i) => (
                     <div key={town.label} style={{
                         fontSize: 20,

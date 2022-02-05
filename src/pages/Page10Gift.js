@@ -8,18 +8,16 @@ import divider from '../assets/divider2.png';
 import gift from '../assets/gift.png';
 import { vh2px } from '../helpers/parsers';
 
-const bgColor = getComputedStyle(document.documentElement).getPropertyValue('--bg-color');
-
 const PageDetailsGift = styled.div`
     & .page-details__gift__intro {
         font-size: 1.2em;
         height: 10vh;
         width: 100vw;
-        margin: 0;
+        margin: 0 auto;
+        max-width: 700px;
         text-align: center;
         @media (max-width: 768px) {
             font-size: 1em;
-            background-color: ${bgColor};
         }
     }
     & .page-details__gift__iban {
@@ -39,7 +37,7 @@ const PageGift = ({ scroll, lang }) => {
             alignItems: 'center',
             flexDirection: 'column',
             marginTop: 20,
-            borderBottom: '1px solid #ccc',
+            // borderBottom: '1px solid #ccc',
         }}>
             <ParallaxWrapper
                 start={scroll.top}
@@ -72,7 +70,7 @@ const PageGift = ({ scroll, lang }) => {
                     <strong>{lang.startsWith('pl') ? bankDetails.titlePL : bankDetails.title}</strong>
                 </div>
                 <img src={divider} alt="divider" width="30%" height="auto" />
-                <h2>{t('thanks_advance')}</h2>
+                <h2 style={{ marginTop: 0 }}>{t('thanks_advance')}</h2>
             </PageDetailsGift>
         </div>
     );

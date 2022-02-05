@@ -1,6 +1,6 @@
 import { forwardRef } from 'react';
 import styled from 'styled-components';
-import cornerUrl from '../assets/corner.png';
+import cornerUrl from '../assets/corner.svg';
 
 const CornerImage = styled.div`
   background-image: url(${cornerUrl});

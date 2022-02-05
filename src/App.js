@@ -81,7 +81,7 @@ const App = ({ useChrome }) => {
   return (
     <div className="App">
       <Layout ref={scrollRef}>
-        <PageIntro guest={guest} />
+        <PageIntro guest={guest} lang={lang} />
         <PageInvitation scroll={getScrollPos(1)} />
         <PageJourney scroll={getScrollPos(2)} />
         <PageChurch scroll={getScrollPos(3)} />

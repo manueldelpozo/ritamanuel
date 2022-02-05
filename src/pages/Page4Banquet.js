@@ -6,7 +6,7 @@ import ExternalLink from '../components/ExternalLink';
 import createLinkCalendar from '../helpers/createLinkCalendar';
 import { vh2px } from '../helpers/parsers';
 import table from '../assets/table.png';
-import divider from '../assets/divider.svg';
+import lamp from '../assets/lamp.svg';
 import banquetDetails from '../consts/banquetDetails';
 
 const TextHeader = styled.h1`
@@ -100,7 +100,7 @@ const PageBanquet = ({ scroll }) => {
                     >
                         {banquetDetails.address}
                     </ExternalLink>
-                    <img src={divider} alt="divider" width="auto" height="100px" />
+                    <img src={lamp} alt="divider" width="auto" height="100px" />
                 </TextDetails>
             </ParallaxWrapper>
             <ParallaxWrapper
