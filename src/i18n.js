@@ -194,7 +194,7 @@ const resources = {
             'wrong_app_intro': 'Jeśli chcesz zobaczyć twoje zaproszenie na ślub, skorzystaj z innej aplikacji',
             'download_chrome': 'Tutaj pobierz Chrome',
             'wrong_app_copy': 'Skopiuj ten adres url:',
-            'wrong_app_paste': 'Wklej adres url w Chrome i ciesz się twoje zaproszenie na ślub :)',
+            'wrong_app_paste': 'Wklej adres url w Chrome i ciesz się zaproszeniem na ślub :)',
         }
     },
     pl_pl: {
@@ -242,7 +242,7 @@ const resources = {
             'wrong_app_intro': 'Jeśli chcielibyscie zobaczyć wasza zaproszenie na ślub, skorzystajcie z innej aplikacji',
             'download_chrome': 'Tutaj pobierzcie Chrome',
             'wrong_app_copy': 'Skopiujcie ten adres url:',
-            'wrong_app_paste': 'Wklejcie adres url w Chrome i ciesz się wasza zaproszenie na ślub :)',
+            'wrong_app_paste': 'Wklejcie adres url w Chrome i cieszcie się zaproszeniem na ślub :)',
         }
     },
     fr: {

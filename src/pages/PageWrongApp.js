@@ -6,7 +6,6 @@ import ButtonFrame from '../components/ButtonFrame';
 import CopyContent from '../components/CopyContent';
 
 const TextDetails = styled.div`
-    height: 50vh;
     padding: 0 10% 5%;
     width: 100vw;
     margin: 0;
@@ -18,29 +17,28 @@ const TextDetails = styled.div`
 const PageWrongApp = ({ url }) => {
     const { t } = useTranslation();
 
-    return (console.log(url),
+    return (
         <div style={{
             height: '100vh',
             display: 'flex',
-            justifyContent: 'center',
+            justifyContent: 'space-around',
             alignItems: 'center',
             flexDirection: 'column',
+            gap: 10,
             padding: '10%',
         }}>
             <TextDetails>
-                <h1>{t('wrong_app_intro')}</h1>
-                <img src={divider} alt="divider" width="auto" height="100px" />
-                <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
-                    <ButtonFrame href="https://www.google.com/chrome/">
-                        <strong>1.</strong> {t('download_chrome')}
-                    </ButtonFrame>
-                    <div style={{ fontSize: '1.2em' }}>
-                        <strong>2.</strong> {t('wrong_app_copy')}:
-                        <strong style={{ fontFamily: 'serif' }}><CopyContent content={url} /></strong>
-                    </div>
-                    <div style={{ fontSize: '1.2em' }}>3. {t('wrong_app_paste')}</div>
-                </div>
+                <h2 style={{ margin: '0 auto', maxWidth: 700 }}>{t('wrong_app_intro')}</h2>
             </TextDetails>
+            <img src={divider} alt="divider" width="auto" height="100px" />
+            <ButtonFrame href="https://www.google.com/chrome/">
+                <strong>1.</strong> {t('download_chrome')}
+            </ButtonFrame>
+            <div style={{ fontSize: '1.2em' }}>
+                <strong>2.</strong> {t('wrong_app_copy')}:
+                <strong style={{ fontFamily: 'serif', fontSize: 12 }}><CopyContent content={url} /></strong>
+            </div>
+            <div style={{ fontSize: '1.2em' }}>3. {t('wrong_app_paste')}</div>
         </div>
     );
 };
