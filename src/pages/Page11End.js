@@ -13,6 +13,7 @@ const PageEnd = ({ guest }) => {
             alignItems: 'center',
             flexDirection: 'column',
             padding: '10%',
+            borderBottom: '1px solid #ccc',
         }}>
             {guest && <h1>{guest}</h1>}
             <img src={divider} alt="divider" width="150" height="auto" />

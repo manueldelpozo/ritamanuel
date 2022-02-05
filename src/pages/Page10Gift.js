@@ -8,12 +8,19 @@ import divider from '../assets/divider2.png';
 import gift from '../assets/gift.png';
 import { vh2px } from '../helpers/parsers';
 
+const bgColor = getComputedStyle(document.documentElement).getPropertyValue('--bg-color');
+
 const PageDetailsGift = styled.div`
-    & > * {
-        margin: .7em;
-    }
     & .page-details__gift__intro {
         font-size: 1.2em;
+        height: 10vh;
+        width: 100vw;
+        margin: 0;
+        text-align: center;
+        @media (max-width: 768px) {
+            font-size: 1em;
+            background-color: ${bgColor};
+        }
     }
     & .page-details__gift__iban {
         font-family: serif;
@@ -21,7 +28,7 @@ const PageDetailsGift = styled.div`
     }
 `;
 
-const PageGift = ({ scroll }) => {
+const PageGift = ({ scroll, lang }) => {
     const { t } = useTranslation();
 
     return (
@@ -31,16 +38,16 @@ const PageGift = ({ scroll }) => {
             justifyContent: 'space-around',
             alignItems: 'center',
             flexDirection: 'column',
-            padding: '10%',
             marginTop: 20,
+            borderBottom: '1px solid #ccc',
         }}>
             <ParallaxWrapper
                 start={scroll.top}
                 end={scroll.bottom}
                 animations={[
-                    ['scale', 1.1, 0.8],
+                    ['scale', 1, 0.8],
                 ]}>
-                <h1>{t('gift_intro')}</h1>
+                <h1 className="page-details__gift__intro">{t('gift_intro')}</h1>
             </ParallaxWrapper>
             <ParallaxWrapper
                 start={scroll.top}
@@ -52,10 +59,11 @@ const PageGift = ({ scroll }) => {
             </ParallaxWrapper>
             <PageDetailsGift className="page-details__gift">
                 <div className="page-details__gift__iban">
-                    <CopyContent content={bankDetails.iban} noSpaces />
+                    <CopyContent content={lang.startsWith('pl') ? bankDetails.accountPL : bankDetails.iban} noSpaces />
                 </div>
                 <div className="page-details__gift__title">
-                    {t('gift_title')}:<br /><strong>{bankDetails.title}</strong>
+                    {t('gift_title')}:<br />
+                    <strong>{lang.startsWith('pl') ? bankDetails.titlePL : bankDetails.title}</strong>
                 </div>
                 <img src={divider} alt="divider" width="30%" height="auto" />
                 <h2>{t('thanks_advance')}</h2>

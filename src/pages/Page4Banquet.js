@@ -58,6 +58,7 @@ const PageBanquet = ({ scroll }) => {
             justifyContent: 'center',
             flexWrap: 'wrap',
             overflowX: 'clip',
+            borderBottom: '1px solid #ccc',
         }}>
             <ParallaxWrapper
                 start={scroll.top - vh2px(10)} 

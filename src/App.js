@@ -94,7 +94,7 @@ const App = ({ useChrome }) => {
               <Page9Tourism scroll={getScrollPos(8)} lang={lang.replace('_pl', '')} />
             </>
         )}
-        <PageGift scroll={getScrollPos(hotelNights[guest] ? 9 : 6)} />
+        <PageGift scroll={getScrollPos(hotelNights[guest] ? 9 : 6)} lang={lang} />
         <PageEnd guest={guest} />
         <PageConfirmation lang={lang} guest={guest} />
       </Layout>

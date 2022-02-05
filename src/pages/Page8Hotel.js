@@ -15,7 +15,7 @@ const TextHeader = styled.h1`
 `;
 
 const Hotel = styled.img`
-    width: min(400px, 80vw);
+    width: min(400px, 75vw);
     height: auto;
 `;
 
@@ -32,9 +32,10 @@ const PageHotel = ({ scroll, lang, nights }) => {
             alignItems: 'center',
             flexDirection: 'column',
             padding: '10%',
+            borderBottom: '1px solid #ccc',
         }}>
             <ParallaxWrapper
-                start={scroll.top}
+                start="self"
                 end={scroll.bottom - vh2px(20)}
                 animations={[
                     ['opacity', 0, 1],
@@ -72,7 +73,7 @@ const PageHotel = ({ scroll, lang, nights }) => {
                     ['translateY', vh2px(10), vh2px(0)],
                 ]}
             >
-                <TextHeader>
+                <h1 style={{ display: 'flex', gap: 10 }}>
                     <ExternalLink
                         href={createLinkCalendar({
                             text: t('wedding'),
@@ -86,8 +87,8 @@ const PageHotel = ({ scroll, lang, nights }) => {
                     >
                         {`${nights} ${t('night')}${nights > 1 ? getPlural(lang) : ''}`}
                     </ExternalLink>
-                    {`+ ${t('breakfast')}`}
-                </TextHeader>
+                    <span>{`+ ${t('breakfast')}`}</span>
+                </h1>
             </ParallaxWrapper>
         </div>
     );

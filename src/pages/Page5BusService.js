@@ -15,27 +15,28 @@ import divider from '../assets/divider.png';
 import divider2 from '../assets/divider2.png';
 
 const TextHeader = styled.h1`
-    height: 22vh;
-    padding: 5% 10% 0;
+    //height: 12vh;
+    padding: 10px 10%;
     width: 100vw;
-    margin: 0;
-    position: relative;
-    z-index: -1;
+    margin-top: 0;
+    margin-bottom: 15px;
+    // position: relative;
+    // z-index: -1;
     text-align: center;
     @media (max-width: 768px) {
-        font-size: 1.9em;
+        font-size: 2em;
+    }
+    @media (max-width: 450px) {
+        padding: 25px 25px 0;
+        margin-bottom: 0;
+        font-size: 1.7em;
     }
 `;
 
 const TextDetails = styled.div`
-    height: 50vh;
-    padding: 0 10% 5%;
+    padding: 0 10%;
     width: 100vw;
-    margin: 0;
-    position: relative;
-    z-index: 1;
     font-size: 1.3em;
-    font-weight: 700;
     text-align: center;
     @media (max-width: 768px) {
         font-size: 1.2em;
@@ -45,6 +46,7 @@ const TextDetails = styled.div`
 const Bus = styled.img`
     width: auto;
     height: 230px;
+    margin-top: 30px;
 `;
 
 const Wheel = styled.img`
@@ -75,7 +77,7 @@ const Journey = ({ from, to, departure }) => (
         <ExternalLink href={`http://maps.google.com/?q=${from.name} ${from.address}`}>
             {from.name}
         </ExternalLink>
-        <img src={divider2} alt="divider2" width="auto" height="15px" />
+        <img src={divider2} alt="divider2" width="auto" height="15" />
         <ExternalLink href={`http://maps.google.com/?q=${to.name} ${to.address}`}>
             {to.name}
         </ExternalLink>
@@ -91,17 +93,16 @@ const PageParty = ({ scroll }) => {
             width: '100vw',
             position: 'relative',
             display: 'flex',
-            // flexDirection: 'column',
-            // justifyContent: 'center',
             flexWrap: 'wrap',
             overflowX: 'clip',
+            borderBottom: '1px solid #ccc',
         }}>
             <ParallaxWrapper
                 start={scroll.top - vh2px(10)}
                 end={scroll.bottom - vh2px(20)}
                 animations={[
                     ['opacity', 0, 1],
-                    ['translateY', -vh2px(5), vh2px(5)],
+                    ['translateY', -vh2px(3), vh2px(0)],
                 ]}>
                 <TextHeader>
                     {t('transport_banquet')}
@@ -129,12 +130,12 @@ const PageParty = ({ scroll }) => {
                 start="self"
                 end={scroll.bottom}
                 animations={[
-                    ['translateY', vh2px(20), vh2px(-10)],
+                    ['translateY', vh2px(20), vh2px(-15)],
                     ['opacity', 0, 1],
                 ]}>
                 <TextDetails>
-                    <p>{t('transport_journeys')}</p>
-                    <img src={divider} alt="divider" width="auto" height="100px" />
+                    <p style={{ marginBottom: 0 }}>{t('transport_journeys')}</p>
+                    <img src={divider} alt="divider" width="auto" height="50" />
                     <Journey from={hotelDetails} to={banquetDetails} departure={banquetDetails.startTime} />
                     <Journey from={banquetDetails} to={hotelDetails} departure={banquetDetails.endTime} />
                     <Journey from={banquetDetails} to={hotelDetails} departure={banquetDetails.endTime2} />

@@ -75,6 +75,7 @@ const PageChurch = ({ scroll }) => {
             justifyContent: 'center',
             flexWrap: 'wrap',
             overflowX: 'clip',
+            borderBottom: '1px solid #ccc',
         }}>
             <ParallaxWrapper
                 start={scroll.top - 50} 

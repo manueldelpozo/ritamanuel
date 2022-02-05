@@ -24,6 +24,7 @@ const Page0Intro = ({ guest }) => {
             alignItems: 'center',
             flexDirection: 'column',
             padding: '10%',
+            borderBottom: '1px solid #ccc',
         }}>
             <TextDetails>
                 <h1>{t('dear')}</h1>

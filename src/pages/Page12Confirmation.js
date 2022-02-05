@@ -40,10 +40,10 @@ const PageConfirmation = ({ lang, guest }) => {
             <h1>{t('confirm')}</h1>
             <div style={{
                 display: 'flex',
-                gap: 56,
+                gap: 30,
                 flexWrap: 'wrap',
                 justifyContent: 'center',
-                marginTop: 40,
+                marginTop: 30,
             }}>
                 <ButtonFrame href={getHrefWithMessage(t('yesGo'), hasWhatsapp)}>
                     {t('yesGo')}

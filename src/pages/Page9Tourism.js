@@ -14,8 +14,11 @@ const TextHeader = styled.h1`
     padding: 10%;
     align-self: flex-start;
     @media (max-width: 768px) {
+        text-align: center;
         align-self: center;
-        padding: 20px 10% 10px;
+        padding: 15px;
+        font-size: 1.8em;
+        margin-bottom: 0;
     }
 `;
 
@@ -50,6 +53,7 @@ const PageTourism = ({ scroll, lang }) => {
             alignItems: 'flex-end',
             flexDirection: 'column',
             overflowX: 'clip',
+            borderBottom: '1px solid #ccc',
         }}>
             <ParallaxWrapper
                 start={scroll.top - vh2px(10)}
