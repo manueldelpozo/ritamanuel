@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ritamanuel/static/css/main.ac88a5dc.chunk.css",
-    "main.js": "/ritamanuel/static/js/main.c1d257fa.chunk.js",
-    "main.js.map": "/ritamanuel/static/js/main.c1d257fa.chunk.js.map",
+    "main.js": "/ritamanuel/static/js/main.bc5b090a.chunk.js",
+    "main.js.map": "/ritamanuel/static/js/main.bc5b090a.chunk.js.map",
     "runtime-main.js": "/ritamanuel/static/js/runtime-main.37502d55.js",
     "runtime-main.js.map": "/ritamanuel/static/js/runtime-main.37502d55.js.map",
     "static/js/2.3704eccb.chunk.js": "/ritamanuel/static/js/2.3704eccb.chunk.js",
@@ -10,7 +10,6 @@
     "index.html": "/ritamanuel/index.html",
     "static/css/main.ac88a5dc.chunk.css.map": "/ritamanuel/static/css/main.ac88a5dc.chunk.css.map",
     "static/js/2.3704eccb.chunk.js.LICENSE.txt": "/ritamanuel/static/js/2.3704eccb.chunk.js.LICENSE.txt",
-    "static/media/45degreee_fabric.26e6dbe3.png": "/ritamanuel/static/media/45degreee_fabric.26e6dbe3.png",
     "static/media/angel-divider.e6b14411.png": "/ritamanuel/static/media/angel-divider.e6b14411.png",
     "static/media/angel-wind.02d1229f.png": "/ritamanuel/static/media/angel-wind.02d1229f.png",
     "static/media/angel.8f70e2f2.png": "/ritamanuel/static/media/angel.8f70e2f2.png",
@@ -37,6 +36,6 @@
     "static/js/runtime-main.37502d55.js",
     "static/js/2.3704eccb.chunk.js",
     "static/css/main.ac88a5dc.chunk.css",
-    "static/js/main.c1d257fa.chunk.js"
+    "static/js/main.bc5b090a.chunk.js"
   ]
 }
