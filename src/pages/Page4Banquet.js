@@ -64,7 +64,6 @@ const PageBanquet = ({ scroll }) => {
                 start={scroll.top - vh2px(10)} 
                 end={scroll.bottom - vh2px(20)}
                 animations={[
-                    ['opacity', 0, 1],
                     ['translateY', -vh2px(5), vh2px(5)],
                 ]}>
                 <TextHeader>
@@ -76,7 +75,6 @@ const PageBanquet = ({ scroll }) => {
                 end={scroll.bottom}
                 animations={[
                     ['translateY', vh2px(35), vh2px(20)],
-                    ['opacity', 0, 1],
                 ]}>
                 <TextDetails>
                     <p>

@@ -61,7 +61,6 @@ const PageTourism = ({ scroll, lang }) => {
                 start={scroll.top - vh2px(10)}
                 end={scroll.bottom - vh2px(20)}
                 animations={[
-                    ['opacity', 0, 1],
                     ['translateX', vw2px(-20), vw2px(0)],
                 ]}>
                 <TextHeader>
@@ -83,7 +82,6 @@ const PageTourism = ({ scroll, lang }) => {
                             start={scroll.bottom - 580}
                             end={scroll.bottom}
                             animations={[
-                                ['opacity', 0, 1],
                                 ['translateX', vw2px(-20 * (i + 1)), vw2px(0)],
                             ]}>
                             <ExternalLink href={town.link(lang)} isBlack>{t(town.label)}</ExternalLink>

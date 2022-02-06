@@ -6,7 +6,6 @@ import { vh2px, vw2px } from '../helpers/parsers';
 import mapEurope from '../assets/mapEurope.jpeg';
 import plane from '../assets/plane.png';
 import windRose from '../assets/windRose.png';
-import fabric from '../assets/45degreee_fabric.png';
 
 const bgColor = getComputedStyle(document.documentElement).getPropertyValue('--bg-color');
 
@@ -73,7 +72,7 @@ const Murcia = styled.span`
     position: absolute;
     left: -77vw;
     bottom: 18vh;
-    transform: rotate(5deg);
+    transform: rotate(7deg);
     z-index: 9;
     text-shadow:
         -2px -2px 0 #000,
@@ -107,7 +106,6 @@ const PageJourney = ({ scroll }) => {
                 end={scroll.bottom - 100}
                 animations={[
                     ['translateY', 0, vh2px(10)],
-                    ['opacity', 0, 1],
                 ]}>
                 <TextHeader>{t('journey')}</TextHeader>
             </ParallaxWrapper>
@@ -134,7 +132,7 @@ const PageJourney = ({ scroll }) => {
                 start="self"
                 end={scroll.bottom}
                 animations={[
-                    ['translateY', -20, 0],
+                    ['translateY', -200, 0],
                 ]}>
                 <Murcia>{t('murcia')}</Murcia>
             </ParallaxWrapper>

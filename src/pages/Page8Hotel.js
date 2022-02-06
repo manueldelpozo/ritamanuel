@@ -20,7 +20,7 @@ const Hotel = styled.img`
 `;
 
 const Star = styled.div`
-    animation: round 10s infinite;
+    animation: round 4s infinite;
 `;
 
 const getPlural = (lang) => lang === 'pl' ? 'e' : 's';
@@ -42,7 +42,6 @@ const PageHotel = ({ scroll, lang, nights }) => {
                 start="self"
                 end={scroll.bottom - vh2px(20)}
                 animations={[
-                    ['opacity', 0, 1],
                     ['translateY', vh2px(-5), vh2px(0)],
                 ]}>
                 <TextHeader>
@@ -73,7 +72,6 @@ const PageHotel = ({ scroll, lang, nights }) => {
                 start={scroll.top + vh2px(70)}
                 end={scroll.bottom}
                 animations={[
-                    ['opacity', 0, 1],
                     ['translateY', vh2px(10), vh2px(0)],
                 ]}
             >

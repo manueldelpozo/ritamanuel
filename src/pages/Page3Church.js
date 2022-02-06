@@ -82,7 +82,6 @@ const PageChurch = ({ scroll }) => {
                 end={scroll.bottom}
                 animations={[
                     ['translateY', -vh2px(20), -vh2px(2)],
-                    ['opacity', 0, 1],
                 ]}>
                 <TextHeader>
                     {t('church')} <br /><span style={{ color: '#ac7d3d' }}>{churchDetails.name}</span>
@@ -93,7 +92,6 @@ const PageChurch = ({ scroll }) => {
                 end={scroll.bottom}
                 animations={[
                     ['translateY', vh2px(10), -vh2px(27)],
-                    ['opacity', 0, 1],
                 ]}>
                 <TextDetails>
                     <p>
@@ -129,7 +127,7 @@ const PageChurch = ({ scroll }) => {
                 start={scroll.top} 
                 end={scroll.bottom}
                 animations={[
-                    ['translateX', vw2px(20), 0],
+                    ['translateX', vw2px(30), 0],
                 ]}>
                 <Church />
             </ParallaxWrapper>

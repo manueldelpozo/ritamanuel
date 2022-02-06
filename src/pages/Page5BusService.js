@@ -15,13 +15,10 @@ import hotelDetails from '../consts/hotelDetails';
 import banquetDetails from '../consts/banquetDetails';
 
 const TextHeader = styled.h1`
-    //height: 12vh;
     padding: 10px 10%;
     width: 100vw;
     margin-top: 0;
     margin-bottom: 15px;
-    // position: relative;
-    // z-index: -1;
     text-align: center;
     @media (max-width: 768px) {
         font-size: 2em;
@@ -40,6 +37,7 @@ const TextDetails = styled.div`
     text-align: center;
     @media (max-width: 768px) {
         font-size: 1.2em;
+        margin-top: -100px;
     }
 `;
 
@@ -91,7 +89,6 @@ const PageParty = ({ scroll }) => {
         <div style={{
             height: '100vh',
             width: '100vw',
-            position: 'relative',
             display: 'flex',
             flexWrap: 'wrap',
             overflowX: 'clip',
@@ -101,7 +98,6 @@ const PageParty = ({ scroll }) => {
                 start={scroll.top - vh2px(10)}
                 end={scroll.bottom - vh2px(20)}
                 animations={[
-                    ['opacity', 0, 1],
                     ['translateY', -vh2px(3), vh2px(0)],
                 ]}>
                 <TextHeader>
@@ -126,20 +122,13 @@ const PageParty = ({ scroll }) => {
                     <Wheel src={wheel} />
                 </div>
             </ParallaxWrapper>
-            <ParallaxWrapper
-                start="self"
-                end={scroll.bottom}
-                animations={[
-                    ['translateY', vh2px(20), vh2px(-15)],
-                ]}>
-                <TextDetails>
-                    <p style={{ marginBottom: 0 }}>{t('transport_journeys')}</p>
-                    <img src={divider} alt="divider" width="auto" height="50" />
-                    <Journey from={hotelDetails} to={banquetDetails} departure={banquetDetails.startTime} />
-                    <Journey from={banquetDetails} to={hotelDetails} departure={banquetDetails.endTime} />
-                    <Journey from={banquetDetails} to={hotelDetails} departure={banquetDetails.endTime2} />
-                </TextDetails>
-            </ParallaxWrapper>
+            <TextDetails>
+                <p style={{ marginBottom: 0 }}>{t('transport_journeys')}</p>
+                <img src={divider} alt="divider" width="auto" height="50" />
+                <Journey from={hotelDetails} to={banquetDetails} departure={banquetDetails.startTime} />
+                <Journey from={banquetDetails} to={hotelDetails} departure={banquetDetails.endTime} />
+                <Journey from={banquetDetails} to={hotelDetails} departure={banquetDetails.endTime2} />
+            </TextDetails>
         </div>
     );
 };

@@ -38,7 +38,6 @@ const PageTransport = ({ scroll }) => {
                 start="self"
                 end={scroll.bottom - vh2px(20)}
                 animations={[
-                    ['opacity', 0, 1],
                     ['translateX', vw2px(-20), vw2px(0)],
                 ]}>
                 <TextHeader>
