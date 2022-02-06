@@ -53,7 +53,7 @@ const PageInvitation = ({ scroll }) => {
                 start={scroll.top - vh2px(10)} 
                 end={scroll.bottom - vh2px(20)}
                 animations={[
-                    ['translateY', -vh2px(5), vh2px(2)],
+                    ['translateY', -vh2px(3), vh2px(2)],
                 ]}>
                 <TextHeader>
                     {t('intro')}

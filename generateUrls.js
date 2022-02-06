@@ -15,7 +15,7 @@ const getInvitationMessage = ({ guest, lang, url, isFromRita }) => {
         pl: `Cześć ${guest} :) ${other} i ja mamy przyjemność zaprosić ciebe na nasz ślub 👰🤵. Kliknij poniższy link: ${url}`,
         pl_pl: `Cześć ${guest} :) ${other} i ja mamy przyjemność zaprosić was na nasz ślub 👰🤵. Kliknij poniższy link: ${url}`,
         en: `Hi ${guest} :) ${other} and I have the pleasure of inviting you to our wedding 👰🤵. Click on the following link: ${url}`,
-        fr: `Coucou ${guest} :) ${other} et j'ai le plaisir de vous inviter à notre mariage 👰🤵. Cliquez sur le lien suivant: ${url}`,
+        fr: `Coucou ${guest} :) ${other} et moi avons le plaisir de vous inviter à notre mariage 👰🤵. Cliquez sur le lien suivant: ${url}`,
     };
 
     return messages[lang];
