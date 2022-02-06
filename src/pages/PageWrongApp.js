@@ -14,6 +14,10 @@ const TextDetails = styled.div`
     text-align: center;
 `;
 
+const TextInstructions = styled.div`
+    font-size: 1.2em;
+`;
+
 const PageWrongApp = ({ url }) => {
     const { t } = useTranslation();
 
@@ -34,11 +38,16 @@ const PageWrongApp = ({ url }) => {
             <ButtonFrame href="https://www.google.com/chrome/">
                 <strong>1.</strong> {t('download_chrome')}
             </ButtonFrame>
-            <div style={{ fontSize: '1.2em' }}>
+            <TextInstructions>
                 <strong>2.</strong> {t('wrong_app_copy')}:
                 <strong style={{ fontFamily: 'serif', fontSize: 12 }}><CopyContent content={url} /></strong>
-            </div>
-            <div style={{ fontSize: '1.2em' }}>3. {t('wrong_app_paste')}</div>
+            </TextInstructions>
+            <TextInstructions>
+                <strong>3.</strong> {t('wrong_app_paste')}
+            </TextInstructions>
+            <TextInstructions>
+                <strong>4.</strong> {t('wrong_app_computer')}
+            </TextInstructions>
         </div>
     );
 };

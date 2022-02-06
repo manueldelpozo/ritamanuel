@@ -131,7 +131,6 @@ const PageParty = ({ scroll }) => {
                 end={scroll.bottom}
                 animations={[
                     ['translateY', vh2px(20), vh2px(-15)],
-                    ['opacity', 0, 1],
                 ]}>
                 <TextDetails>
                     <p style={{ marginBottom: 0 }}>{t('transport_journeys')}</p>

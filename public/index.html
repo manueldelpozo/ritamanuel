@@ -148,21 +148,17 @@
     -->
     <!-- Start detect Chrome -->
     <script type="text/javascript">
-      function detectBrowser() {
+      function detectGoodBrowser() {
         var useSamsung = navigator.userAgent.match(/SamsungBrowser/i);
         if(useSamsung) {
           return undefined;
         }
 
-        var useChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
-        var useSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && window['safari'].pushNotification));
-        if (useChrome || useSafari) {
-          var root = document.getElementById('root');
-          root.setAttribute('data-use-chrome', 'true');
-        }
+        var root = document.getElementById('root');
+        root.setAttribute('data-use-chrome', 'true');
       }
       window.scrollTo(0,1);
-      detectBrowser();
+      detectGoodBrowser();
     </script>
     <!-- End detect Chrome -->
   </body>

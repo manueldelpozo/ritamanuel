@@ -19,6 +19,10 @@ const Hotel = styled.img`
     height: auto;
 `;
 
+const Star = styled.div`
+    animation: round 10s infinite;
+`;
+
 const getPlural = (lang) => lang === 'pl' ? 'e' : 's';
 
 const PageHotel = ({ scroll, lang, nights }) => {
@@ -50,7 +54,7 @@ const PageHotel = ({ scroll, lang, nights }) => {
             </ParallaxWrapper>
             <div style={{ display: 'flex' }}>
                 {Array.from(Array(hotelDetails.stars).keys()).map(star => (
-                    <div key={`star${star}`}>
+                    <Star key={`star${star}`}>
                         <ParallaxWrapper
                             start={scroll.top + 100 * star}
                             end={scroll.bottom}
@@ -61,7 +65,7 @@ const PageHotel = ({ scroll, lang, nights }) => {
                         >
                             &#9733;
                         </ParallaxWrapper>
-                    </div>
+                    </Star>
                 ))}
             </div>
             <Hotel src={hotel} />

@@ -73,6 +73,7 @@ const Murcia = styled.span`
     position: absolute;
     left: -77vw;
     bottom: 18vh;
+    transform: rotate(5deg);
     z-index: 9;
     text-shadow:
         -2px -2px 0 #000,
@@ -81,11 +82,11 @@ const Murcia = styled.span`
         2px 2px 0 #000;
     @media (max-width: 760px) {
         left: -66vw;
-        font-size: 2.2em;
+        font-size: 2.3em;
     }
     @media (max-width: 450px) {  
       left: -55vw;
-      font-size: 2.1em;
+      font-size: 2.2em;
     }
 `;
  

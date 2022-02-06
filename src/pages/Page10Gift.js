@@ -26,6 +26,10 @@ const PageDetailsGift = styled.div`
     }
 `;
 
+const Gift = styled.img`
+    animation: scaling 3s infinite ease-in-out;
+`;
+
 const PageGift = ({ scroll, lang }) => {
     const { t } = useTranslation();
 
@@ -53,7 +57,7 @@ const PageGift = ({ scroll, lang }) => {
                 animations={[
                     ['scale', 0.8, 1.2],
                 ]}>
-                <img src={gift} height={vh2px(20)} width="auto"/>
+                <Gift src={gift} height={vh2px(20)} width="auto"/>
             </ParallaxWrapper>
             <PageDetailsGift className="page-details__gift">
                 <div>
