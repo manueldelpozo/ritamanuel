@@ -1,7 +1,10 @@
 'use strict';
 
 const fs = require('fs');
+const createHTML = require('create-html');
 const guestsJson = require('./src/consts/guests.json');
+const jsdom = require("jsdom");
+const { JSDOM } = jsdom;
 
 const PORT = 3000;
 const urlBase = 'https://manueldelpozo.github.io/ritamanuel';
@@ -10,12 +13,12 @@ const urlLocal = `http://localhost:${PORT}`
 const getInvitationMessage = ({ guest, lang, url, isFromRita }) => {
     const other = isFromRita ? 'Manu' : 'Rita';
     const messages = {
-        es: `Hola ${guest} :) ${other} y yo tenemos el gusto de invitarte a nuestra boda 👰🤵. Haz click en el siguente enlace: ${url}`,
-        es_pl: `Hola ${guest} :) ${other} y yo tenemos el gusto de invitaros a nuestra boda 👰🤵. Haz click en el siguente enlace: ${url}`,
-        pl: `Cześć ${guest} :) ${other} i ja mamy przyjemność zaprosić ciebe na nasz ślub 👰🤵. Kliknij poniższy link: ${url}`,
-        pl_pl: `Cześć ${guest} :) ${other} i ja mamy przyjemność zaprosić was na nasz ślub 👰🤵. Kliknij poniższy link: ${url}`,
-        en: `Hi ${guest} :) ${other} and I have the pleasure of inviting you to our wedding 👰🤵. Click on the following link: ${url}`,
-        fr: `Coucou ${guest} :) ${other} et moi avons le plaisir de vous inviter à notre mariage 👰🤵. Cliquez sur le lien suivant: ${url}`,
+        es: `Hola ${guest} 🙂 ${other} y yo tenemos el gusto de invitarte a nuestra boda 👰🤵. Haz click en el siguente enlace: ${url}`,
+        es_pl: `Hola ${guest} 🙂 ${other} y yo tenemos el gusto de invitaros a nuestra boda 👰🤵. Haz click en el siguente enlace: ${url}`,
+        pl: `Cześć ${guest} 🙂 ${other} i ja mamy przyjemność zaprosić Ciebe na Nasz ślub 👰🤵. Kliknij poniższy link: ${url}`,
+        pl_pl: `Cześć ${guest} 🙂 ${other} i ja mamy przyjemność zaprosić Was na Nasz ślub 👰🤵. Kliknij poniższy link: ${url}`,
+        en: `Hi ${guest} 🙂 ${other} and I have the pleasure of inviting you to our wedding 👰🤵. Click on the following link: ${url}`,
+        fr: `Coucou ${guest} 🙂 ${other} et moi avons le plaisir de vous inviter à notre mariage 👰🤵. Cliquez sur le lien suivant: ${url}`,
     };
 
     return messages[lang];
@@ -38,6 +41,50 @@ const getUrlListByLang = (lang, list) => list.map(guest => {
 });
 
 const urlLists = Object.entries(guestsJson).map(([lang, list]) => getUrlListByLang(lang, list));
+
+const generateBodyContent = (invitations) => {
+    const html = `<!DOCTYPE html>`;
+    const { document } = new JSDOM(html).window;
+    const tmp = document.createElement('div');
+    const list = document.createElement('ul');
+
+    invitations.flat().forEach(({ guest, lang, message }) => {
+        const listItem = document.createElement('li');
+        const copyBtn = document.createElement('button');
+        const guestText = document.createTextNode(`${guest} // ${lang} // `);
+        copyBtn.setAttribute("onclick",`copy('${message}')`);
+        copyBtn.innerHTML = 'Copy message';
+        listItem.appendChild(guestText);
+        listItem.appendChild(copyBtn);
+        list.appendChild(listItem);
+    });
+
+    tmp.appendChild(list);
+
+    return tmp.innerHTML;
+}
+
+const html = createHTML({
+    title: 'Invitations',
+    head: `<meta name="description" content="Invitations">
+           <script type="text/javascript">
+               function copy(message) {
+                    console.log(navigator)
+                    if ('clipboard' in navigator) {
+                        navigator.clipboard.writeText(message);
+                    } else {
+                        document.execCommand('copy', true, message);
+                    }
+                }
+            </script>
+    `,
+    body: generateBodyContent(urlLists),
+});
+
+fs.writeFile('public/invitations.html', html, function (err) {
+    if (err) throw err;
+    console.log('Invitations page created');
+});
 
 fs.writeFile('public/invitations.json', JSON.stringify(urlLists, null, 2), (err) => {
     if (err) throw err;
