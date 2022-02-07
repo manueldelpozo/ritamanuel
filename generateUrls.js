@@ -48,13 +48,18 @@ const generateBodyContent = (invitations) => {
     const tmp = document.createElement('div');
     const list = document.createElement('ul');
 
-    invitations.flat().forEach(({ guest, lang, message }) => {
+    invitations.flat().forEach(({ guest, lang, url, message }) => {
         const listItem = document.createElement('li');
+        const link = document.createElement('a');
         const copyBtn = document.createElement('button');
         const guestText = document.createTextNode(`${guest} // ${lang} // `);
+        link.href = url;
+        link.target = "_blank";
+        link.innerHTML =  '-> link to test <- ';
         copyBtn.setAttribute("onclick",`copy('${message}')`);
         copyBtn.innerHTML = 'Copy message';
         listItem.appendChild(guestText);
+        listItem.appendChild(link);
         listItem.appendChild(copyBtn);
         list.appendChild(listItem);
     });
