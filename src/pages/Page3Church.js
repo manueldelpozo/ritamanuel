@@ -81,7 +81,7 @@ const PageChurch = ({ scroll }) => {
                 start={scroll.top - 50} 
                 end={scroll.bottom}
                 animations={[
-                    ['translateY', -vh2px(10), -vh2px(2)],
+                    ['translateY', -vh2px(8), -vh2px(2)],
                 ]}>
                 <TextHeader>
                     {t('church')} <br /><span style={{ color: '#ac7d3d' }}>{churchDetails.name}</span>
@@ -91,7 +91,7 @@ const PageChurch = ({ scroll }) => {
                 start={scroll.top + 200} 
                 end={scroll.bottom}
                 animations={[
-                    ['translateY', vh2px(10), -vh2px(27)],
+                    ['translateY', vh2px(0), -vh2px(27)],
                 ]}>
                 <TextDetails>
                     <p>

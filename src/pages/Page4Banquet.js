@@ -71,7 +71,7 @@ const PageBanquet = ({ scroll }) => {
                 </TextHeader>
             </ParallaxWrapper>
             <ParallaxWrapper
-                start={scroll.top + vh2px(30)} 
+                start={scroll.top}
                 end={scroll.bottom}
                 animations={[
                     ['translateY', vh2px(35), vh2px(20)],

@@ -105,7 +105,7 @@ const PageJourney = ({ scroll }) => {
                 start={scroll.top - 100}
                 end={scroll.bottom - 100}
                 animations={[
-                    ['translateY', 0, vh2px(10)],
+                    ['translateY', 0, vh2px(8)],
                 ]}>
                 <TextHeader>{t('journey')}</TextHeader>
             </ParallaxWrapper>
@@ -121,9 +121,9 @@ const PageJourney = ({ scroll }) => {
                 start="self"
                 end={scroll.bottom}
                 animations={[
-                    ['translateX', vw2px(3), -vw2px(90)],
-                    ['translateY', -vh2px(20), vh2px(52)],
-                    ['scale', 1.3, 0.8],
+                    ['translateX', vw2px(1), -vw2px(90)],
+                    ['translateY', -vh2px(100), vh2px(53)],
+                    ['scale', 1.5, 0.8],
                     ['rotate', 0, 15],
                 ]}>
                 <Plane src={plane} />
