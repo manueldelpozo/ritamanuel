@@ -35,7 +35,8 @@ const getUrlListByLang = (lang, list) => list.map(guest => {
             lang,
             guest,
             url,
-            isFromRita: (['pl', 'pl_pl'].includes(lang) && guest !== 'Marcin') || (lang === 'en' && guest !== 'Filipa and Bruno'),
+            isFromRita: (['pl', 'pl_pl'].includes(lang) && guest !== 'Marcin')
+                || (lang === 'en' && !['Filipa and Bruno', 'Gabriela and Slavko'].includes(guest)),
         }),
     };
 });
