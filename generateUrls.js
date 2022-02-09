@@ -58,7 +58,10 @@ const generateBodyContent = (invitations) => {
         link.target = "_blank";
         link.innerHTML =  '-> link to test <- ';
         copyBtn.setAttribute("onclick",`copy('${message}')`);
-        copyBtn.innerHTML = 'Copy message';
+        copyBtn.style.fontSize = '32px';
+        copyBtn.style.padding = '10px';
+        copyBtn.style.margin = '20px 10px 30px';
+        copyBtn.innerHTML = `Copy message for ${guest}`;
         listItem.appendChild(guestText);
         listItem.appendChild(link);
         listItem.appendChild(copyBtn);
