@@ -299,12 +299,6 @@
       "message": "Cześć Norbert 🙂 Manu i ja mamy przyjemność zaprosić Ciebe na Nasz ślub 👰🤵 Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Norbert"
     },
     {
-      "guest": "Ola",
-      "lang": "pl",
-      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Ola",
-      "message": "Cześć Ola 🙂 Manu i ja mamy przyjemność zaprosić Ciebe na Nasz ślub 👰🤵 Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Ola"
-    },
-    {
       "guest": "Julia",
       "lang": "pl",
       "url": "https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Julia",
@@ -341,6 +335,12 @@
       "lang": "pl_pl",
       "url": "https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Ada%20i%20Patryk",
       "message": "Cześć Ada i Patryk 🙂 Manu i ja mamy przyjemność zaprosić Was na Nasz ślub 👰🤵 Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Ada%20i%20Patryk"
+    },
+    {
+      "guest": "Ola i Bartek",
+      "lang": "pl_pl",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Ola%20i%20Bartek",
+      "message": "Cześć Ola i Bartek 🙂 Manu i ja mamy przyjemność zaprosić Was na Nasz ślub 👰🤵 Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl_pl?guest=Ola%20i%20Bartek"
     },
     {
       "guest": "Agnieszka i Oskar",
