@@ -20,7 +20,7 @@ const Plane = styled.img`
     animation: fly 3s infinite ease-in-out alternate
 `;
 
-const PageTransport = ({ scroll }) => {
+const PageTransport = ({ scroll, lang }) => {
     const { t } = useTranslation();
 
     return (
@@ -54,7 +54,9 @@ const PageTransport = ({ scroll }) => {
                             ['translateX', vw2px(-10 * i), 0],
                         ]}
                     >
-                        <ExternalLink href={interest.link}>{t(interest.label)}</ExternalLink>
+                        <ExternalLink href={lang.startsWith('pl') ? interest.link_pl : interest.link}>
+                            {t(interest.label)}
+                        </ExternalLink>
                     </ParallaxWrapper>
                 </div>
             ))}

@@ -50,8 +50,8 @@ const Plane = styled.img`
     position: absolute;
     right: -200px;
     z-index: 10;
-    -webkit-filter: drop-shadow(7px 7px 4px #222);
-    filter: drop-shadow(7px 7px 4px #222);
+    -webkit-filter: drop-shadow(30px 20px 4px #00000099);;
+    filter: drop-shadow(30px 20px 4px #00000099);;
 `;
 
 const WindRose = styled.img`
@@ -68,7 +68,7 @@ const WindRose = styled.img`
 const Murcia = styled.span`
     color: #f9e6aa;
     font-weight: bolder;
-    font-size: 2.4em;
+    font-size: 2.5em;
     position: absolute;
     left: -77vw;
     bottom: 18vh;
@@ -81,11 +81,11 @@ const Murcia = styled.span`
         2px 2px 0 #000;
     @media (max-width: 760px) {
         left: -66vw;
-        font-size: 2.3em;
+        font-size: 2.4em;
     }
     @media (max-width: 450px) {  
       left: -55vw;
-      font-size: 2.2em;
+      font-size: 2.3em;
     }
 `;
  

@@ -53,9 +53,9 @@ const Church = styled.div`
 
 const Palm = styled.img`
     width: auto;
-    height: 50vh;
+    height: 42vh;
     position: absolute;
-    bottom: -15px;
+    bottom: -20px;
     left: -35vw;
     z-index: -1;
     @media (max-width: 768px) {
@@ -124,6 +124,7 @@ const PageChurch = ({ scroll }) => {
                 <Palm src={palm} />
             </ParallaxWrapper>
             <ParallaxWrapper
+                style={{ zIndex: -1 }}
                 start={scroll.top} 
                 end={scroll.bottom}
                 animations={[

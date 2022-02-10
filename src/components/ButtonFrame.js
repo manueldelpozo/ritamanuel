@@ -14,7 +14,8 @@ const ButtonContent = styled.div`
     width: 210px;
     height: 140px;
     background: none;
-    font-size: 1.2em;
+    font-size: 1.3em;
+    line-height: 1.1em;
     font-weight: bold;
 
     &:before {

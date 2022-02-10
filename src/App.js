@@ -89,7 +89,7 @@ const App = ({ useChrome }) => {
         <PageBusService scroll={getScrollPos(5)} />
         {hotelNights[guest] && (
             <>
-              <PageTravelInterest scroll={getScrollPos(6)} />
+              <PageTravelInterest scroll={getScrollPos(6)} lang={lang} />
               <PageHotel scroll={getScrollPos(7)} lang={lang} nights={hotelNights[guest]} />
               <Page9Tourism scroll={getScrollPos(8)} lang={lang.replace('_pl', '')} />
             </>

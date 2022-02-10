@@ -13,6 +13,7 @@ const ExternalLink = ({ children, href, width, isBlack }) => (
             textDecoration: 'overline',
             color: isBlack ? COLOR_PRIMARY : COLOR_SECONDARY,
             position: 'relative',
+            fontWeight: '700',
         }}
         without="true"
     >
