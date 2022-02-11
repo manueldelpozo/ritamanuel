@@ -31,7 +31,7 @@ const TextHeader = styled.h1`
 `;
 
 const TextDetails = styled.div`
-    padding: 0 10%;
+    padding: 0 5%;
     width: 100vw;
     font-size: 1.3em;
     text-align: center;

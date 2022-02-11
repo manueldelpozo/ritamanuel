@@ -3,7 +3,12 @@ import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
 import ParallaxWrapper from '../components/ParallaxWrapper';
 import { vh2px } from '../helpers/parsers';
-import rm from '../assets/rm.svg';
+import { ReactComponent as Rm } from '../assets/rm.svg';
+
+const Logo = styled(Rm)`
+    height: 200px;
+    width: auto;
+`;
 
 const TextDetails = styled.div`
     height: 50vh;
@@ -39,7 +44,7 @@ const Page0Intro = ({ scroll, guest, lang }) => {
                 animations={[
                     ['rotate', 0, 180],
                 ]}>
-                <img src={rm} alt="divider" width="auto" height="200px" />
+                <Logo />
             </ParallaxWrapper>
             {!lang.startsWith('pl') ? (
                 <TextDetails>

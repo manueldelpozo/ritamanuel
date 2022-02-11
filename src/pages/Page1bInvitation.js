@@ -83,7 +83,7 @@ const PageInvitation = ({ scroll }) => {
                         ['translateX', vw2px(20), vw2px(0)],
                     ]}>
                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', width: '50vw' }}>
-                        <span>Manuel</span>
+                        <span style={{ height: 55 }}>Manuel</span>
                         <Figure src={gentleman} />
                     </div>
                 </ParallaxWrapper>
