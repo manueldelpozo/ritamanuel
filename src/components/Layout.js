@@ -7,13 +7,12 @@ const CornerImage = styled.div`
   background-position: right bottom;
   background-size: 40%;
   background-repeat: no-repeat;
+  animation: reveal 1s ease-in-out;
 `;
 
 const MainContent = styled.div`
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-  // scroll-padding-top: 10vh;
-  // overflow-y: scroll;
   & > * {
     scroll-snap-align: start;
   }

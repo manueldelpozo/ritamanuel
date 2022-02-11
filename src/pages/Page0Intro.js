@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
+import ParallaxWrapper from '../components/ParallaxWrapper';
+import { vh2px } from '../helpers/parsers';
 import rm from '../assets/rm.svg';
 
 const TextDetails = styled.div`
@@ -18,7 +20,7 @@ const Guest = styled.h1`
     margin-bottom: 0;
 `;
 
-const Page0Intro = ({ guest, lang }) => {
+const Page0Intro = ({ scroll, guest, lang }) => {
     const { t } = useTranslation();
 
     return (
@@ -31,7 +33,14 @@ const Page0Intro = ({ guest, lang }) => {
             padding: '10%',
             borderBottom: '1px solid #ccc',
         }}>
-            <img src={rm} alt="divider" width="auto" height="200px" />
+            <ParallaxWrapper
+                start={scroll.bottom}
+                end={scroll.bottom + vh2px(70)}
+                animations={[
+                    ['rotate', 0, 180],
+                ]}>
+                <img src={rm} alt="divider" width="auto" height="200px" />
+            </ParallaxWrapper>
             {!lang.startsWith('pl') ? (
                 <TextDetails>
                     <h2>{t('dear')}</h2>

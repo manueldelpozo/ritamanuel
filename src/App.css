@@ -85,6 +85,15 @@
   }
 }
 
+@keyframes reveal {
+  from {
+    background-size: 0%;
+  }
+  to {
+    background-size: 40%;
+  }
+}
+
 .typing-text {
   overflow: hidden;
   white-space: nowrap;
