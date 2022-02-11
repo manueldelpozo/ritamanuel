@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ritamanuel/static/css/main.6315b1e3.chunk.css",
-    "main.js": "/ritamanuel/static/js/main.e71c4692.chunk.js",
-    "main.js.map": "/ritamanuel/static/js/main.e71c4692.chunk.js.map",
+    "main.css": "/ritamanuel/static/css/main.30f4ca3b.chunk.css",
+    "main.js": "/ritamanuel/static/js/main.0836d812.chunk.js",
+    "main.js.map": "/ritamanuel/static/js/main.0836d812.chunk.js.map",
     "runtime-main.js": "/ritamanuel/static/js/runtime-main.37502d55.js",
     "runtime-main.js.map": "/ritamanuel/static/js/runtime-main.37502d55.js.map",
-    "static/js/2.3704eccb.chunk.js": "/ritamanuel/static/js/2.3704eccb.chunk.js",
-    "static/js/2.3704eccb.chunk.js.map": "/ritamanuel/static/js/2.3704eccb.chunk.js.map",
+    "static/js/2.90aec54b.chunk.js": "/ritamanuel/static/js/2.90aec54b.chunk.js",
+    "static/js/2.90aec54b.chunk.js.map": "/ritamanuel/static/js/2.90aec54b.chunk.js.map",
     "index.html": "/ritamanuel/index.html",
-    "static/css/main.6315b1e3.chunk.css.map": "/ritamanuel/static/css/main.6315b1e3.chunk.css.map",
-    "static/js/2.3704eccb.chunk.js.LICENSE.txt": "/ritamanuel/static/js/2.3704eccb.chunk.js.LICENSE.txt",
+    "static/css/main.30f4ca3b.chunk.css.map": "/ritamanuel/static/css/main.30f4ca3b.chunk.css.map",
+    "static/js/2.90aec54b.chunk.js.LICENSE.txt": "/ritamanuel/static/js/2.90aec54b.chunk.js.LICENSE.txt",
     "static/media/angel-divider.e6b14411.png": "/ritamanuel/static/media/angel-divider.e6b14411.png",
     "static/media/angel-wind.02d1229f.png": "/ritamanuel/static/media/angel-wind.02d1229f.png",
     "static/media/angel.8f70e2f2.png": "/ritamanuel/static/media/angel.8f70e2f2.png",
@@ -34,8 +34,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.37502d55.js",
-    "static/js/2.3704eccb.chunk.js",
-    "static/css/main.6315b1e3.chunk.css",
-    "static/js/main.e71c4692.chunk.js"
+    "static/js/2.90aec54b.chunk.js",
+    "static/css/main.30f4ca3b.chunk.css",
+    "static/js/main.0836d812.chunk.js"
   ]
 }
