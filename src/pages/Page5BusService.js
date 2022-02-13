@@ -14,19 +14,16 @@ import divider2 from '../assets/divider2.png';
 import hotelDetails from '../consts/hotelDetails';
 import banquetDetails from '../consts/banquetDetails';
 
-const TextHeader = styled.h1`
+const TextHeader = styled.h2`
     padding: 10px 10%;
     width: 100vw;
     margin-top: 0;
     margin-bottom: 15px;
     text-align: center;
-    @media (max-width: 768px) {
-        font-size: 2em;
-    }
+    // font-size: min(30px,10vw);
     @media (max-width: 450px) {
         padding: 25px 25px 0;
         margin-bottom: 0;
-        font-size: 1.7em;
     }
 `;
 

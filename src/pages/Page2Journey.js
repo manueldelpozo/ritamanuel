@@ -9,7 +9,7 @@ import windRose from '../assets/windRose.png';
 
 const bgColor = getComputedStyle(document.documentElement).getPropertyValue('--bg-color');
 
-const TextHeader = styled.h1`
+const TextHeader = styled.h2`
     height: 70vh;
     // background-image: linear-gradient(${bgColor}, ${`${bgColor}00`});
     padding: 10%;
@@ -17,6 +17,7 @@ const TextHeader = styled.h1`
     margin: -10vh 0;
     position: relative;
     z-index: -1;
+    // font-size: min(30px,10vw);
 `;
 
 const MapEurope = styled.div`

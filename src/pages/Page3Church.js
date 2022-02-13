@@ -9,7 +9,7 @@ import churchDetails from '../consts/churchDetails';
 import iglesia from '../assets/iglesia.png';
 import palm from '../assets/palm.png';
 
-const TextHeader = styled.h1`
+const TextHeader = styled.h2`
     height: 20vh;
     padding: 10%;
     width: 100vw;
@@ -17,9 +17,7 @@ const TextHeader = styled.h1`
     position: relative;
     z-index: -1;
     text-align: start;
-    @media (max-width: 768px) {
-        font-size: 1.9em;
-    }
+    // font-size: min(30px,10vw);
 `;
 
 const TextDetails = styled.div`

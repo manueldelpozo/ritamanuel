@@ -37,7 +37,7 @@ const PageConfirmation = ({ lang, guest }) => {
             flexDirection: 'column',
             padding: '10%',
         }}>
-            <h1>{t('confirm')}</h1>
+            <h2>{t('confirm')}</h2>
             <div style={{
                 display: 'flex',
                 gap: 30,

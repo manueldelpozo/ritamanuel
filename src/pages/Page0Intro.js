@@ -18,10 +18,11 @@ const TextDetails = styled.div`
     position: relative;
     z-index: 1;
     text-align: center;
+    font-size: min(14px, 5vw);
 `;
 
 const Guest = styled.h1`
-    font-size: 2.6em;
+    font-size: 30px;
     margin-bottom: 0;
 `;
 

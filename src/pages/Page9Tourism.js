@@ -5,23 +5,23 @@ import ParallaxWrapper from '../components/ParallaxWrapper';
 import ExternalLink from '../components/ExternalLink';
 import tourismInfo from '../consts/tourismInfo';
 import palm from '../assets/palm.png';
+import boat from '../assets/boat.png';
 import coast from '../assets/coast.png';
 import { vh2px, vw2px } from '../helpers/parsers';
 
-const TextHeader = styled.h1`
+const TextHeader = styled.h2`
     text-align: end;
-    font-size: 2em;
-    padding: 10%;
+    padding: 10% 20%;
     align-self: flex-start;
+    // font-size: min(30px,10vw);
     @media (max-width: 768px) {
         text-align: center;
         align-self: center;
-        padding: 15px;
-        font-size: 1.8em;
+        padding: 25px;
         margin-bottom: 0;
     }
     @media (max-width: 450px) {
-        font-size: 3vh;
+        padding: 0 25px;
     }
 `;
 
@@ -42,6 +42,15 @@ const Coast = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+`;
+
+const Boat = styled.img`
+    height: 70px;
+    width: auto;
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    animation: fly 5s infinite ease-in-out alternate
 `;
 
 const PageTourism = ({ scroll, lang }) => {
@@ -71,7 +80,7 @@ const PageTourism = ({ scroll, lang }) => {
                 <Beach src={palm} />
                 {tourismInfo?.map((town, i) => (
                     <div key={town.label} style={{
-                        fontSize: 20,
+                        fontSize: 18,
                         textAlign: 'end',
                         width: 450,
                         position: 'absolute',
@@ -88,6 +97,7 @@ const PageTourism = ({ scroll, lang }) => {
                         </ParallaxWrapper>
                     </div>
                 ))}
+                <Boat src={boat} />
             </Coast>
         </div>
     );

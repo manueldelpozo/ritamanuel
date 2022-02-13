@@ -9,7 +9,7 @@ import angelDivider from '../assets/angel-divider.png';
 import angelWing from '../assets/angel-wind.png';
 import angel from '../assets/angel.png';
 
-const TextHeader = styled.h1`
+const TextHeader = styled.h2`
     height: 10vh;
     padding: 5% 10% 0;
     width: 100vw;
@@ -17,9 +17,7 @@ const TextHeader = styled.h1`
     position: relative;
     z-index: -1;
     text-align: center;
-    @media (max-width: 768px) {
-        font-size: 1.9em;
-    }
+    // font-size: min(30px,10vw);
 `;
 
 const Figure = styled.img`

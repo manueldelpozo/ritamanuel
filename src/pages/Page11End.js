@@ -15,17 +15,17 @@ const PageEnd = ({ guest }) => {
             padding: '10%',
             borderBottom: '1px solid #ccc',
         }}>
-            {guest && <h1>{guest}</h1>}
+            {guest && <h2>{guest}</h2>}
             <img src={divider} alt="divider" width="150" height="auto" />
-            <h2>
+            <h3>
                 <div>{t('end1')}</div>
                 <div>{t('end2')}</div>
                 <div>{t('end3')}</div>
-            </h2>
+            </h3>
             <img src={divider} alt="divider" width="150" height="auto" style={{ transform: 'rotate(180deg)' }} />
-            <h1>
+            <h2>
                 {t('end4')}
-            </h1>
+            </h2>
         </div>
     );
 };

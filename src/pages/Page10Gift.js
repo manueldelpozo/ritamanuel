@@ -6,20 +6,16 @@ import ParallaxWrapper from '../components/ParallaxWrapper';
 import bankDetails from '../consts/bankDetails';
 import divider from '../assets/divider2.png';
 import gift from '../assets/gift.png';
-import { vh2px } from '../helpers/parsers';
+import { vh2px, vw2px } from '../helpers/parsers';
+
+const TextIntro = styled.h2`
+    width: min(100vw, 750px);
+    margin: 0 auto;
+    text-align: center;
+    // font-size: min(30px,10vw);
+`;
 
 const PageDetailsGift = styled.div`
-    & .page-details__gift__intro {
-        font-size: 1.2em;
-        height: 10vh;
-        width: 100vw;
-        margin: 0 auto;
-        max-width: 700px;
-        text-align: center;
-        @media (max-width: 768px) {
-            font-size: 1em;
-        }
-    }
     & .page-details__gift__iban {
         font-family: serif;
         font-weight: bold;
@@ -41,15 +37,16 @@ const PageGift = ({ scroll, lang }) => {
             alignItems: 'center',
             flexDirection: 'column',
             marginTop: 20,
-            // borderBottom: '1px solid #ccc',
+            borderBottom: '1px solid #ccc',
         }}>
             <ParallaxWrapper
                 start={scroll.top}
                 end={scroll.bottom}
                 animations={[
                     ['scale', 1, 0.8],
+                    ['translateY', 0, vw2px(5)],
                 ]}>
-                <h1 className="page-details__gift__intro">{t('gift_intro')}</h1>
+                <TextIntro>{t('gift_intro')}</TextIntro>
             </ParallaxWrapper>
             <ParallaxWrapper
                 start={scroll.top}

@@ -9,17 +9,15 @@ import table from '../assets/table.png';
 import lamp from '../assets/lamp.svg';
 import banquetDetails from '../consts/banquetDetails';
 
-const TextHeader = styled.h1`
+const TextHeader = styled.h2`
     height: 10vh;
     padding: 5% 10% 0;
-    width: 100vw;
+    width: min(100vw, 750px);
     margin: 0;
     position: relative;
     z-index: -1;
     text-align: center;
-    @media (max-width: 768px) {
-        font-size: 1.9em;
-    }
+    // font-size: min(30px,10vw);
 `;
 
 const TextDetails = styled.div`
@@ -38,8 +36,8 @@ const TextDetails = styled.div`
 `;
 
 const Table = styled.img`
-    width: auto;
-    height: 40vh;
+    width: max(600px, 40vh);
+    height: auto;
     @media (max-width: 768px) {
         width: 100vw;
         height: auto;

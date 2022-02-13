@@ -20,7 +20,7 @@ const tourismInfo = [
         link: lang => `https://www.booking.com/city/es/santa-pola.${lang}.html`,
         position: {
             top: 200,
-            left: 70,
+            left: 75,
         }
     },
     {
@@ -28,7 +28,7 @@ const tourismInfo = [
         link: lang => `https://www.booking.com/city/es/torrevieja.${lang}.html`,
         position: {
             top: 270,
-            left: 105,
+            left: 110,
         }
     },
     {
@@ -36,15 +36,15 @@ const tourismInfo = [
         link: lang => `https://www.booking.com/holiday-homes/city/es/pilar-de-la-horadada.${lang}.html`,
         position: {
             top: 360,
-            left: 110,
+            left: 130,
         }
     },
     {
         label: 'La Manga',
         link: lang => `https://www.booking.com/city/es/la-manga-del-mar-menor.${lang}.html`,
         position: {
-            top: 460,
-            left: 115,
+            top: 445,
+            left: 130,
         }
     },
     {

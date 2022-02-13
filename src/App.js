@@ -52,7 +52,7 @@ const App = ({ useChrome }) => {
 
   useEffect(() => {
     if (lang) {
-      i18n.changeLanguage(lang)
+      i18n.changeLanguage(lang);
     }
   }, [i18n, lang]);
 

@@ -7,9 +7,9 @@ import transportInfo from '../consts/transportInfo';
 import plane from '../assets/plane.png';
 import { vh2px, vw2px } from '../helpers/parsers';
 
-const TextHeader = styled.h1`
+const TextHeader = styled.h2`
     text-align: end;
-    font-size: 2em;
+    // font-size: min(30px,10vw);
 `;
 
 const Plane = styled.img`
@@ -46,7 +46,7 @@ const PageTransport = ({ scroll, lang }) => {
             </ParallaxWrapper>
             <Plane src={plane} />
             {transportInfo?.map((interest, i) => (
-                <div key={interest.label} style={{ fontSize: 20 }}>
+                <div key={interest.label} style={{ fontSize: 18 }}>
                     <ParallaxWrapper
                         start={scroll.bottom - vh2px(40)}
                         end={scroll.bottom - vh2px(10)}

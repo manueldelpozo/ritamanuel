@@ -15,7 +15,7 @@ const TextDetails = styled.div`
 `;
 
 const TextInstructions = styled.div`
-    font-size: 1.2em;
+    font-size: min(14px, 5vw);
 `;
 
 const PageWrongApp = ({ url }) => {
