@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/ritamanuel/static/css/main.f65676eb.chunk.css",
-    "main.js": "/ritamanuel/static/js/main.a5dbd8f0.chunk.js",
-    "main.js.map": "/ritamanuel/static/js/main.a5dbd8f0.chunk.js.map",
+    "main.css": "/ritamanuel/static/css/main.286cf347.chunk.css",
+    "main.js": "/ritamanuel/static/js/main.06bc87bf.chunk.js",
+    "main.js.map": "/ritamanuel/static/js/main.06bc87bf.chunk.js.map",
     "runtime-main.js": "/ritamanuel/static/js/runtime-main.37502d55.js",
     "runtime-main.js.map": "/ritamanuel/static/js/runtime-main.37502d55.js.map",
     "static/js/2.c93d9e20.chunk.js": "/ritamanuel/static/js/2.c93d9e20.chunk.js",
     "static/js/2.c93d9e20.chunk.js.map": "/ritamanuel/static/js/2.c93d9e20.chunk.js.map",
     "index.html": "/ritamanuel/index.html",
-    "static/css/main.f65676eb.chunk.css.map": "/ritamanuel/static/css/main.f65676eb.chunk.css.map",
+    "static/css/main.286cf347.chunk.css.map": "/ritamanuel/static/css/main.286cf347.chunk.css.map",
     "static/js/2.c93d9e20.chunk.js.LICENSE.txt": "/ritamanuel/static/js/2.c93d9e20.chunk.js.LICENSE.txt",
     "static/media/angel-divider.e6b14411.png": "/ritamanuel/static/media/angel-divider.e6b14411.png",
     "static/media/angel-wind.02d1229f.png": "/ritamanuel/static/media/angel-wind.02d1229f.png",
@@ -36,7 +36,7 @@
   "entrypoints": [
     "static/js/runtime-main.37502d55.js",
     "static/js/2.c93d9e20.chunk.js",
-    "static/css/main.f65676eb.chunk.css",
-    "static/js/main.a5dbd8f0.chunk.js"
+    "static/css/main.286cf347.chunk.css",
+    "static/js/main.06bc87bf.chunk.js"
   ]
 }
