@@ -58,8 +58,6 @@ const PageHotel = ({ scroll, lang, nights }) => {
     const formattedDatesStay = React.useMemo(() => {
         return `${formatDateI18n(dateCheckIn, lang)}, ${formatDateI18n(dateCheckMid, lang)}`;
     },  [nights, lang, dateCheckIn]);
-    console.log(formattedDatesStay)
-
 
     return (
         <div style={{

@@ -5,7 +5,7 @@ import cornerUrl from '../assets/corner.svg';
 const CornerImage = styled.div`
   background-image: url(${cornerUrl});
   background-position: right bottom;
-  background-size: 40%;
+  background-size: min(40%, 200px);
   background-repeat: no-repeat;
   animation: reveal 1s ease-in-out;
 `;
