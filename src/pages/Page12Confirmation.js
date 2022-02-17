@@ -36,6 +36,7 @@ const PageConfirmation = ({ lang, guest }) => {
             alignItems: 'center',
             flexDirection: 'column',
             padding: '10%',
+            borderBottom: '1px solid #ccc',
         }}>
             <h2>{t('confirm')}</h2>
             <div style={{

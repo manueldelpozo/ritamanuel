@@ -17,8 +17,10 @@ import Page9Tourism from './pages/Page9Tourism';
 import PageGift from './pages/Page10Gift';
 import PageConfirmation from './pages/Page12Confirmation';
 import PageEnd from './pages/Page11End';
+import PageFlightAdvice from './pages/PageFlightAdvice';
 import PageWrongApp from './pages/PageWrongApp';
 import hotelNights from './consts/hotelNights.json';
+import guestsFromPoznan from './consts/guestsFromPoznan.json';
 import './App.css';
 
 const Footer = styled.footer`
@@ -34,7 +36,7 @@ const getScrollPos = (pageNumber) => ({
   bottom: document.documentElement.clientHeight * pageNumber,
 });
 
-const App = ({ useChrome }) => {
+const App = ({ useChrome, info }) => {
   const { search } = useLocation();
   const { lang } = useParams();
   const { i18n } = useTranslation();
@@ -42,6 +44,7 @@ const App = ({ useChrome }) => {
   const [scrolling, setScrolling] = useState(false);
   const [scrollTop, setScrollTop] = useState(0);
   const [isBottom, setIsBottom] = useState(false);
+  const [isInfoFlights, setIsInfoFlights] = useState(info);
 
   const guest = useMemo(() => {
     if (search.startsWith('?')) {
@@ -68,11 +71,37 @@ const App = ({ useChrome }) => {
     return () => window.removeEventListener("scroll", onScroll);
   }, [scrollTop]);
 
+  const scrollToTop = () => {
+    window.scroll({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }
+
+  const goToInfoFlights = () => {
+    setIsInfoFlights(true);
+    scrollToTop();
+  }
+  const goToInvitation = () => {
+    setIsInfoFlights(false);
+    scrollToTop();
+  }
+
   if (!useChrome) {
     return (
         <div className="App">
           <Layout ref={scrollRef}>
-            <PageWrongApp url={window.location.href}/>
+            <PageWrongApp url={window.location.href} />
+          </Layout>
+        </div>
+    )
+  }
+
+  if (isInfoFlights) {
+    return (
+        <div className="App">
+          <Layout ref={scrollRef}>
+            <PageFlightAdvice goToInvitation={goToInvitation} isInfoFlightsUrl={info} />
           </Layout>
         </div>
     )
@@ -89,7 +118,7 @@ const App = ({ useChrome }) => {
         <PageBusService scroll={getScrollPos(5)} />
         {hotelNights[guest] && (
             <>
-              <PageTravelInterest scroll={getScrollPos(6)} lang={lang} />
+              <PageTravelInterest scroll={getScrollPos(6)} lang={lang} fromPoznan={guestsFromPoznan[guest]} goToInfoFlights={goToInfoFlights} />
               <PageHotel scroll={getScrollPos(7)} lang={lang} nights={hotelNights[guest]} />
               <Page9Tourism scroll={getScrollPos(8)} lang={lang.replace('_pl', '')} />
             </>

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
+import ButtonFrame from '../components/ButtonFrame';
 import ParallaxWrapper from '../components/ParallaxWrapper';
 import ExternalLink from '../components/ExternalLink';
 import transportInfo from '../consts/transportInfo';
@@ -13,14 +14,14 @@ const TextHeader = styled.h2`
 `;
 
 const Plane = styled.img`
-    width: min(400px, 80vw);
+    width: min(400px, 70vw);
     height: auto;
     -webkit-filter: drop-shadow(7px 7px 4px #222);
     filter: drop-shadow(7px 7px 4px #222);
     animation: fly 3s infinite ease-in-out alternate
 `;
 
-const PageTransport = ({ scroll, lang }) => {
+const PageTransport = ({ scroll, lang, fromPoznan, goToInfoFlights }) => {
     const { t } = useTranslation();
 
     return (
@@ -30,6 +31,7 @@ const PageTransport = ({ scroll, lang }) => {
             justifyContent: 'space-around',
             alignItems: 'flex-end',
             flexDirection: 'column',
+            gap: 12,
             padding: '10%',
             marginBottom: 30,
             borderBottom: '1px solid #ccc',
@@ -60,6 +62,11 @@ const PageTransport = ({ scroll, lang }) => {
                     </ParallaxWrapper>
                 </div>
             ))}
+            {fromPoznan && (
+                <ButtonFrame onClick={goToInfoFlights}>
+                    Ceny i Informacje
+                </ButtonFrame>
+            )}
         </div>
     );
 };

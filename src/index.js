@@ -14,6 +14,7 @@ ReactDOM.render(
             <Routes>
                 <Route exact path={baseName} element={<App useChrome={useChrome} />} />
                 <Route exact path={`${baseName}/:lang`} element={<App useChrome={useChrome} />} />
+                <Route exact path={`${baseName}/info`} element={<App useChrome={useChrome} info />} />
             </Routes>
         </Router>
     </React.StrictMode>,

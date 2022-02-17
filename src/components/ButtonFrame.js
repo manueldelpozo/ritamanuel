@@ -17,6 +17,7 @@ const ButtonContent = styled.div`
     font-size: 1.3em;
     line-height: 1.1em;
     font-weight: bold;
+    font-family: 'Parisienne', serif;
 
     &:before {
         content: "";
