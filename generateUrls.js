@@ -13,12 +13,12 @@ const urlLocal = `http://localhost:${PORT}`
 const getInvitationMessage = ({ guest, lang, url, isFromRita }) => {
     const other = isFromRita ? 'Manu' : 'Rita';
     const messages = {
-        es: `Hola ${guest} 🙂 ${other} y yo tenemos el gusto de invitarte a nuestra boda 👰🤵 Haz click en el siguente enlace: ${url}`,
-        es_pl: `Hola ${guest} 🙂 ${other} y yo tenemos el gusto de invitaros a nuestra boda 👰🤵 Haz click en el siguente enlace: ${url}`,
-        pl: `Cześć ${guest} 🙂 ${other} i ja mamy przyjemność zaprosić Ciebe na Nasz ślub 👰🤵 Kliknij poniższy link: ${url}`,
-        pl_pl: `Cześć ${guest} 🙂 ${other} i ja mamy przyjemność zaprosić Was na Nasz ślub 👰🤵 Kliknij poniższy link: ${url}`,
-        en: `Hi ${guest} 🙂 ${other} and I have the pleasure of inviting you to our wedding 👰🤵 Click on the following link: ${url}`,
-        fr: `Coucou ${guest} 🙂 ${other} et moi avons le plaisir de vous inviter à notre mariage 👰🤵 Cliquez sur le lien suivant: ${url}`,
+        es: `Hola ${guest}! 🙂 ${other} y yo tenemos el gusto de invitarte a nuestra boda 👰🤵 Haz click en el siguente enlace: ${url} Avísame si tienes dificultad para ver la invitación. Saludos 👋`,
+        es_pl: `Hola ${guest}! 🙂 ${other} y yo tenemos el gusto de invitaros a nuestra boda 👰🤵 Haz click en el siguente enlace: ${url} Avisadme si tenéis dificultad para ver la invitación. Saludos 👋`,
+        pl: `Cześć ${guest}! 🙂 ${other} i ja mamy przyjemność zaprosić Ciebe na Nasz ślub 👰🤵 Kliknij poniższy link: ${url}`,
+        pl_pl: `Cześć ${guest}! 🙂 ${other} i ja mamy przyjemność zaprosić Was na Nasz ślub 👰🤵 Kliknij poniższy link: ${url}`,
+        en: `Hi ${guest}! 🙂 ${other} and I have the pleasure of inviting you to our wedding 👰🤵 Click on the following link: ${url}`,
+        fr: `Coucou ${guest}! 🙂 ${other} et moi avons le plaisir de vous inviter à notre mariage 👰🤵 Cliquez sur le lien suivant: ${url}`,
     };
 
     return messages[lang];
