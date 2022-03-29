@@ -2,6 +2,7 @@ import * as React from 'react';
 import styled from 'styled-components';
 import divider from '../assets/divider2.png';
 import ButtonFrame from '../components/ButtonFrame';
+import prices from '../consts/flightPrices';
 
 const PriceBlock = styled.div`
   text-align: start;
@@ -19,33 +20,6 @@ const Number = styled.div`
   min-width: 70px;
 `;
 
-const prices = {
-    ryanair_poznan_alicante: {
-        aug25: 483,
-        aug28: 364,
-        sep1: 660,
-    },
-    ryanair_wroclaw_alicante: {
-        aug28: 319,
-        aug30: 366,
-        sep1: 362,
-    },
-    ryanair_alicante_poznan: {
-        sep4: 428,
-        sep8: 543,
-        sep11: 248,
-    },
-    ryanair_alicante_wroclaw: {
-        sep4: 374,
-        sep6: 414,
-        sep8: 284,
-        sep11: 275,
-    },
-    alsa_airport_murcia_eur: 9.65,
-    hotel_eur: 60,
-}
-const EUR_PLN = 4.5;
-
 const PageFlightAdvice = ({ goToInvitation, isInfoFlightsUrl }) => {
     return (
         <div
@@ -62,10 +36,10 @@ const PageFlightAdvice = ({ goToInvitation, isInfoFlightsUrl }) => {
             }}
         >
             <div>
-                <h3>Ceny mogą ulec zmianie-stan na 16.02.2022r.</h3>
+                <h3>Ceny mogą ulec zmianie-stan na <mark>{prices.date}r.</mark></h3>
                 <p>Przygotowaliśmy również dla Was spis lotów. Cena dotyczy 1 osoby.</p>
                 <p>Dziecko powyżej 2 lat niestety liczone jest jako normalny bilet. Dzieci do 2 lat - płaci się 25 Euro.</p>
-                <p>Przed lotem wymagane jest aktualne  szczepienie lub  dla niezaszczepionych wykonany PCR 48 h przed lotem(koszt PCR około 300 zł).</p>
+                {/*<p>Przed lotem wymagane jest aktualne  szczepienie lub  dla niezaszczepionych wykonany PCR 48 h przed lotem(koszt PCR około 300 zł).</p>*/}
                 <p>RYANAIR:
                     <span> / Taryfa VALUE</span>
                     <span> / Bez ubezpieczenia lotu</span>
@@ -160,7 +134,7 @@ const PageFlightAdvice = ({ goToInvitation, isInfoFlightsUrl }) => {
                         <div>Alicante -> Wrocław</div>
                         <div>8 wrz.</div>
                     </div>
-                    <Number>{prices.ryanair_alicante_wroclaw.sep8} zł</Number>
+                    <Number><mark>{prices.ryanair_alicante_wroclaw.sep8} zł</mark></Number>
                 </PriceBlock>
                 <PriceBlock>
                     <div>
@@ -169,78 +143,7 @@ const PageFlightAdvice = ({ goToInvitation, isInfoFlightsUrl }) => {
                     </div>
                     <Number><mark>{prices.ryanair_alicante_wroclaw.sep11} zł</mark></Number>
                 </PriceBlock>
-
-                {/*<PriceBlock>*/}
-                {/*    <div>*/}
-                {/*        <div>RYANAIR:</div>*/}
-                {/*        <div>Wrocław -> Alicante</div>*/}
-                {/*        <div>1 wrz. 14:50</div>*/}
-                {/*        <div>Alicante -> Wrocław</div>*/}
-                {/*        <div>4 wrz. 20:40</div>*/}
-                {/*        <div>Taryfa VALUE</div>*/}
-                {/*        <div>Bez ubezpieczenia lotu</div>*/}
-                {/*        <div>Bez zarezerwowanego miejsca</div>*/}
-                {/*        <div>Mały bagaż</div>*/}
-                {/*    </div>*/}
-                {/*    <Number><mark>{prices.ryanair_wroclaw_alicante} zł</mark></Number>*/}
-                {/*</PriceBlock>*/}
-                {/*<img src={divider} alt="divider" width="100" height="auto"/>*/}
-                {/*<PriceBlock>*/}
-                {/*    <div>*/}
-                {/*        <div>RYANAIR:</div>*/}
-                {/*        <div>Poznań -> Alicante</div>*/}
-                {/*        <div>1 wrz. 07:00</div>*/}
-                {/*        <div>Alicante -> Poznań</div>*/}
-                {/*        <div>4 wrz. 20:10</div>*/}
-                {/*        <div>Taryfa VALUE</div>*/}
-                {/*        <div>Bez ubezpieczenia lotu</div>*/}
-                {/*        <div>Bez zarezerwowanego miejsca</div>*/}
-                {/*        <div>Mały bagaż</div>*/}
-                {/*    </div>*/}
-                {/*    <Number>{prices.ryanair_poznan_alicante} zł</Number>*/}
-                {/*</PriceBlock>*/}
                 <img src={divider} alt="divider" width="100" height="auto"/>
-                {/*<PriceBlock>*/}
-                {/*    <div>*/}
-                {/*        <div>Autobus ALSA:</div>*/}
-                {/*        <div>Lotnisko Alicante -> Murcia</div>*/}
-                {/*        <div>1 wrz.</div>*/}
-                {/*        <div>11:15 / 13:15 / 17:15 / 19:15 / 20:45</div>*/}
-                {/*        <div>Murcia -> Lotnisko Alicante</div>*/}
-                {/*        <div>4 wrz.</div>*/}
-                {/*        <div>09:00 / 11:00 / 13:00 / 17:00 / 19:00</div>*/}
-                {/*    </div>*/}
-                {/*    <Number>*/}
-                {/*        {prices.alsa_airport_murcia_eur} EUR <br />({(prices.alsa_airport_murcia_eur * EUR_PLN).toFixed(0)} zł)*/}
-                {/*    </Number>*/}
-                {/*</PriceBlock>*/}
-                {/*<img src={divider} alt="divider" width="100" height="auto"/>*/}
-                {/*<PriceBlock>*/}
-                {/*    <div>*/}
-                {/*        <div>Hotel</div>*/}
-                {/*        <div>1 wrz. - 2 wrz.</div>*/}
-                {/*    </div>*/}
-                {/*    <Number>*/}
-                {/*        {prices.hotel_eur} EUR <br />({(prices.hotel_eur * EUR_PLN).toFixed(0)} zł)*/}
-                {/*    </Number>*/}
-                {/*</PriceBlock>*/}
-                {/*<img src={divider} alt="divider" width="100" height="auto"/>*/}
-                {/*<PriceBlock>*/}
-                {/*    <strong>TOTAL z Wrocławia</strong>*/}
-                {/*    <Number>*/}
-                {/*        <mark>*/}
-                {/*            {(prices.ryanair_wroclaw_alicante + (prices.alsa_airport_murcia_eur + prices.hotel_eur) * EUR_PLN)*/}
-                {/*                .toFixed(0)} zł*/}
-                {/*        </mark>*/}
-                {/*    </Number>*/}
-                {/*</PriceBlock>*/}
-                {/*<PriceBlock>*/}
-                {/*    <strong>TOTAL z Poznania</strong>*/}
-                {/*    <Number>*/}
-                {/*        {(prices.ryanair_poznan_alicante + (prices.alsa_airport_murcia_eur + prices.hotel_eur) * EUR_PLN)*/}
-                {/*            .toFixed(0)} zł*/}
-                {/*    </Number>*/}
-                {/*</PriceBlock>*/}
             </div>
             <div style={{ marginBottom: 16 }}>
                 <p>
