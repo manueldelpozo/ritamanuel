@@ -85,12 +85,6 @@
       "message": "Hola Karras! 🙂 Rita y yo tenemos el gusto de invitarte a nuestra boda 👰🤵 Haz click en el siguente enlace: https://manueldelpozo.github.io/ritamanuel/#/es?guest=Karras Avísame si tienes dificultad para ver la invitación. Saludos 👋"
     },
     {
-      "guest": "Miguel",
-      "lang": "es",
-      "url": "https://manueldelpozo.github.io/ritamanuel/#/es?guest=Miguel",
-      "message": "Hola Miguel! 🙂 Rita y yo tenemos el gusto de invitarte a nuestra boda 👰🤵 Haz click en el siguente enlace: https://manueldelpozo.github.io/ritamanuel/#/es?guest=Miguel Avísame si tienes dificultad para ver la invitación. Saludos 👋"
-    },
-    {
       "guest": "Josep",
       "lang": "es",
       "url": "https://manueldelpozo.github.io/ritamanuel/#/es?guest=Josep",
@@ -255,6 +249,12 @@
       "message": "Hola Ana y Pablo! 🙂 Rita y yo tenemos el gusto de invitaros a nuestra boda 👰🤵 Haz click en el siguente enlace: https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Ana%20y%20Pablo Avisadme si tenéis dificultad para ver la invitación. Saludos 👋"
     },
     {
+      "guest": "María José y Miguel",
+      "lang": "es_pl",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Mar%C3%ADa%20Jos%C3%A9%20y%20Miguel",
+      "message": "Hola María José y Miguel! 🙂 Rita y yo tenemos el gusto de invitaros a nuestra boda 👰🤵 Haz click en el siguente enlace: https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Mar%C3%ADa%20Jos%C3%A9%20y%20Miguel Avisadme si tenéis dificultad para ver la invitación. Saludos 👋"
+    },
+    {
       "guest": "Leticia y Alfonso",
       "lang": "es_pl",
       "url": "https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Leticia%20y%20Alfonso",
@@ -277,6 +277,12 @@
       "lang": "es_pl",
       "url": "https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Olga%20y%20Andr%C3%A9s",
       "message": "Hola Olga y Andrés! 🙂 Rita y yo tenemos el gusto de invitaros a nuestra boda 👰🤵 Haz click en el siguente enlace: https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Olga%20y%20Andr%C3%A9s Avisadme si tenéis dificultad para ver la invitación. Saludos 👋"
+    },
+    {
+      "guest": "Kumi y Jose Carlos",
+      "lang": "es_pl",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Kumi%20y%20Jose%20Carlos",
+      "message": "Hola Kumi y Jose Carlos! 🙂 Rita y yo tenemos el gusto de invitaros a nuestra boda 👰🤵 Haz click en el siguente enlace: https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Kumi%20y%20Jose%20Carlos Avisadme si tenéis dificultad para ver la invitación. Saludos 👋"
     }
   ],
   [
