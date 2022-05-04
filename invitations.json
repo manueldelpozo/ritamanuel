@@ -95,6 +95,12 @@
       "lang": "es",
       "url": "https://manueldelpozo.github.io/ritamanuel/#/es?guest=Pablo",
       "message": "Hola Pablo! 🙂 Rita y yo tenemos el gusto de invitarte a nuestra boda 👰🤵 Haz click en el siguente enlace: https://manueldelpozo.github.io/ritamanuel/#/es?guest=Pablo Avísame si tienes dificultad para ver la invitación. Saludos 👋"
+    },
+    {
+      "guest": "Perico",
+      "lang": "es",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/es?guest=Perico",
+      "message": "Hola Perico! 🙂 Rita y yo tenemos el gusto de invitarte a nuestra boda 👰🤵 Haz click en el siguente enlace: https://manueldelpozo.github.io/ritamanuel/#/es?guest=Perico Avísame si tienes dificultad para ver la invitación. Saludos 👋"
     }
   ],
   [
@@ -283,6 +289,12 @@
       "lang": "es_pl",
       "url": "https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Kumi%20y%20Jose%20Carlos",
       "message": "Hola Kumi y Jose Carlos! 🙂 Rita y yo tenemos el gusto de invitaros a nuestra boda 👰🤵 Haz click en el siguente enlace: https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Kumi%20y%20Jose%20Carlos Avisadme si tenéis dificultad para ver la invitación. Saludos 👋"
+    },
+    {
+      "guest": "Inma y Jose María",
+      "lang": "es_pl",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Inma%20y%20Jose%20Mar%C3%ADa",
+      "message": "Hola Inma y Jose María! 🙂 Rita y yo tenemos el gusto de invitaros a nuestra boda 👰🤵 Haz click en el siguente enlace: https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Inma%20y%20Jose%20Mar%C3%ADa Avisadme si tenéis dificultad para ver la invitación. Saludos 👋"
     }
   ],
   [
@@ -321,6 +333,12 @@
       "lang": "pl",
       "url": "https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Ciocia%20Majka",
       "message": "Cześć Ciocia Majka! 🙂 Manu i ja mamy przyjemność zaprosić Ciebe na Nasz ślub 👰🤵 Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Ciocia%20Majka"
+    },
+    {
+      "guest": "Mateusz",
+      "lang": "pl",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Mateusz",
+      "message": "Cześć Mateusz! 🙂 Manu i ja mamy przyjemność zaprosić Ciebe na Nasz ślub 👰🤵 Kliknij poniższy link: https://manueldelpozo.github.io/ritamanuel/#/pl?guest=Mateusz"
     }
   ],
   [
