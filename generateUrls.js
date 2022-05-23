@@ -3,6 +3,7 @@
 const fs = require('fs');
 const createHTML = require('create-html');
 const guestsJson = require('./src/consts/guests.json');
+const hotelNightsJson = require('./src/consts/hotelNights.json');
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 
@@ -42,12 +43,19 @@ const getUrlListByLang = (lang, list) => list.map(guest => {
 });
 
 const urlLists = Object.entries(guestsJson).map(([lang, list]) => getUrlListByLang(lang, list));
+const hotelNightsList = Object.entries(hotelNightsJson);
+const nightPrice = {
+    1: 57,
+    2: 114,
+};
+const breakfastPrice = 10;
 
-const generateBodyContent = (invitations) => {
+const generateBodyContent = (invitations, hotelNights) => {
     const html = `<!DOCTYPE html>`;
     const { document } = new JSDOM(html).window;
     const tmp = document.createElement('div');
     const list = document.createElement('ul');
+    const listNights = document.createElement('ul');
 
     invitations.flat().forEach(({ guest, lang, url, message }) => {
         const listItem = document.createElement('li');
@@ -68,7 +76,20 @@ const generateBodyContent = (invitations) => {
         list.appendChild(listItem);
     });
 
+    hotelNights.flat().forEach(({ guest, nights }) => {
+        const listItem = document.createElement('li');
+        const total = document.createElement('strong');
+        const guestNumber = ['y', 'i', 'et', 'and'].includes(guest) ? 2 : 1;
+        const guestText = document.createTextNode(`${guest} // ${nights} nights // ${nightPrice[nights]} + breakfast(${breakfastPrice * guestNumber}) `);
+        const totalText = document.createTextNode(`Total // ${nightPrice[nights] + breakfastPrice * guestNumber}) `);
+        listItem.appendChild(guestText);
+        total.appendChild(totalText);
+        listItem.appendChild(total);
+        listNights.appendChild(listItem);
+    });
+
     tmp.appendChild(list);
+    tmp.appendChild(listNights);
 
     return tmp.innerHTML;
 }
@@ -87,7 +108,7 @@ const html = createHTML({
                 }
             </script>
     `,
-    body: generateBodyContent(urlLists),
+    body: generateBodyContent(urlLists, hotelNightsList),
 });
 
 fs.writeFile('public/invitations.html', html, function (err) {

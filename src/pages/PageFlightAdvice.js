@@ -54,14 +54,14 @@ const PageFlightAdvice = ({ goToInvitation, isInfoFlightsUrl }) => {
                         <div>Poznań -> Alicante</div>
                         <div>25 srp.</div>
                     </div>
-                    <Number>{prices.ryanair_poznan_alicante.aug25} zł</Number>
+                    <Number><mark>{prices.ryanair_poznan_alicante.aug25} zł</mark></Number>
                 </PriceBlock>
                 <PriceBlock>
                     <div>
                         <div>Poznań -> Alicante</div>
                         <div>28 srp.</div>
                     </div>
-                    <Number><mark>{prices.ryanair_poznan_alicante.aug28} zł</mark></Number>
+                    <Number>{prices.ryanair_poznan_alicante.aug28} zł</Number>
                 </PriceBlock>
                 <PriceBlock>
                     <div>
@@ -76,14 +76,14 @@ const PageFlightAdvice = ({ goToInvitation, isInfoFlightsUrl }) => {
                         <div>Wrocław -> Alicante</div>
                         <div>28 srp.</div>
                     </div>
-                    <Number><mark>{prices.ryanair_wroclaw_alicante.aug28} zł</mark></Number>
+                    <Number>{prices.ryanair_wroclaw_alicante.aug28} zł</Number>
                 </PriceBlock>
                 <PriceBlock>
                     <div>
                         <div>Wrocław -> Alicante</div>
                         <div>30 srp.</div>
                     </div>
-                    <Number>{prices.ryanair_wroclaw_alicante.aug30} zł</Number>
+                    <Number><mark>{prices.ryanair_wroclaw_alicante.aug30} zł</mark></Number>
                 </PriceBlock>
                 <PriceBlock>
                     <div>
@@ -127,14 +127,14 @@ const PageFlightAdvice = ({ goToInvitation, isInfoFlightsUrl }) => {
                         <div>Alicante -> Wrocław</div>
                         <div>6 wrz.</div>
                     </div>
-                    <Number>{prices.ryanair_alicante_wroclaw.sep6} zł</Number>
+                    <Number><mark>{prices.ryanair_alicante_wroclaw.sep6} zł</mark></Number>
                 </PriceBlock>
                 <PriceBlock>
                     <div>
                         <div>Alicante -> Wrocław</div>
                         <div>8 wrz.</div>
                     </div>
-                    <Number><mark>{prices.ryanair_alicante_wroclaw.sep8} zł</mark></Number>
+                    <Number>{prices.ryanair_alicante_wroclaw.sep8} zł</Number>
                 </PriceBlock>
                 <PriceBlock>
                     <div>
