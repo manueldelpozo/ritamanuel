@@ -43,7 +43,7 @@ const getUrlListByLang = (lang, list) => list.map(guest => {
 });
 
 const urlLists = Object.entries(guestsJson).map(([lang, list]) => getUrlListByLang(lang, list));
-const hotelNightsList = Object.entries(hotelNightsJson);
+const hotelNightsList = Object.entries(hotelNightsJson).map(([guest, nights]) => ({ guest, nights }));
 const nightPrice = {
     1: 57,
     2: 114,
@@ -81,7 +81,7 @@ const generateBodyContent = (invitations, hotelNights) => {
         const total = document.createElement('strong');
         const guestNumber = ['y', 'i', 'et', 'and'].includes(guest) ? 2 : 1;
         const guestText = document.createTextNode(`${guest} // ${nights} nights // ${nightPrice[nights]} + breakfast(${breakfastPrice * guestNumber}) `);
-        const totalText = document.createTextNode(`Total // ${nightPrice[nights] + breakfastPrice * guestNumber}) `);
+        const totalText = document.createTextNode(`Total // ${nightPrice[nights] + breakfastPrice * guestNumber} EUR`);
         listItem.appendChild(guestText);
         total.appendChild(totalText);
         listItem.appendChild(total);
