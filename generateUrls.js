@@ -79,7 +79,7 @@ const generateBodyContent = (invitations, hotelNights) => {
     hotelNights.flat().forEach(({ guest, nights }) => {
         const listItem = document.createElement('li');
         const total = document.createElement('strong');
-        const guestNumber = ['y', 'i', 'et', 'and'].includes(guest) ? 2 : 1;
+        const guestNumber = guest.split(' ').some(word => [' y ', ' i ', ' et ', ' and '].includes(word)) ? 2 : 1;
         const guestText = document.createTextNode(`${guest} // ${nights} nights // ${nightPrice[nights]} + breakfast(${breakfastPrice * guestNumber}) `);
         const totalText = document.createTextNode(`Total // ${nightPrice[nights] + breakfastPrice * guestNumber} EUR`);
         listItem.appendChild(guestText);
