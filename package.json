@@ -28,7 +28,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "rm ./public/invitations.json && node ./generateUrls.js && npm run build && cp ./public/404.html ./build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "addguests": "npm run predeploy && git add . && git commit -a -m 'add guests' && git push && npm run deploy"
   },
   "eslintConfig": {
     "extends": [
