@@ -51,13 +51,15 @@ const Wheel = styled.img`
     animation: round 2s infinite linear;
 `;
 
+const TRAVEL_TIME_MIN = 45;
+
 const Journey = ({ from, to, departure }) => (
     <div style={{ display: 'flex', justifyContent: 'center', gap: 15, fontSize: 'max(14px, 1.5vw)', marginBottom: 16 }}>
         <ExternalLink
             href={createLinkCalendar({
                 text: `Bus ${from.name} - ${to.name}`,
                 dates: [
-                    subMinutes(new Date(`${banquetDetails.startDate} ${departure.split(' ')[0]}`), 30),
+                    subMinutes(new Date(`${banquetDetails.startDate} ${departure.split(' ')[0]}`), TRAVEL_TIME_MIN),
                     `${banquetDetails.startDate} ${departure.split(' ')[0]}`,
                 ],
                 details: `Bus ${from.name} - ${to.name}`,
@@ -66,7 +68,7 @@ const Journey = ({ from, to, departure }) => (
             isBlack
         >
             <span style={{ fontSize: 12 }}>
-                {format(subMinutes(new Date(`${banquetDetails.startDate} ${departure.split(' ')[0]}`), 30), 'hh:mm a')}
+                {format(subMinutes(new Date(`${banquetDetails.startDate} ${departure.split(' ')[0]}`), TRAVEL_TIME_MIN), 'HH:mm a')}
             </span>
         </ExternalLink>
         <ExternalLink href={`http://maps.google.com/?q=${from.name} ${from.address}`}>
