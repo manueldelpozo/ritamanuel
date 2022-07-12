@@ -26,7 +26,13 @@ const Gift = styled.img`
     animation: scaling 3s infinite ease-in-out;
 `;
 
-const PageGift = ({ scroll, lang }) => {
+const getAccountNumber = ({ iban, accountPL, accountPL2, list2 }, guest, isPl) => {
+    if (!isPl) return iban;
+    if (list2.includes(guest)) return accountPL2;
+    return accountPL;
+}
+
+const PageGift = ({ scroll, lang, guest }) => {
     const { t } = useTranslation();
 
     return (
@@ -61,7 +67,7 @@ const PageGift = ({ scroll, lang }) => {
                     {t('gift_nr_account')}:<br />
                     <div className="page-details__gift__iban">
                         <CopyContent
-                            content={lang.startsWith('pl') ? bankDetails.accountPL : bankDetails.iban}
+                            content={getAccountNumber(bankDetails, guest, lang.startsWith('pl'))}
                             noSpaces
                         />
                     </div>
