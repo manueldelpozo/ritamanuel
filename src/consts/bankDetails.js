@@ -9,6 +9,10 @@ const bankDetails = {
     list2: [
         'Hania i Tadeusz',
         'Dorota i Michał',
+        'Karolina i Piotr',
+        'Aleksandra i Rafał',
+        'Mateusz',
+        'Marcin',
     ],
 };
 
