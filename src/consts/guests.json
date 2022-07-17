@@ -1,6 +1,5 @@
 {
     "es": [
-        "Abuela Micaela",
         "David",
         "Daniel",
         "María",
@@ -10,7 +9,6 @@
         "Consue",
         "Beatriz",
         "Carmen",
-        "Esperanza",
         "Fulgen",
         "Jesús",
         "Karras",
@@ -78,14 +76,7 @@
     ],
     "pl_pl": [
         "Mama i Tata",
-        "Sandra i Piotr",
-        "Asia i Jarek",
-        "Ada i Patryk",
-        "Ola i Bartek",
-        "Agnieszka i Oskar",
         "Sylwia i Tomek",
-        "Dominika i Przemek",
-        "Oliwia i Damian",
         "Ewelina i Robert",
         "Beata i Andrzej",
         "Joanna i Grzegorz",
@@ -103,15 +94,12 @@
         "Joanna i Michał z synem",
         "Iwona i Dawid",
         "Aleksandra i Rafał",
-        "Ania i Jacek",
         "Karolina i Piotr",
         "Karolina, Witek i Dorota"
     ],
     "en": [
-        "Filipa and Bruno",
         "Ewa and Miguel",
-        "Magda and Vishal",
-        "Gabriela and Slavko"
+        "Magda and Vishal"
     ],
     "fr": [
         "Chloè et Özgür"
