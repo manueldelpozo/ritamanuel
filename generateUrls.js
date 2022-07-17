@@ -14,7 +14,7 @@ const urlLocal = `http://localhost:${PORT}`
 const getInvitationMessage = ({ guest, lang, url, isFromRita, messageType = 'invitations' }) => {
     const other = isFromRita ? 'Manu' : 'Rita';
     const messages = {
-        invitation: {
+        invitations: {
             es: `Hola ${guest}! 🙂 ${other} y yo tenemos el gusto de invitarte a nuestra boda 👰🤵 Haz click en el siguente enlace: ${url} Avísame si tienes dificultad para ver la invitación. Saludos 👋`,
             es_pl: `Hola ${guest}! 🙂 ${other} y yo tenemos el gusto de invitaros a nuestra boda 👰🤵 Haz click en el siguente enlace: ${url} Avisadme si tenéis dificultad para ver la invitación. Saludos 👋`,
             pl: `Cześć ${guest}! 🙂 ${other} i ja mamy przyjemność zaprosić Ciebe na Nasz ślub 👰🤵 Kliknij poniższy link: ${url}`,
