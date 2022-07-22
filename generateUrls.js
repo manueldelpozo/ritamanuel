@@ -32,8 +32,8 @@ const getInvitationMessage = ({ guest, lang, url, isFromRita, messageType = 'inv
             fr: `Coucou ${guest}! 🙂 Rappelez-vous simplement que ${other} vous attendons le 3 septembre pour notre mariage 👰🤵 Si vous ne trouvez pas l'invitation avec tous les détails, la revoilà: ${url}. À bientôt 👋`,
         },
         churchNeo: {
-            es: `Hola ${guest}! 🙂 ${other}, yo Manuel y mis padres Luis y María Angéles tenemos el gusto de invitarte a nuestra boda 👰🤵 el próximo 3 de septiembre en Santa Eulalia. Haz click en el siguente enlace: ${url} Avísame si tienes dificultad para ver la invitación. Saludos 👋`,
-            es_pl: `Hola ${guest}! 🙂 ${other} y yo Manuel y mis padres Luis y María Angéles tenemos el gusto de invitaros a nuestra boda 👰🤵 el próximo 3 de septiembre en Santa Eulalia. Haz click en el siguente enlace: ${url} Avisadme si tenéis dificultad para ver la invitación. Saludos 👋`,
+            es: `Hola ${guest}! soy Manuel del Pozo. Te escribo porque Rita y yo junto a mis padres Luis y María Angéles tenemos el gusto de invitarte a nuestra boda 👰🤵 el próximo 3 de septiembre en Santa Eulalia. Haz click en el siguente enlace: ${url} Avísame si tienes dificultad para ver la invitación. Saludos 👋`,
+            es_pl: `Hola ${guest}! soy Manuel del Pozo. Os escribo porque Rita y yo junto a mis padres Luis y María Angéles tenemos el gusto de invitaros a nuestra boda 👰🤵 el próximo 3 de septiembre en Santa Eulalia. Haz click en el siguente enlace: ${url} Avisadme si tenéis dificultad para ver la invitación. Saludos 👋`,
             pl: '',
             pl_pl: '',
             en: '',
