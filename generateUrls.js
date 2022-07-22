@@ -4,6 +4,7 @@ const fs = require('fs');
 const createHTML = require('create-html');
 const guestsJson = require('./src/consts/guests.json');
 const hotelNightsJson = require('./src/consts/hotelNights.json');
+const churchGuestsJson = require('./src/consts/churchGuests.json');
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 
@@ -30,31 +31,41 @@ const getInvitationMessage = ({ guest, lang, url, isFromRita, messageType = 'inv
             en: `Hi ${guest}! 🙂 Just remind you that ${other} and I are waiting for you on September 3 for our wedding 👰🤵 If you can't find the invitation with all the details, here it is again: ${url}. See you soon 👋`,
             fr: `Coucou ${guest}! 🙂 Rappelez-vous simplement que ${other} vous attendons le 3 septembre pour notre mariage 👰🤵 Si vous ne trouvez pas l'invitation avec tous les détails, la revoilà: ${url}. À bientôt 👋`,
         },
+        churchNeo: {
+            es: `Hola ${guest}! 🙂 ${other}, yo Manuel y mis padres Luis y María Angéles tenemos el gusto de invitarte a nuestra boda 👰🤵 el próximo 3 de septiembre en Santa Eulalia. Haz click en el siguente enlace: ${url} Avísame si tienes dificultad para ver la invitación. Saludos 👋`,
+            es_pl: `Hola ${guest}! 🙂 ${other} y yo Manuel y mis padres Luis y María Angéles tenemos el gusto de invitaros a nuestra boda 👰🤵 el próximo 3 de septiembre en Santa Eulalia. Haz click en el siguente enlace: ${url} Avisadme si tenéis dificultad para ver la invitación. Saludos 👋`,
+            pl: '',
+            pl_pl: '',
+            en: '',
+            fr: '',
+        },
     };
 
     return messages[messageType][lang];
 };
 
-const getUrlListByLang = (lang, list, messageType) => list.map(guest => {
-    const url = `${urlBase}/#/${lang}?guest=${encodeURIComponent(guest)}`;
+const getUrlListByLang = (lang, list, messageType) => list
+    .map(guest => {
+        const url = `${urlBase}/#/${lang}?guest=${encodeURIComponent(guest)}`;
 
-    return {
-        guest,
-        lang,
-        url,
-        message: getInvitationMessage({
-            lang,
+        return {
             guest,
+            lang,
             url,
-            isFromRita: (['pl', 'pl_pl'].includes(lang) && guest !== 'Marcin')
-                || (lang === 'en' && !['Filipa and Bruno', 'Gabriela and Slavko'].includes(guest)),
-            messageType,
-        }),
-    };
-});
+            message: getInvitationMessage({
+                lang,
+                guest,
+                url,
+                isFromRita: (['pl', 'pl_pl'].includes(lang) && guest !== 'Marcin')
+                    || (lang === 'en' && !['Filipa and Bruno', 'Gabriela and Slavko'].includes(guest)),
+                messageType,
+            }),
+        };
+    });
 
 const urlLists = Object.entries(guestsJson).map(([lang, list]) => getUrlListByLang(lang, list, 'invitations'));
 const urlListsReminders = Object.entries(guestsJson).map(([lang, list]) => getUrlListByLang(lang, list, 'reminders'));
+const urlListsChurchNeo = Object.entries(guestsJson).map(([lang, list]) => getUrlListByLang(lang, list, 'churchNeo'));
 const hotelNightsList = Object.entries(hotelNightsJson).map(([guest, nights]) => ({ guest, nights }));
 const nightPrice = {
     1: 57,
@@ -62,7 +73,7 @@ const nightPrice = {
 };
 const breakfastPrice = 10;
 
-const generateBodyContent = (list, hotelNights) => {
+const generateBodyContent = (list, hotelNights, filterList) => {
     const html = `<!DOCTYPE html>`;
     const { document } = new JSDOM(html).window;
     const tmp = document.createElement('div');
@@ -70,22 +81,24 @@ const generateBodyContent = (list, hotelNights) => {
     const domListNights = document.createElement('ul');
 
     list.flat().forEach(({ guest, lang, url, message }) => {
-        const listItem = document.createElement('li');
-        const link = document.createElement('a');
-        const copyBtn = document.createElement('button');
-        const guestText = document.createTextNode(`${guest} // ${lang} // `);
-        link.href = url;
-        link.target = "_blank";
-        link.innerHTML =  '-> link to test <- ';
-        copyBtn.setAttribute("onclick",`copy('${message}')`);
-        copyBtn.style.fontSize = '32px';
-        copyBtn.style.padding = '10px';
-        copyBtn.style.margin = '20px 10px 30px';
-        copyBtn.innerHTML = `Copy message for ${guest}`;
-        listItem.appendChild(guestText);
-        listItem.appendChild(link);
-        listItem.appendChild(copyBtn);
-        domList.appendChild(listItem);
+        if (!filterList || filterList.includes(guest)) {
+            const listItem = document.createElement('li');
+            const link = document.createElement('a');
+            const copyBtn = document.createElement('button');
+            const guestText = document.createTextNode(`${guest} // ${lang} // `);
+            link.href = url;
+            link.target = "_blank";
+            link.innerHTML =  '-> link to test <- ';
+            copyBtn.setAttribute("onclick",`copy('${message}')`);
+            copyBtn.style.fontSize = '32px';
+            copyBtn.style.padding = '10px';
+            copyBtn.style.margin = '20px 10px 30px';
+            copyBtn.innerHTML = `Copy message for ${guest}`;
+            listItem.appendChild(guestText);
+            listItem.appendChild(link);
+            listItem.appendChild(copyBtn);
+            domList.appendChild(listItem);
+        }
     });
 
     hotelNights.flat().forEach(({ guest, nights }) => {
@@ -138,6 +151,22 @@ const htmlReminders = createHTML({
     body: generateBodyContent(urlListsReminders, hotelNightsList),
 });
 
+const htmlChurch = createHTML({
+    title: 'Church Neo',
+    head: `<meta name="description" content="Invitations">
+           <script type="text/javascript">
+               function copy(message) {
+                    if ('clipboard' in navigator) {
+                        navigator.clipboard.writeText(message);
+                    } else {
+                        document.execCommand('copy', true, message);
+                    }
+                }
+            </script>
+    `,
+    body: generateBodyContent(urlListsChurchNeo, hotelNightsList, Object.keys(churchGuestsJson)),
+});
+
 fs.writeFile('public/invitations.html', htmlInvitations, function (err) {
     if (err) throw err;
     console.log('Invitations page created');
@@ -156,6 +185,16 @@ fs.writeFile('public/reminders.html', htmlReminders, function (err) {
 fs.writeFile('public/reminders.json', JSON.stringify(urlListsReminders, null, 2), (err) => {
     if (err) throw err;
     console.log('Reminders written to file');
+});
+
+fs.writeFile('public/church.html', htmlChurch, function (err) {
+    if (err) throw err;
+    console.log('Church page created');
+});
+
+fs.writeFile('public/church.json', JSON.stringify(urlListsChurchNeo, null, 2), (err) => {
+    if (err) throw err;
+    console.log('Church written to file');
 });
 
 console.log('This is after the write call');

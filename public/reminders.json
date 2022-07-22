@@ -49,12 +49,6 @@
       "message": "Hola Beatriz! 🙂 Solo recordarte que Rita y yo te esperamos el 3 de septiembre en nuestra boda 👰🤵 Si no encuentras la invitación con todos los detalles, aquí la tienes de nuevo: https://manueldelpozo.github.io/ritamanuel/#/es?guest=Beatriz. Nos vemos 👋"
     },
     {
-      "guest": "Carmen",
-      "lang": "es",
-      "url": "https://manueldelpozo.github.io/ritamanuel/#/es?guest=Carmen",
-      "message": "Hola Carmen! 🙂 Solo recordarte que Rita y yo te esperamos el 3 de septiembre en nuestra boda 👰🤵 Si no encuentras la invitación con todos los detalles, aquí la tienes de nuevo: https://manueldelpozo.github.io/ritamanuel/#/es?guest=Carmen. Nos vemos 👋"
-    },
-    {
       "guest": "Fulgen",
       "lang": "es",
       "url": "https://manueldelpozo.github.io/ritamanuel/#/es?guest=Fulgen",
@@ -119,6 +113,48 @@
       "lang": "es",
       "url": "https://manueldelpozo.github.io/ritamanuel/#/es?guest=Manolo",
       "message": "Hola Manolo! 🙂 Solo recordarte que Rita y yo te esperamos el 3 de septiembre en nuestra boda 👰🤵 Si no encuentras la invitación con todos los detalles, aquí la tienes de nuevo: https://manueldelpozo.github.io/ritamanuel/#/es?guest=Manolo. Nos vemos 👋"
+    },
+    {
+      "guest": "Esperanza",
+      "lang": "es",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/es?guest=Esperanza",
+      "message": "Hola Esperanza! 🙂 Solo recordarte que Rita y yo te esperamos el 3 de septiembre en nuestra boda 👰🤵 Si no encuentras la invitación con todos los detalles, aquí la tienes de nuevo: https://manueldelpozo.github.io/ritamanuel/#/es?guest=Esperanza. Nos vemos 👋"
+    },
+    {
+      "guest": "Ladislao",
+      "lang": "es",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/es?guest=Ladislao",
+      "message": "Hola Ladislao! 🙂 Solo recordarte que Rita y yo te esperamos el 3 de septiembre en nuestra boda 👰🤵 Si no encuentras la invitación con todos los detalles, aquí la tienes de nuevo: https://manueldelpozo.github.io/ritamanuel/#/es?guest=Ladislao. Nos vemos 👋"
+    },
+    {
+      "guest": "Joaquín",
+      "lang": "es",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/es?guest=Joaqu%C3%ADn",
+      "message": "Hola Joaquín! 🙂 Solo recordarte que Rita y yo te esperamos el 3 de septiembre en nuestra boda 👰🤵 Si no encuentras la invitación con todos los detalles, aquí la tienes de nuevo: https://manueldelpozo.github.io/ritamanuel/#/es?guest=Joaqu%C3%ADn. Nos vemos 👋"
+    },
+    {
+      "guest": "Carmen",
+      "lang": "es",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/es?guest=Carmen",
+      "message": "Hola Carmen! 🙂 Solo recordarte que Rita y yo te esperamos el 3 de septiembre en nuestra boda 👰🤵 Si no encuentras la invitación con todos los detalles, aquí la tienes de nuevo: https://manueldelpozo.github.io/ritamanuel/#/es?guest=Carmen. Nos vemos 👋"
+    },
+    {
+      "guest": "Inma",
+      "lang": "es",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/es?guest=Inma",
+      "message": "Hola Inma! 🙂 Solo recordarte que Rita y yo te esperamos el 3 de septiembre en nuestra boda 👰🤵 Si no encuentras la invitación con todos los detalles, aquí la tienes de nuevo: https://manueldelpozo.github.io/ritamanuel/#/es?guest=Inma. Nos vemos 👋"
+    },
+    {
+      "guest": "Jose Manuel",
+      "lang": "es",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/es?guest=Jose%20Manuel",
+      "message": "Hola Jose Manuel! 🙂 Solo recordarte que Rita y yo te esperamos el 3 de septiembre en nuestra boda 👰🤵 Si no encuentras la invitación con todos los detalles, aquí la tienes de nuevo: https://manueldelpozo.github.io/ritamanuel/#/es?guest=Jose%20Manuel. Nos vemos 👋"
+    },
+    {
+      "guest": "Bernardina",
+      "lang": "es",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/es?guest=Bernardina",
+      "message": "Hola Bernardina! 🙂 Solo recordarte que Rita y yo te esperamos el 3 de septiembre en nuestra boda 👰🤵 Si no encuentras la invitación con todos los detalles, aquí la tienes de nuevo: https://manueldelpozo.github.io/ritamanuel/#/es?guest=Bernardina. Nos vemos 👋"
     }
   ],
   [
@@ -315,12 +351,6 @@
       "message": "Hola Kumi y Jose Carlos! 🙂 Solo recordaros que Rita y yo os esperamos el 3 de septiembre en nuestra boda 👰🤵 Si no encontráis la invitación con todos los detalles, aquí la tenéis de nuevo: https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Kumi%20y%20Jose%20Carlos. Nos vemos 👋"
     },
     {
-      "guest": "Inma y Jose María",
-      "lang": "es_pl",
-      "url": "https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Inma%20y%20Jose%20Mar%C3%ADa",
-      "message": "Hola Inma y Jose María! 🙂 Solo recordaros que Rita y yo os esperamos el 3 de septiembre en nuestra boda 👰🤵 Si no encontráis la invitación con todos los detalles, aquí la tenéis de nuevo: https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Inma%20y%20Jose%20Mar%C3%ADa. Nos vemos 👋"
-    },
-    {
       "guest": "Rita y Antonio",
       "lang": "es_pl",
       "url": "https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Rita%20y%20Antonio",
@@ -331,12 +361,6 @@
       "lang": "es_pl",
       "url": "https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Mar%C3%ADa%20Carmen%20y%20Carlos",
       "message": "Hola María Carmen y Carlos! 🙂 Solo recordaros que Rita y yo os esperamos el 3 de septiembre en nuestra boda 👰🤵 Si no encontráis la invitación con todos los detalles, aquí la tenéis de nuevo: https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Mar%C3%ADa%20Carmen%20y%20Carlos. Nos vemos 👋"
-    },
-    {
-      "guest": "Sole y Alfredo",
-      "lang": "es_pl",
-      "url": "https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Sole%20y%20Alfredo",
-      "message": "Hola Sole y Alfredo! 🙂 Solo recordaros que Rita y yo os esperamos el 3 de septiembre en nuestra boda 👰🤵 Si no encontráis la invitación con todos los detalles, aquí la tenéis de nuevo: https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Sole%20y%20Alfredo. Nos vemos 👋"
     },
     {
       "guest": "Ángela y Aníbal",
@@ -351,12 +375,6 @@
       "message": "Hola Iulia y Marcos! 🙂 Solo recordaros que Rita y yo os esperamos el 3 de septiembre en nuestra boda 👰🤵 Si no encontráis la invitación con todos los detalles, aquí la tenéis de nuevo: https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Iulia%20y%20Marcos. Nos vemos 👋"
     },
     {
-      "guest": "Leonor y Jose María",
-      "lang": "es_pl",
-      "url": "https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Leonor%20y%20Jose%20Mar%C3%ADa",
-      "message": "Hola Leonor y Jose María! 🙂 Solo recordaros que Rita y yo os esperamos el 3 de septiembre en nuestra boda 👰🤵 Si no encontráis la invitación con todos los detalles, aquí la tenéis de nuevo: https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Leonor%20y%20Jose%20Mar%C3%ADa. Nos vemos 👋"
-    },
-    {
       "guest": "Sandra y Jose Miguel",
       "lang": "es_pl",
       "url": "https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Sandra%20y%20Jose%20Miguel",
@@ -367,6 +385,72 @@
       "lang": "es_pl",
       "url": "https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Dori%20y%20Jorge",
       "message": "Hola Dori y Jorge! 🙂 Solo recordaros que Rita y yo os esperamos el 3 de septiembre en nuestra boda 👰🤵 Si no encontráis la invitación con todos los detalles, aquí la tenéis de nuevo: https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Dori%20y%20Jorge. Nos vemos 👋"
+    },
+    {
+      "guest": "Laly y Juan",
+      "lang": "es_pl",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Laly%20y%20Juan",
+      "message": "Hola Laly y Juan! 🙂 Solo recordaros que Rita y yo os esperamos el 3 de septiembre en nuestra boda 👰🤵 Si no encontráis la invitación con todos los detalles, aquí la tenéis de nuevo: https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Laly%20y%20Juan. Nos vemos 👋"
+    },
+    {
+      "guest": "Mari Carmen y Agustín",
+      "lang": "es_pl",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Mari%20Carmen%20y%20Agust%C3%ADn",
+      "message": "Hola Mari Carmen y Agustín! 🙂 Solo recordaros que Rita y yo os esperamos el 3 de septiembre en nuestra boda 👰🤵 Si no encontráis la invitación con todos los detalles, aquí la tenéis de nuevo: https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Mari%20Carmen%20y%20Agust%C3%ADn. Nos vemos 👋"
+    },
+    {
+      "guest": "Sole y Alfredo",
+      "lang": "es_pl",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Sole%20y%20Alfredo",
+      "message": "Hola Sole y Alfredo! 🙂 Solo recordaros que Rita y yo os esperamos el 3 de septiembre en nuestra boda 👰🤵 Si no encontráis la invitación con todos los detalles, aquí la tenéis de nuevo: https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Sole%20y%20Alfredo. Nos vemos 👋"
+    },
+    {
+      "guest": "Tere y Joaquín",
+      "lang": "es_pl",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Tere%20y%20Joaqu%C3%ADn",
+      "message": "Hola Tere y Joaquín! 🙂 Solo recordaros que Rita y yo os esperamos el 3 de septiembre en nuestra boda 👰🤵 Si no encontráis la invitación con todos los detalles, aquí la tenéis de nuevo: https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Tere%20y%20Joaqu%C3%ADn. Nos vemos 👋"
+    },
+    {
+      "guest": "Rafi y Amalio",
+      "lang": "es_pl",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Rafi%20y%20Amalio",
+      "message": "Hola Rafi y Amalio! 🙂 Solo recordaros que Rita y yo os esperamos el 3 de septiembre en nuestra boda 👰🤵 Si no encontráis la invitación con todos los detalles, aquí la tenéis de nuevo: https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Rafi%20y%20Amalio. Nos vemos 👋"
+    },
+    {
+      "guest": "María y Paco",
+      "lang": "es_pl",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Mar%C3%ADa%20y%20Paco",
+      "message": "Hola María y Paco! 🙂 Solo recordaros que Rita y yo os esperamos el 3 de septiembre en nuestra boda 👰🤵 Si no encontráis la invitación con todos los detalles, aquí la tenéis de nuevo: https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Mar%C3%ADa%20y%20Paco. Nos vemos 👋"
+    },
+    {
+      "guest": "Inma y Jose María",
+      "lang": "es_pl",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Inma%20y%20Jose%20Mar%C3%ADa",
+      "message": "Hola Inma y Jose María! 🙂 Solo recordaros que Rita y yo os esperamos el 3 de septiembre en nuestra boda 👰🤵 Si no encontráis la invitación con todos los detalles, aquí la tenéis de nuevo: https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Inma%20y%20Jose%20Mar%C3%ADa. Nos vemos 👋"
+    },
+    {
+      "guest": "Tere y Andrés",
+      "lang": "es_pl",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Tere%20y%20Andr%C3%A9s",
+      "message": "Hola Tere y Andrés! 🙂 Solo recordaros que Rita y yo os esperamos el 3 de septiembre en nuestra boda 👰🤵 Si no encontráis la invitación con todos los detalles, aquí la tenéis de nuevo: https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Tere%20y%20Andr%C3%A9s. Nos vemos 👋"
+    },
+    {
+      "guest": "Conchi y Alfonso",
+      "lang": "es_pl",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Conchi%20y%20Alfonso",
+      "message": "Hola Conchi y Alfonso! 🙂 Solo recordaros que Rita y yo os esperamos el 3 de septiembre en nuestra boda 👰🤵 Si no encontráis la invitación con todos los detalles, aquí la tenéis de nuevo: https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Conchi%20y%20Alfonso. Nos vemos 👋"
+    },
+    {
+      "guest": "Mari Carmen y Pepe",
+      "lang": "es_pl",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Mari%20Carmen%20y%20Pepe",
+      "message": "Hola Mari Carmen y Pepe! 🙂 Solo recordaros que Rita y yo os esperamos el 3 de septiembre en nuestra boda 👰🤵 Si no encontráis la invitación con todos los detalles, aquí la tenéis de nuevo: https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Mari%20Carmen%20y%20Pepe. Nos vemos 👋"
+    },
+    {
+      "guest": "Leonor y Jose María",
+      "lang": "es_pl",
+      "url": "https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Leonor%20y%20Jose%20Mar%C3%ADa",
+      "message": "Hola Leonor y Jose María! 🙂 Solo recordaros que Rita y yo os esperamos el 3 de septiembre en nuestra boda 👰🤵 Si no encontráis la invitación con todos los detalles, aquí la tenéis de nuevo: https://manueldelpozo.github.io/ritamanuel/#/es_pl?guest=Leonor%20y%20Jose%20Mar%C3%ADa. Nos vemos 👋"
     }
   ],
   [
