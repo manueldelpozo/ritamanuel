@@ -5,6 +5,7 @@ const createHTML = require('create-html');
 const guestsJson = require('./src/consts/guests.json');
 const hotelNightsJson = require('./src/consts/hotelNights.json');
 const churchGuestsJson = require('./src/consts/churchGuests.json');
+const confirmedGuestsJson = require('./src/consts/confirmedGuests.json');
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 
@@ -148,7 +149,7 @@ const htmlReminders = createHTML({
                 }
             </script>
     `,
-    body: generateBodyContent(urlListsReminders, hotelNightsList),
+    body: generateBodyContent(urlListsReminders, hotelNightsList, Object.keys(confirmedGuestsJson)),
 });
 
 const htmlChurch = createHTML({
