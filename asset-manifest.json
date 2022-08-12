@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ritamanuel/static/css/main.286cf347.chunk.css",
-    "main.js": "/ritamanuel/static/js/main.30944df0.chunk.js",
-    "main.js.map": "/ritamanuel/static/js/main.30944df0.chunk.js.map",
+    "main.js": "/ritamanuel/static/js/main.c267b078.chunk.js",
+    "main.js.map": "/ritamanuel/static/js/main.c267b078.chunk.js.map",
     "runtime-main.js": "/ritamanuel/static/js/runtime-main.37502d55.js",
     "runtime-main.js.map": "/ritamanuel/static/js/runtime-main.37502d55.js.map",
-    "static/js/2.2c2e2d1e.chunk.js": "/ritamanuel/static/js/2.2c2e2d1e.chunk.js",
-    "static/js/2.2c2e2d1e.chunk.js.map": "/ritamanuel/static/js/2.2c2e2d1e.chunk.js.map",
+    "static/js/2.35e74b89.chunk.js": "/ritamanuel/static/js/2.35e74b89.chunk.js",
+    "static/js/2.35e74b89.chunk.js.map": "/ritamanuel/static/js/2.35e74b89.chunk.js.map",
     "index.html": "/ritamanuel/index.html",
     "static/css/main.286cf347.chunk.css.map": "/ritamanuel/static/css/main.286cf347.chunk.css.map",
-    "static/js/2.2c2e2d1e.chunk.js.LICENSE.txt": "/ritamanuel/static/js/2.2c2e2d1e.chunk.js.LICENSE.txt",
+    "static/js/2.35e74b89.chunk.js.LICENSE.txt": "/ritamanuel/static/js/2.35e74b89.chunk.js.LICENSE.txt",
     "static/media/angel-divider.e6b14411.png": "/ritamanuel/static/media/angel-divider.e6b14411.png",
     "static/media/angel-wind.02d1229f.png": "/ritamanuel/static/media/angel-wind.02d1229f.png",
     "static/media/angel.8f70e2f2.png": "/ritamanuel/static/media/angel.8f70e2f2.png",
@@ -17,6 +17,7 @@
     "static/media/bus.a303968b.png": "/ritamanuel/static/media/bus.a303968b.png",
     "static/media/buttonFrame.b7291cfb.svg": "/ritamanuel/static/media/buttonFrame.b7291cfb.svg",
     "static/media/coast.93d8cb11.png": "/ritamanuel/static/media/coast.93d8cb11.png",
+    "static/media/cocktail.3f3f3f60.png": "/ritamanuel/static/media/cocktail.3f3f3f60.png",
     "static/media/corner.070b3eeb.svg": "/ritamanuel/static/media/corner.070b3eeb.svg",
     "static/media/dame.1797731b.png": "/ritamanuel/static/media/dame.1797731b.png",
     "static/media/divider.290dbcd1.svg": "/ritamanuel/static/media/divider.290dbcd1.svg",
@@ -25,7 +26,6 @@
     "static/media/hand.28bb8145.png": "/ritamanuel/static/media/hand.28bb8145.png",
     "static/media/hotel.2f068fa3.png": "/ritamanuel/static/media/hotel.2f068fa3.png",
     "static/media/iglesia.34d15ec5.png": "/ritamanuel/static/media/iglesia.34d15ec5.png",
-    "static/media/lamp.a0dd9405.svg": "/ritamanuel/static/media/lamp.a0dd9405.svg",
     "static/media/mapEurope.d6123498.jpeg": "/ritamanuel/static/media/mapEurope.d6123498.jpeg",
     "static/media/palm.afa9e04f.png": "/ritamanuel/static/media/palm.afa9e04f.png",
     "static/media/plane.bad8f55e.png": "/ritamanuel/static/media/plane.bad8f55e.png",
@@ -35,8 +35,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.37502d55.js",
-    "static/js/2.2c2e2d1e.chunk.js",
+    "static/js/2.35e74b89.chunk.js",
     "static/css/main.286cf347.chunk.css",
-    "static/js/main.30944df0.chunk.js"
+    "static/js/main.c267b078.chunk.js"
   ]
 }
