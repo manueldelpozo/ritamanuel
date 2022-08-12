@@ -11,6 +11,7 @@ import PageJourney from './pages/Page2Journey';
 import PageChurch from './pages/Page3Church';
 import PageBanquet from './pages/Page4Banquet';
 import PageBusService from './pages/Page5BusService';
+import PageBusConfirmation from './pages/Page6BusConfirmation';
 import PageTravelInterest from './pages/Page7Transport';
 import PageHotel from './pages/Page8Hotel';
 import Page9Tourism from './pages/Page9Tourism';
@@ -21,6 +22,7 @@ import PageFlightAdvice from './pages/PageFlightAdvice';
 import PageWrongApp from './pages/PageWrongApp';
 import hotelNights from './consts/hotelNights.json';
 import guestsFromPoznan from './consts/guestsFromPoznan.json';
+import confirmedGuests from './consts/confirmedGuests.json';
 import './App.css';
 
 const Footer = styled.footer`
@@ -116,16 +118,19 @@ const App = ({ useChrome, info }) => {
         <PageChurch scroll={getScrollPos(3)} />
         <PageBanquet scroll={getScrollPos(4)} />
         <PageBusService scroll={getScrollPos(5)} />
+        {confirmedGuests[guest] && (
+            <PageBusConfirmation scroll={getScrollPos(6)} guest={guest} lang={lang} />
+        )}
         {hotelNights[guest] && (
             <>
-              <PageTravelInterest scroll={getScrollPos(6)} lang={lang} fromPoznan={guestsFromPoznan[guest]} goToInfoFlights={goToInfoFlights} />
-              <PageHotel scroll={getScrollPos(7)} lang={lang} nights={hotelNights[guest]} />
-              <Page9Tourism scroll={getScrollPos(8)} lang={lang.replace('_pl', '')} />
+              <PageTravelInterest scroll={getScrollPos(confirmedGuests[guest] ? 7 : 6)} lang={lang} fromPoznan={guestsFromPoznan[guest]} goToInfoFlights={goToInfoFlights} />
+              <PageHotel scroll={getScrollPos(confirmedGuests[guest] ? 8 : 7)} lang={lang} nights={hotelNights[guest]} />
+              <Page9Tourism scroll={getScrollPos(confirmedGuests[guest] ? 9 : 8)} lang={lang.replace('_pl', '')} />
             </>
         )}
-        <PageGift scroll={getScrollPos(hotelNights[guest] ? 9 : 6)} lang={lang} guest={guest} />
+        <PageGift scroll={getScrollPos(confirmedGuests[guest] ? 10 : (hotelNights[guest] ? 9 : 6))} lang={lang} guest={guest} />
         <PageEnd guest={guest} />
-        <PageConfirmation lang={lang} guest={guest} />
+        {!confirmedGuests[guest] && <PageConfirmation lang={lang} guest={guest} />}
       </Layout>
       <Footer>
         {!scrolling && !isBottom && <ButtonScroll scrollTop={scrollTop} />}

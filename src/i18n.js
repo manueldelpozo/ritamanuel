@@ -22,6 +22,7 @@ const resources = {
             'gift_intro': 'Just your presence is already the best gift to us. However, if you desire to give nonetheless',
             'gift_nr_account': 'Account number',
             'gift_title': 'With the transfer title',
+            'gift_name': 'Manuel del Pozo',
             'thanks_advance': 'Thank You in advance',
             'ryanair_flights_alicante': 'Fligths to Alicante (Ryanair)',
             'ryanair_flights_murcia': 'Fligths to Murcia (Ryanair)',
@@ -52,6 +53,8 @@ const resources = {
             'wrong_app_copy': 'Copy this url:',
             'wrong_app_paste': 'Paste the url in Chrome and enjoy the wedding invitation :)',
             'wrong_app_computer': 'If it does not work yet, please try it on computer',
+            'confirm_transport': 'Please confirm if you need to use the bus service',
+            'go_by_bus': 'Yes, We go by bus',
         }
     },
     es: {
@@ -71,6 +74,7 @@ const resources = {
             'gift_intro': 'Tu presencia ya es un regalo para nosotros. Sin embargo si deseas obsequiarnos con un detalle',
             'gift_nr_account': 'Número de cuenta',
             'gift_title': 'Con el título',
+            'gift_name': 'Manuel del Pozo',
             'thanks_advance': 'Te damos las gracias de antemano',
             'ryanair_flights_alicante': 'Vuelos a Alicante (Ryanair)',
             'ryanair_flights_murcia': 'Vuelos a Murcia (Ryanair)',
@@ -101,6 +105,8 @@ const resources = {
             'wrong_app_copy': 'Copia esta url:',
             'wrong_app_paste': 'Pega la url en el navegador Chrome y disfruta de la invitación :)',
             'wrong_app_computer': 'Si aún no funciona, por favor prueba en el ordenador',
+            'confirm_transport': 'Por favor, confirmanos si necesitas usar el servicio de transporte',
+            'go_by_bus': 'Sí, voy en bus',
         }
     },
     es_pl: {
@@ -120,6 +126,7 @@ const resources = {
             'gift_intro': 'Vuestra presencia ya es un regalo para nosotros. Sin embargo si deseáis obsequiarnos con un detalle',
             'gift_nr_account': 'Número de cuenta',
             'gift_title': 'Con el título',
+            'gift_name': 'Manuel del Pozo',
             'thanks_advance': 'Os damos las gracias de antemano',
             'ryanair_flights_alicante': 'Vuelos a Alicante (Ryanair)',
             'ryanair_flights_murcia': 'Vuelos a Murcia (Ryanair)',
@@ -150,6 +157,8 @@ const resources = {
             'wrong_app_copy': 'Copiad esta url:',
             'wrong_app_paste': 'Pegad la url en el navegador Chrome y disfrutad de la invitación :)',
             'wrong_app_computer': 'Si aún no funciona, por favor probad en el ordenador',
+            'confirm_transport': 'Por favor, confirmadnos si necesitáis usar el servicio de transporte',
+            'go_by_bus': 'Sí, vamos en bus',
         }
     },
     pl: {
@@ -169,6 +178,7 @@ const resources = {
             'gift_intro': 'Wasza obecność jest dla Nas najlepszym prezentem. Jednak tradycyjnie w Hiszpanii Goście nie przynoszą prezentów, ani kwiatów. Jeśli chcielibyscie pomóc, możecie przelać dowolną kwotę',
             'gift_nr_account': 'na numer konta',
             'gift_title': 'Z tytulem przelewu',
+            'gift_name': 'Manuel del Pozo',
             'thanks_advance': 'Z góry dziękujemy',
             'ryanair_flights_alicante': 'Loty do Alicante (Ryanair)',
             'ryanair_flights_murcia': 'Loty do Murcji (Ryanair)',
@@ -199,6 +209,8 @@ const resources = {
             'wrong_app_copy': 'Skopiuj ten adres url:',
             'wrong_app_paste': 'Wklej adres url w Chrome i ciesz się zaproszeniem na ślub :)',
             'wrong_app_computer': 'Jeśli to jeszcze nie działa, wypróbuj na komputerze',
+            'confirm_transport': 'Potwierdź proszę, jeśli jedziesz na uroczystość autobusem',
+            'go_by_bus': 'Tak, jadę autobusem',
         }
     },
     pl_pl: {
@@ -218,6 +230,7 @@ const resources = {
             'gift_intro': 'Wasza obecność jest dla Nas najlepszym prezentem. Jednak tradycyjnie w Hiszpanii Goście nie przynoszą prezentów, ani kwiatów. Jeśli chcielibyście pomóc, możecie przelać dowolną kwotę',
             'gift_nr_account': 'na numer konta',
             'gift_title': 'Z tytulem przelewu',
+            'gift_name': 'Manuel del Pozo',
             'thanks_advance': 'Z góry dziękujemy',
             'ryanair_flights_alicante': 'Loty do Alicante (Ryanair)',
             'ryanair_flights_murcia': 'Loty do Murcji (Ryanair)',
@@ -248,6 +261,8 @@ const resources = {
             'wrong_app_copy': 'Skopiujcie ten adres url:',
             'wrong_app_paste': 'Wklejcie adres url w Chrome i cieszcie się zaproszeniem na ślub :)',
             'wrong_app_computer': 'Jeśli to jeszcze nie działa, wypróbujcie na komputerze',
+            'confirm_transport': 'Potwierdź proszę, jeśli jedziecie na uroczystość autobusem',
+            'go_by_bus': 'Tak, jedziemy autobusem',
         }
     },
     fr: {
@@ -267,6 +282,7 @@ const resources = {
             'gift_intro': 'Votre seule présence est le meilleur cadeau pour nous. Cependant, si vous souhaitez aider',
             'gift_nr_account': 'Numéro de compte',
             'gift_title': 'Avec motif du virement',
+            'gift_name': 'Manuel del Pozo',
             'thanks_advance': 'Merci d\'avance',
             'ryanair_flights_alicante': 'Vols vers Alacante (Ryanair)',
             'ryanair_flights_murcia': 'Vols vers Murcie (Ryanair)',

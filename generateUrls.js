@@ -24,11 +24,11 @@ const getInvitationMessage = ({ guest, lang, url, isFromRita, messageType = 'inv
             fr: `Coucou ${guest}! 🙂 ${other} et moi avons le plaisir de vous inviter à notre mariage 👰🤵 Cliquez sur le lien suivant: ${url}`,
         },
         reminders: {
-            es: `Hola ${guest}! 🙂 Solo recordarte que ${other} y yo te esperamos el 3 de septiembre en nuestra boda 👰🤵 Si no encuentras la invitación con todos los detalles, aquí la tienes de nuevo: ${url}. Nos vemos 👋`,
-            es_pl: `Hola ${guest}! 🙂 Solo recordaros que ${other} y yo os esperamos el 3 de septiembre en nuestra boda 👰🤵 Si no encontráis la invitación con todos los detalles, aquí la tenéis de nuevo: ${url}. Nos vemos 👋`,
-            pl: `Cześć ${guest}! 🙂 Przypomnij tylko, że ${other} i ja czekamy na Ciebie 3 września na nasz ślub 👰🤵 Jeśli nie możesz znaleźć zaproszenia ze wszystkimi szczegółami, oto jest ponownie: ${url}. Do zobaczenia 👋`,
-            pl_pl: `Cześć ${guest}! 🙂 Przypomnij tylko, że ${other} i ja czekamy na Was 3 września na nasz ślub 👰🤵 Jeśli nie możecie znaleźć zaproszenia ze wszystkimi szczegółami, oto jest ponownie: ${url}. Do zobaczenia 👋`,
-            en: `Hi ${guest}! 🙂 Just remind you that ${other} and I are waiting for you on September 3 for our wedding 👰🤵 If you can't find the invitation with all the details, here it is again: ${url}. See you soon 👋`,
+            es: `Hola ${guest}! 🙂 Solo recordarte que ${other} y yo te esperamos el 3 de septiembre en nuestra boda 👰🤵 Si no encuentras la invitación con todos los detalles, aquí la tienes de nuevo: ${url}. Por favor, confirma si vas en bus a la celebración. Nos vemos 👋`,
+            es_pl: `Hola ${guest}! 🙂 Solo recordaros que ${other} y yo os esperamos el 3 de septiembre en nuestra boda 👰🤵 Si no encontráis la invitación con todos los detalles, aquí la tenéis de nuevo: ${url}. Por favor, confirmad si vais en bus a la celebración. Nos vemos 👋`,
+            pl: `Cześć ${guest}! 🙂 Przypomnij tylko, że ${other} i ja czekamy na Ciebie 3 września na nasz ślub 👰🤵 Jeśli nie możesz znaleźć zaproszenia ze wszystkimi szczegółami, oto jest ponownie: ${url}. Potwierdź proszę, jeśli jedziesz na uroczystość autobusem. Do zobaczenia 👋`,
+            pl_pl: `Cześć ${guest}! 🙂 Przypomnij tylko, że ${other} i ja czekamy na Was 3 września na nasz ślub 👰🤵 Jeśli nie możecie znaleźć zaproszenia ze wszystkimi szczegółami, oto jest ponownie: ${url}. Potwierdź proszę, jeśli jedziecie na uroczystość autobusem. Do zobaczenia 👋`,
+            en: `Hi ${guest}! 🙂 Just remind you that ${other} and I are waiting for you on September 3 for our wedding 👰🤵 If you can't find the invitation with all the details, here it is again: ${url}. Please confirm if you go by bus to the wedding reception. See you soon 👋`,
             fr: `Coucou ${guest}! 🙂 Rappelez-vous simplement que ${other} vous attendons le 3 septembre pour notre mariage 👰🤵 Si vous ne trouvez pas l'invitation avec tous les détails, la revoilà: ${url}. À bientôt 👋`,
         },
         churchNeo: {

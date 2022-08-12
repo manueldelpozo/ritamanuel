@@ -26,6 +26,12 @@ const Gift = styled.img`
     animation: scaling 3s infinite ease-in-out;
 `;
 
+const getAccountName = ({ toName, toNamePL, toNamePL2, list2 }, guest, isPl) => {
+    if (!isPl) return toName;
+    if (list2.includes(guest)) return toNamePL2;
+    return toNamePL;
+}
+
 const getAccountNumber = ({ iban, accountPL, accountPL2, list2 }, guest, isPl) => {
     if (!isPl) return iban;
     if (list2.includes(guest)) return accountPL2;
@@ -64,7 +70,7 @@ const PageGift = ({ scroll, lang, guest }) => {
             </ParallaxWrapper>
             <PageDetailsGift className="page-details__gift">
                 <div>
-                    {t('gift_nr_account')}:<br />
+                    {t('gift_nr_account')}: <strong>{getAccountName(bankDetails, guest, lang.startsWith('pl'))}</strong><br />
                     <div className="page-details__gift__iban">
                         <CopyContent
                             content={getAccountNumber(bankDetails, guest, lang.startsWith('pl'))}

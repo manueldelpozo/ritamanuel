@@ -5,8 +5,9 @@ import ParallaxWrapper from '../components/ParallaxWrapper';
 import ExternalLink from '../components/ExternalLink';
 import createLinkCalendar from '../helpers/createLinkCalendar';
 import { vh2px } from '../helpers/parsers';
+import cocktail from '../assets/cocktail.png';
 import table from '../assets/table.png';
-import lamp from '../assets/lamp.svg';
+// import lamp from '../assets/lamp.svg';
 import banquetDetails from '../consts/banquetDetails';
 
 const TextHeader = styled.h2`
@@ -21,7 +22,7 @@ const TextHeader = styled.h2`
 `;
 
 const TextDetails = styled.div`
-    height: 50vh;
+    height: 35vh;
     padding: 0 10% 5%;
     width: 100vw;
     margin: 0;
@@ -43,7 +44,7 @@ const Table = styled.img`
         height: auto;
     }
 `;
- 
+
 const PageBanquet = ({ scroll }) => {
     const { t } = useTranslation();
 
@@ -59,13 +60,20 @@ const PageBanquet = ({ scroll }) => {
             borderBottom: '1px solid #ccc',
         }}>
             <ParallaxWrapper
-                start={scroll.top - vh2px(10)} 
+                start={scroll.top - vh2px(10)}
                 end={scroll.bottom - vh2px(20)}
                 animations={[
                     ['translateY', -vh2px(5), vh2px(5)],
                 ]}>
                 <TextHeader>
-                    {t('banquet')} <br /><span style={{ color: '#ac7d3d' }}>{banquetDetails.name}</span>
+                    {t('banquet')}
+                    <br />
+                    <ExternalLink
+                        href={`http://maps.google.com/?q=${banquetDetails.name} ${banquetDetails.address}`}
+                    >
+                        {banquetDetails.name}
+                    </ExternalLink>
+                    {/*<span style={{ color: '#ac7d3d' }}>{banquetDetails.name}</span>*/}
                 </TextHeader>
             </ParallaxWrapper>
             <ParallaxWrapper
@@ -74,8 +82,10 @@ const PageBanquet = ({ scroll }) => {
                 animations={[
                     ['translateY', vh2px(35), vh2px(20)],
                 ]}>
+                <img src={cocktail} alt="cocktail" width="auto" height="100px" />
                 <TextDetails>
                     <p>
+                        {t('banquet_time')}
                         <ExternalLink
                             href={createLinkCalendar({
                                 text: t('banquet_calendar'),
@@ -88,15 +98,15 @@ const PageBanquet = ({ scroll }) => {
                             })}
                             isBlack
                         >
-                            {t('church_time')}{banquetDetails.startTime}
+                            {banquetDetails.startTime}
                         </ExternalLink>
                     </p>
-                    <ExternalLink
-                        href={`http://maps.google.com/?q=${banquetDetails.name} ${banquetDetails.address}`}
-                    >
-                        {banquetDetails.address}
-                    </ExternalLink>
-                    <img src={lamp} alt="divider" width="auto" height="100px" />
+                    {/*<ExternalLink*/}
+                    {/*    href={`http://maps.google.com/?q=${banquetDetails.name} ${banquetDetails.address}`}*/}
+                    {/*>*/}
+                    {/*    {banquetDetails.address}*/}
+                    {/*</ExternalLink>*/}
+                    {/*<img src={lamp} alt="divider" width="auto" height="100px" />*/}
                 </TextDetails>
             </ParallaxWrapper>
             <ParallaxWrapper
