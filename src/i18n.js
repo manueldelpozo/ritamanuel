@@ -9,7 +9,9 @@ const resources = {
         translation: {
             'dear': 'Dear',
             'intro': 'You are invited to join our wedding',
+            'intro_confirmed': 'Thank you for your confirmation',
             'journey': 'We\'re embarking on an exciting journey, and we would like you to come with us',
+            'journey_confirmed': 'We\'re glad you are joining us on this journey',
             'church': 'The ceremony will take place in the Church of ',
             'church_time': 'On 3rd September at ',
             'banquet': 'After ceremony we will head to the wedding reception at ',
@@ -18,6 +20,7 @@ const resources = {
             'end2': 'on 3rd September',
             'end3': 'in Murcia',
             'end4': 'Bye!',
+            'end_confirmed': 'Get ready for the action!',
             'download': 'Download all wedding details',
             'gift_intro': 'Just your presence is already the best gift to us. However, if you desire to give nonetheless',
             'gift_nr_account': 'Account number',
@@ -54,14 +57,16 @@ const resources = {
             'wrong_app_paste': 'Paste the url in Chrome and enjoy the wedding invitation :)',
             'wrong_app_computer': 'If it does not work yet, please try it on computer',
             'confirm_transport': 'Please confirm if you need to use the bus service',
-            'go_by_bus': 'Yes, We go by bus',
+            'go_by_bus': 'Yes, We go by bus and I return at',
         }
     },
     es: {
         translation: {
             'dear': 'Querid@',
             'intro': 'Te invitamos a nuestro enlace',
+            'intro_confirmed': 'Gracias por confirmar tu asistencia a nuestra boda',
             'journey': 'Nos embarcamos en un viaje, y queremos que nos acompañes',
+            'journey_confirmed': 'Nos alegramos que nos acompañes en este viaje',
             'church': 'La ceremonia tendrá lugar en la Iglesia de ',
             'church_time': 'El 3 de septiembre a las ',
             'banquet': 'Después de la ceremonia nos dirigiremos al lugar de celebración en ',
@@ -70,6 +75,7 @@ const resources = {
             'end2': 'el 3 de septiembre',
             'end3': 'en Murcia',
             'end4': 'Hasta pronto',
+            'end_confirmed': '¡Prepárate para la acción!',
             'download': 'Descarga los detalles de la boda',
             'gift_intro': 'Tu presencia ya es un regalo para nosotros. Sin embargo si deseas obsequiarnos con un detalle',
             'gift_nr_account': 'Número de cuenta',
@@ -106,14 +112,16 @@ const resources = {
             'wrong_app_paste': 'Pega la url en el navegador Chrome y disfruta de la invitación :)',
             'wrong_app_computer': 'Si aún no funciona, por favor prueba en el ordenador',
             'confirm_transport': 'Por favor, confirmanos si necesitas usar el servicio de transporte',
-            'go_by_bus': 'Sí, voy en bus',
+            'go_by_bus': 'Sí, voy en bus y vuelvo a las',
         }
     },
     es_pl: {
         translation: {
             'dear': 'Queridos',
             'intro': 'Os invitamos a nuestro enlace',
+            'intro_confirmed': 'Gracias por confirmar vuestra asistencia a nuestra boda',
             'journey': 'Nos embarcamos en un viaje, y queremos que nos acompañéis',
+            'journey_confirmed': 'Nos alegramos que nos acompañéis en este viaje',
             'church': 'La ceremonia tendrá lugar en la Iglesia de ',
             'church_time': 'El 3 de septiembre a las ',
             'banquet': 'Después de la ceremonia nos dirigiremos al lugar de celebración en ',
@@ -122,6 +130,7 @@ const resources = {
             'end2': 'el 3 de septiembre',
             'end3': 'en Murcia',
             'end4': 'Hasta pronto',
+            'end_confirmed': '¡Preparaos para la acción!',
             'download': 'Descarga los detalles de la boda',
             'gift_intro': 'Vuestra presencia ya es un regalo para nosotros. Sin embargo si deseáis obsequiarnos con un detalle',
             'gift_nr_account': 'Número de cuenta',
@@ -158,14 +167,16 @@ const resources = {
             'wrong_app_paste': 'Pegad la url en el navegador Chrome y disfrutad de la invitación :)',
             'wrong_app_computer': 'Si aún no funciona, por favor probad en el ordenador',
             'confirm_transport': 'Por favor, confirmadnos si necesitáis usar el servicio de transporte',
-            'go_by_bus': 'Sí, vamos en bus',
+            'go_by_bus': 'Sí, vamos en bus y volvemos a las',
         }
     },
     pl: {
         translation: {
             'dear': 'Zaproszenie na Ślub',
             'intro': 'Będziemy uradowani Twoją obecnością!',
+            'intro_confirmed': 'Dziękujemy za potwierdzenie obecności na naszym weselu',
             'journey': 'Jesteśmy na pokładzie w podróży i chcemy, żebyś do Nas dołączył',
+            'journey_confirmed': 'Cieszymy się, że dołączysz do nas w tej podróży',
             'church': 'Uroczystość odbędzie się w kościele ',
             'church_time': '3 września o ',
             'banquet': 'Po ceremonii udamy się na miejsce uroczystości w ',
@@ -174,6 +185,7 @@ const resources = {
             'end2': '3 września',
             'end3': 'w Murcje',
             'end4': 'Do zobaczenia',
+            'end_confirmed': 'Przygotuj się na akcję!',
             'download': 'Pobierz szczegóły ślubu',
             'gift_intro': 'Wasza obecność jest dla Nas najlepszym prezentem. Jednak tradycyjnie w Hiszpanii Goście nie przynoszą prezentów, ani kwiatów. Jeśli chcielibyscie pomóc, możecie przelać dowolną kwotę',
             'gift_nr_account': 'na numer konta',
@@ -210,14 +222,16 @@ const resources = {
             'wrong_app_paste': 'Wklej adres url w Chrome i ciesz się zaproszeniem na ślub :)',
             'wrong_app_computer': 'Jeśli to jeszcze nie działa, wypróbuj na komputerze',
             'confirm_transport': 'Potwierdź proszę, jeśli jedziesz na uroczystość autobusem',
-            'go_by_bus': 'Tak, jadę autobusem',
+            'go_by_bus`': 'Tak, jadę autobusem i wracam o',
         }
     },
     pl_pl: {
         translation: {
             'dear': 'Zaproszenie na Ślub',
             'intro': 'Będziemy uradowani Waszą obecnością!',
+            'intro_confirmed': 'Dziękujemy za potwierdzenie obecności na naszym weselu',
             'journey': 'Jesteśmy na pokładzie w podróży i chcemy, żebyście do Nas dołączyli',
+            'journey_confirmed': 'Cieszymy się, że dołączycie do nas w tej podróży',
             'church': 'Uroczystość odbędzie się w kościele ',
             'church_time': '3 września o ',
             'banquet': 'Po ceremonii udamy się na miejsce uroczystości w ',
@@ -226,6 +240,7 @@ const resources = {
             'end2': '3 września',
             'end3': 'w Murcje',
             'end4': 'Do zobaczenia',
+            'end_confirmed': 'Przygotujcie się na akcję!',
             'download': 'Pobierz szczegóły ślubu',
             'gift_intro': 'Wasza obecność jest dla Nas najlepszym prezentem. Jednak tradycyjnie w Hiszpanii Goście nie przynoszą prezentów, ani kwiatów. Jeśli chcielibyście pomóc, możecie przelać dowolną kwotę',
             'gift_nr_account': 'na numer konta',
@@ -262,7 +277,7 @@ const resources = {
             'wrong_app_paste': 'Wklejcie adres url w Chrome i cieszcie się zaproszeniem na ślub :)',
             'wrong_app_computer': 'Jeśli to jeszcze nie działa, wypróbujcie na komputerze',
             'confirm_transport': 'Potwierdź proszę, jeśli jedziecie na uroczystość autobusem',
-            'go_by_bus': 'Tak, jedziemy autobusem',
+            'go_by_bus': 'Tak, jedziemy autobusem i wracamy o',
         }
     },
     fr: {

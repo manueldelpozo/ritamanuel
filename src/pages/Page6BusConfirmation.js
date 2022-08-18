@@ -1,6 +1,16 @@
 import { useTranslation } from 'react-i18next';
+import format from 'date-fns/format';
+import subMinutes from 'date-fns/subMinutes';
 import ButtonFrame from '../components/ButtonFrame';
+import banquetDetails from '../consts/banquetDetails';
 import confirmationDetails from '../consts/confirmationDetails';
+
+const TRAVEL_TIME_MIN = 45;
+const FORMAT_TIME = 'HH:mm';
+
+const getBusDeparture = (endDate) => (
+    format(subMinutes(new Date(`${banquetDetails.startDate} ${endDate}`), TRAVEL_TIME_MIN), FORMAT_TIME)
+);
 
 const PageBusConfirmation = ({ lang, confirmedGuest }) => {
     const { t } = useTranslation();
@@ -30,8 +40,11 @@ const PageBusConfirmation = ({ lang, confirmedGuest }) => {
                 justifyContent: 'center',
                 marginTop: 30,
             }}>
-                <ButtonFrame href={getHrefWithMessage(t('go_by_bus'))}>
-                    {t('go_by_bus')}
+                <ButtonFrame href={getHrefWithMessage(`${t('go_by_bus')} ${getBusDeparture(banquetDetails.endTime)}`)}>
+                    {`${t('go_by_bus')} ${getBusDeparture(banquetDetails.endTime)}`}
+                </ButtonFrame>
+                <ButtonFrame href={getHrefWithMessage(`${t('go_by_bus')} ${getBusDeparture(banquetDetails.endTime2)}`)}>
+                    {`${t('go_by_bus')} ${getBusDeparture(banquetDetails.endTime2)}`}
                 </ButtonFrame>
             </div>
         </div>

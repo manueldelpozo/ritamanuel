@@ -113,8 +113,8 @@ const App = ({ useChrome, info }) => {
     <div className="App">
       <Layout ref={scrollRef}>
         <PageIntro scroll={getScrollPos(0)} guest={guest} lang={lang} />
-        <PageInvitation scroll={getScrollPos(1)} />
-        <PageJourney scroll={getScrollPos(2)} />
+        <PageInvitation scroll={getScrollPos(1)} isConfirmed={!!confirmedGuests[guest]} />
+        <PageJourney scroll={getScrollPos(2)} isConfirmed={!!confirmedGuests[guest]} />
         <PageChurch scroll={getScrollPos(3)} />
         <PageBanquet scroll={getScrollPos(4)} />
         <PageBusService scroll={getScrollPos(5)} />
@@ -129,7 +129,7 @@ const App = ({ useChrome, info }) => {
             </>
         )}
         <PageGift scroll={getScrollPos(confirmedGuests[guest] ? 10 : (hotelNights[guest] ? 9 : 6))} lang={lang} guest={guest} />
-        <PageEnd guest={guest} />
+        <PageEnd guest={guest} isConfirmed={!!confirmedGuests[guest]} />
         {!confirmedGuests[guest] && <PageConfirmation lang={lang} guest={guest} />}
       </Layout>
       <Footer>

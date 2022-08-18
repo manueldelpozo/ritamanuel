@@ -33,8 +33,8 @@ const AngelWing = styled.img`
     transform-origin: 100% 100%;
     animation: fly 1s infinite ease-in-out alternate;
 `;
- 
-const PageInvitation = ({ scroll }) => {
+
+const PageInvitation = ({ scroll, isConfirmed }) => {
     const { t } = useTranslation();
 
     return (
@@ -48,13 +48,13 @@ const PageInvitation = ({ scroll }) => {
             overflowX: 'clip',
         }}>
             <ParallaxWrapper
-                start={scroll.top - vh2px(10)} 
+                start={scroll.top - vh2px(10)}
                 end={scroll.bottom - vh2px(20)}
                 animations={[
                     ['translateY', -vh2px(3), vh2px(2)],
                 ]}>
                 <TextHeader>
-                    {t('intro')}
+                    {isConfirmed ? t('intro_confirmed') : t('intro')}
                 </TextHeader>
             </ParallaxWrapper>
             <img src={angelDivider} alt="divider" width="auto" height="150px" style={{ filter: 'brightness(0.6)' }} />

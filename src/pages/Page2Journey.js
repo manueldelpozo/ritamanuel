@@ -89,8 +89,8 @@ const Murcia = styled.span`
       font-size: 2.3em;
     }
 `;
- 
-const PageJourney = ({ scroll }) => {
+
+const PageJourney = ({ scroll, isConfirmed }) => {
     const { t } = useTranslation();
 
     return (
@@ -108,7 +108,7 @@ const PageJourney = ({ scroll }) => {
                 animations={[
                     ['translateY', 0, vh2px(8)],
                 ]}>
-                <TextHeader>{t('journey')}</TextHeader>
+                <TextHeader>{isConfirmed ? t('journey_confirmed') : t('journey')}</TextHeader>
             </ParallaxWrapper>
             <ParallaxWrapper
                 start={scroll.top + 200}

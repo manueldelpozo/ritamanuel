@@ -10,7 +10,7 @@ const ButtonContent = styled.div`
     align-items: center;
     justify-content: center;
     border: 0;
-    padding: 2em;
+    padding: 2em 1em;
     width: 210px;
     height: 140px;
     background: none;
@@ -52,7 +52,7 @@ const ButtonFrame = ({ onClick, download, href, children }) => {
     if (onClick) {
         return (
             <button onClick={onClick} style={{ border: 'none', background: 'none', margin: 0, padding: 0 }}>
-                <ButtonContent>             
+                <ButtonContent>
                     <AnimatedHand />
                     {children}
                 </ButtonContent>
@@ -70,7 +70,7 @@ const ButtonFrame = ({ onClick, download, href, children }) => {
             </a>
         );
     }
-    
+
     if (download) {
         return (
             <a href={download} download style={{ textDecoration: 'none', color: 'inherit' }}>
