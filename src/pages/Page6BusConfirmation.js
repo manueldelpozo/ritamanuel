@@ -12,13 +12,13 @@ const getBusDeparture = (endDate) => (
     format(subMinutes(new Date(`${banquetDetails.startDate} ${endDate}`), TRAVEL_TIME_MIN), FORMAT_TIME)
 );
 
-const PageBusConfirmation = ({ lang, confirmedGuest }) => {
+const PageBusConfirmation = ({ lang, guest }) => {
     const { t } = useTranslation();
     const { email } = confirmationDetails[lang];
 
     const getHrefWithMessage = (message) => {
         return `mailto:${email}?`
-            + `subject=Confirmation${encodeURIComponent(` ${confirmedGuest}`)}`
+            + `subject=Bus${encodeURIComponent(` ${guest}`)}`
             + `&body=${encodeURIComponent(message)}`;
     };
 
