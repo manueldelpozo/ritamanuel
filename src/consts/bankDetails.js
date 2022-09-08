@@ -9,13 +9,7 @@ const bankDetails = {
     toName: 'Manuel del Pozo',
     toNamePL: 'Rita Grzegorz',
     toNamePL2: 'Manuel del Pozo',
-    list2: [
-        'Hania i Tadeusz',
-        'Dorota i Michał',
-        'Aleksandra i Rafał',
-        'Mateusz',
-        'Marcin',
-    ],
+    list2: [],
 };
 
 export default bankDetails;
